@@ -24,7 +24,7 @@ const WebSeo = () => {
         <Container>
             <Wrap>
                 <ImageContainer>
-                    <StaticImage src="../../../images/seo-test.jpg" alt="" layout="fullWidth" />
+                    <StaticImage src="../../../images/seo-test.JPG" alt="" layout="fullWidth" />
                 </ImageContainer>
                 <TextContainer>
                     <Headline2>Such&shy;ma&shy;schi&shy;nen&shy;op&shy;ti&shy;mie&shy;rung</Headline2>
