@@ -52,7 +52,7 @@ const KontaktHead = () => {
     return (
         <Wrap>
             <Background>
-                <StaticImage src="../../../images/4_About/jott_zwei_team.jpg" alt="" loading="eager" objectFit="cover" placeholder="blurred" />
+                <StaticImage src="../../images/4_About/jott_zwei_team.jpg" alt="" loading="eager" objectFit="cover" layout="fullWidth" placeholder="blurred" />
             </Background>
             <Foreground>
                 <Headline1>Das sind <Leberwurst>wir!</Leberwurst></Headline1>

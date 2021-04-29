@@ -52,7 +52,7 @@ const LeistungenHead = () => {
     return (
         <Wrap>
             <Background>
-                <StaticImage src="../../../images/3_Leistungen/Webdesign/titelbild_webdesign.jpg" alt="" loading="eager" objectFit="cover" placeholder="blurred" />
+                <StaticImage src="../../images/3_Leistungen/Webdesign/titelbild_webdesign.jpg" alt="" loading="eager" objectFit="cover" placeholder="blurred" />
             </Background>
             <Foreground>
                 <Headline1>Unsere <Leberwurst>Leistungen</Leberwurst></Headline1>

@@ -10,7 +10,7 @@ import { Leberwurst } from "../../components/defaultComponents"
 const PrintmedienPage = () => (
     <Layout>
         <Seo title="Home" keywords={[`gatsby`, `application`, `react`]} />
-        <PageHead image={<StaticImage src="../../../images/1_Homepage/Hero/hero_2.jpg" alt="" placeholder="blurred" objectFit="cover" />} headline={<><Leberwurst>Print</Leberwurst> Test</>} text="Ein Auszug unserer Projekte. Klicken Sie auf ein Projekt, um mehr über dieses zu erfahren!" />
+        <PageHead image={<StaticImage src="../../images/3_Leistungen/Printmedien/Flyer.jpg" alt="" placeholder="blurred" objectFit="cover" layout="fullWidth" />} headline={<><Leberwurst>Print</Leberwurst> Test</>} text="Ein Auszug unserer Projekte. Klicken Sie auf ein Projekt, um mehr über dieses zu erfahren!" />
         <PrintArea />
     </Layout>
 )

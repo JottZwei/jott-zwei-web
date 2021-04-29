@@ -3,7 +3,7 @@ import Reternityref from '../../components/2_Referenzen/Reternity-ref'
 import Layout from '../../components/layout'
 import Seo from '../../components/seo'
 
-const reternity = () => {
+const ReternityPage = () => {
     return (
         <Layout>
         <Seo title="Leistungen" keywords={[`gatsby`, `application`, `react`]} />
@@ -12,4 +12,4 @@ const reternity = () => {
     )
 }
 
-export default reternity
+export default ReternityPage

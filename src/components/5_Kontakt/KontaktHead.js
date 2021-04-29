@@ -52,7 +52,7 @@ const AboutHead = () => {
     return (
         <Wrap>
             <Background>
-                <StaticImage src="../../../images/3_Leistungen/Webdesign/titelbild_webdesign.jpg" alt="" loading="eager" objectFit="cover" placeholder="blurred" />
+                <StaticImage src="../../images/4_About/jott_zwei_team.jpg" alt="" loading="eager" objectFit="cover" placeholder="blurred" layout="fullWidth" />
             </Background>
             <Foreground>
                 <Headline1><Leberwurst>Kontaktieren</Leberwurst> sie uns!</Headline1>

@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-styled-components",
+  "name": "jott-zwei-werbeagentur",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby and styled-components",
-  "version": "0.1.0",
-  "author": "Blake Noll <nollblake@gmail.com>",
+  "description": "Ihre Werbeagentur im Artland",
+  "version": "0.2.0",
+  "author": "Jan Francksen <francksen@jott-zwei.de>",
   "dependencies": {
     "babel-plugin-styled-components": "^1.12.0",
     "gatsby": "^3.3.0",
@@ -41,9 +41,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/blakenoll/gatsby-starter-styled-components"
-  },
-  "bugs": {
-    "url": "https://github.com/blakenoll/gatsby-starter-styled-components/issues"
+    "url": "https://github.com/JottZwei/jott-zwei-web"
   }
 }

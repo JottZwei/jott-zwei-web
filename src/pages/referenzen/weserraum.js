@@ -3,7 +3,7 @@ import Borchersref from '../../components/2_Referenzen/borchers-ref'
 import Layout from '../../components/layout'
 import Seo from '../../components/seo'
 
-const weserraum = () => {
+const WeserraumPage = () => {
     return (
         <Layout>
         <Seo title="Leistungen" keywords={[`gatsby`, `application`, `react`]} />
@@ -12,4 +12,4 @@ const weserraum = () => {
     )
 }
 
-export default weserraum
+export default WeserraumPage
