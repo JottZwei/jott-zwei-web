@@ -1,7 +1,8 @@
+import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 import styled from 'styled-components'
-import { Link } from "gatsby"
+import { Button, Headline3, Text } from '../defaultComponents'
 
 const Wrap = styled.section`
     border-radius: 20px;
@@ -9,9 +10,13 @@ const Wrap = styled.section`
     width: min(90%, 1150px);
     margin: 100px auto;
     overflow: hidden;
+
+    @media screen and (max-width: 1200px){
+        margin: 20px auto;
+    }
 `
 
-const Container = styled.div`
+const Container = styled(Link)`
     color: white;
     position: relative;
     &:hover > div {
@@ -30,25 +35,24 @@ const Content = styled.div`
     justify-content: center;    
     transition: 0.3s transform ease;
     margin-left: 20%;
+    z-index: 10;
+
+    @media screen and (max-width: 1200px){
+        padding: 3vw 5vw;
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+    }
 `
 
-const Text = styled.div`   
+const TextContent = styled.div`   
     text-align: right;
+
+    @media screen and (max-width: 1200px){
+        text-align: center;
+    }
 `
 
-const Headline = styled.h2`
-    font-weight: 300;
-`
-
-const Subline = styled.span`
-`
-
-const Button = styled(Link)`
-    background: var(--secondary-color);
-    padding: 20px;
-    color: white;
-    text-decoration: none;
-`
 
 const Image = styled.div`
     position:absolute;
@@ -56,21 +60,26 @@ const Image = styled.div`
     bottom: -5px;
     left: 0;
     transition: 0.3s transform ease, 0.2s left ease;
+    z-index: 5;
+
+    @media screen and (max-width: 1200px){
+        display: none;
+    }
 `
 
 const CTA = () => {
     return (
                     <Wrap>
-                    <Container>
+                    <Container to="/kontakt">
                         <Image>
                             <StaticImage src="../../images/team_jott_zwei_2.png" alt=""/>
                         </Image>
                         <Content>
-                            <Text>
-                                <Headline>Neugierig geworden?</Headline>
-                                <Subline>Lernen Sie uns kennen!</Subline>
-                            </Text>
-                            <Button to="/kontakt">zum Kontakt</Button>
+                            <TextContent>
+                                <Headline3>Neugierig geworden?</Headline3>
+                                <Text>Lernen Sie uns kennen!</Text>
+                            </TextContent>
+                            <Button >zum Kontakt</Button>
                         </Content>
                     </Container>
                 </Wrap>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styled, { keyframes } from 'styled-components'
 import { StaticImage } from 'gatsby-plugin-image'
-import { Headline1, Text, Button } from '../defaultComponents'
+import { Headline1, Text, ButtonInternal } from '../defaultComponents'
 import { FaFacebook, FaInstagram, FaLinkedin, FaXing } from "react-icons/fa"
 
 
@@ -17,6 +17,10 @@ const Wrap = styled.div`
     overflow: hidden;
     box-shadow: 5px 5px 10px black;
     position: relative;
+
+    @media screen and (max-width: 1100px){
+        height: auto;
+    }
 `
 
 const Background = styled.div`
@@ -49,7 +53,16 @@ const Foreground = styled.div`
     grid-template-rows: 3fr 1fr;
     grid-template-areas: "a b" "c d";
     gap: 30px;
-    padding: 100px;
+    padding: 5vw;
+
+    @media screen and (max-width: 1100px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto auto;
+        grid-template-areas: "a" "d" "c" ;
+        & > div {
+            max-width: 100%;
+        }
+    }
 `
 const fadeInFromBottom = keyframes`
     from {
@@ -92,7 +105,7 @@ const Content = styled.div`
         animation: .7s ease-out 0s 1 ${fadeInFromBottom}; 
     }
 
-    & > ${Button}{
+    & > ${ButtonInternal}{
         animation: 1s ease-out 0s 1 ${fadeInFromBottom}; 
     }
 `
@@ -177,8 +190,6 @@ const PaginationItem = styled.div`
 
 
 const Hero = () => {
-
-    
     const Array = [{
         image: <StaticImage src="../../images/1_Homepage/Hero/hero_2.jpg" alt="" placeholder="blurred" objectFit="cover" />,
         headline: "Doppelt so geil.",
@@ -223,7 +234,7 @@ const Hero = () => {
                                     <>
                                         <Headline1>{slide.headline}</Headline1>
                                         <Text>{slide.text}</Text>
-                                        <Button to="#referenzen">Los geht's</Button>
+                                        <ButtonInternal to="#referenzen">Los geht's</ButtonInternal>
                                     </>
                                     )}
                             </Content>

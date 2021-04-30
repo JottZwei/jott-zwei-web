@@ -59,7 +59,6 @@ const LeistungenHead = () => {
                 <Text>Wir von Jott Zwei sind Ihre Werbeagentur, wenn es um professionelle Printprodukte und Digitalmedien geht. Wir setzen Ihre Wünsche von der Logoentwicklung bis zur fertigen Broschüre um. Gerne sind wir auch vom Webdesign bis zur Betreuung Ihrer Social Media-Kanäle für Sie da. Mit unserem Know-how wird Ihre Marke in jedem Format prägnant auf dem Markt platziert.</Text>
                 <Button to="#losgehts">Los geht's</Button>
             </Foreground>
-
         </Wrap>
     )
 }

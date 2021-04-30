@@ -2,11 +2,13 @@ import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 import { StaticImage } from "gatsby-plugin-image"
+import { FaHome, FaStar, FaMap, FaUserAlt, FaEnvelope } from "react-icons/fa"
 
 const Wrap = styled.nav`
     background: ${({active}) => active ? "#010e1e88" : "rgba(255,255,255,0.0)"};
     backdrop-filter: ${({active}) => active ? "blur(10px)" : "blur(0px)"};
     border-bottom: ${({active}) => active ? "1px solid rgba(255,255,255,0.2)" : "1px solid rgba(255,255,255,0.0)"};
+    top: 0;
     width: 100%;
     position: fixed;
     padding: ${({active}) => active ? ".1em 1.5em" : "1.5em 1.5em" };
@@ -29,7 +31,10 @@ const NavMenu = styled.ul`
     display: flex;
     gap: 1.3em;
     color: white;
-    margin: 0;
+
+    @media screen and (max-width: 1100px){
+        margin: 0 auto;
+    }
 `
 
 const NavItem = styled(Link)`
@@ -37,8 +42,22 @@ const NavItem = styled(Link)`
     margin: 0;
     transition: color 0.2s ease;
 
+    & > svg {
+        width: 100%;
+        font-size: 1rem;
+        display: none;
+    }
+
     &:hover {
         color: var(--secondary-color);
+    }
+
+    @media screen and (max-width: 1100px){
+        font-size: 0.8rem;
+
+        & > svg {
+            display: block;
+        }
     }
 `
 
@@ -106,18 +125,23 @@ const Navbar = () => {
                 </Logo>
                 <NavMenu>
                     <NavItem to="/">
+                        <FaHome />
                         Start
                     </NavItem>
                     <NavItem to="/referenzen">
+                        <FaStar />
                         Referenzen
                     </NavItem>
                     <NavItem to="/leistungen">
+                        <FaMap />
                         Leistungen
                     </NavItem>
                     <NavItem to="/ueber-uns">
+                        <FaUserAlt />
                         Über Uns
                     </NavItem>
                     <NavItem to="/kontakt">
+                        <FaEnvelope />
                         Kontakt
                     </NavItem>
                 </NavMenu>

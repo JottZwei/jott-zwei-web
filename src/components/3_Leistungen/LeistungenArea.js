@@ -71,7 +71,7 @@ const LeistungenArea = () => {
                     <Button>zur Referenz ...</Button>
                 </Content>
             </Item>
-            <Item to="/leistungen/logogestaltung">
+            <Item to="/leistungen/logodesign">
                 <StaticImage src="../../images/3_Leistungen/Webdesign/titelbild_webdesign.jpg" alt="" placeholder="blurred"/>
                 <Content>
                     <Headline2>Logo</Headline2>

@@ -24,7 +24,7 @@ export const Headline2 = styled.h2`
 
 export const Headline3 = styled.h3`
     color: var(--white);
-    font-size: clamp(1.5rem, 1.4rem + 0.4848vw, 1.7rem);
+    font-size: clamp(1.2rem, 1.2rem + 0.4848vw, 1.7rem);
     margin-bottom: .3em;
     font-weight: 400;
 `
@@ -52,6 +52,10 @@ export const ButtonExtern = styled.a`
         background: var(--tertiary-color);
         transform: scale(1.05);
     }
+
+    @media screen and (max-width: 1200px){
+        font-size: 0.8rem;
+    }
 `
 
 export const Button = styled.button`
@@ -66,6 +70,11 @@ export const Button = styled.button`
     &:hover, &:focus {
         background: var(--tertiary-color);
         transform: scale(1.05);
+    }
+
+    @media screen and (max-width: 1200px){
+        font-size: 0.8rem;
+        padding: 0.6em 1em;
     }
 `
 
@@ -82,6 +91,11 @@ export const ButtonInternal = styled(Link)`
         background: var(--tertiary-color);
         transform: scale(1.05);
     }
+
+    @media screen and (max-width: 1200px){
+        font-size: 0.8rem;
+        padding: 0.5em 1em;
+    }
 `
 
 export const ButtonExternal = styled.a`
@@ -97,4 +111,9 @@ transition: background-color 0.2s ease, transform 0.2s ease;
     background: var(--tertiary-color);
     transform: scale(1.05);
 }
+    
+    @media screen and (max-width: 1200px){
+        font-size: 0.8rem;
+        padding: 0.5em 1em;
+    }
 `
