@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { ButtonIntern, Headline1, Text } from '../defaultComponents'
+import { ButtonInternal, Headline1, Text } from '../defaultComponents'
 
 const Wrap = styled.div`
     height: 80vh;
@@ -54,7 +54,7 @@ const PageHead = ({ image, headline, text }) => {
             <Foreground>
                 <Headline1>{headline}</Headline1>
                 <Text>{text}</Text>
-                <ButtonIntern to="#losgehts">Los geht's</ButtonIntern>
+                <ButtonInternal to="#losgehts">Los geht's</ButtonInternal>
             </Foreground>
         </Wrap>
     )

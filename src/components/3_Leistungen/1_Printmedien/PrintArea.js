@@ -30,7 +30,7 @@ const Content = styled.div`
     padding: 20px;
 `
 
-const Button = styled.button`
+const Button = styled(Link)`
     width: 100%;
     padding: 20px;
     background: var(--secondary-color);
