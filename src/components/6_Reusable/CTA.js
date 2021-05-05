@@ -8,7 +8,7 @@ const Wrap = styled.section`
     border-radius: 20px;
     background:  var(--tertiary-color);
     width: min(90%, 1150px);
-    margin: 100px auto;
+    margin: 0px auto;
     overflow: hidden;
 
     @media screen and (max-width: 1200px){
@@ -24,7 +24,7 @@ const Container = styled(Link)`
     }
 
     &:hover > div:first-child {
-        left: 40px;
+        left: 0px;
     }
 `
 
@@ -57,8 +57,8 @@ const TextContent = styled.div`
 const Image = styled.div`
     position:absolute;
     width: 550px;
-    bottom: -5px;
-    left: 0;
+    top: 0px;
+    left: -30px;
     transition: 0.3s transform ease, 0.2s left ease;
     z-index: 5;
 

@@ -1,8 +1,8 @@
-import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 import styled from 'styled-components'
 import { Headline2, Button } from '../defaultComponents'
 import { Link } from 'gatsby'
+import { ReferenzenData } from './ReferenzenData'
 
 const Wrap = styled.div`
     display: grid;
@@ -20,7 +20,7 @@ const Item = styled(Link)`
 
     & > div:first-child{
         border-radius: 12px;
-        overflow:hidden;
+        overflow: hidden;
     }
 `
 
@@ -35,53 +35,17 @@ const Content = styled.div`
 const ReferenzenArea = () => {
     return (
         <Wrap id="losgehts">
-            <Item to="/referenzen/ziemer-consult">
-                <StaticImage src="../../images/2_Referenzen/Ziemer/ref_zc_2.jpg" alt="" placeholder="blurred"/>
-                <Content>
-                    <Headline2>Ziemer Consult</Headline2>
-                    <Button>zur Referenz ...</Button>
-                </Content>
-            </Item>
-
-            <Item to="/referenzen/freizeittanken">
-                <StaticImage src="../../images/2_Referenzen/Freizeittanken/ref_ft_1.jpg" alt="" placeholder="blurred"/>
-                <Content>
-                    <Headline2>Freizeittanken</Headline2>
-                    <Button>zur Referenz ...</Button>
-                </Content>
-            </Item>
-
-            <Item to="/referenzen/reternity">
-                <StaticImage src="../../images/2_Referenzen/Reternity/ref_rt_2.jpg" alt="" placeholder="blurred"/>
-                <Content>
-                    <Headline2>Reternity</Headline2>
-                    <Button>zur Referenz ...</Button>
-                </Content>
-            </Item>
-
-            <Item to="/referenzen/rebel-pandas">
-                <StaticImage src="../../images/2_Referenzen/RebelPandas/ref_rp_1.jpg" alt="" placeholder="blurred"/>
-                <Content>
-                    <Headline2>Rebel Pandas</Headline2>
-                    <Button>zur Referenz ...</Button>
-                </Content>
-            </Item>
-
-            <Item to="/referenzen/weserraum">
-                <StaticImage src="../../images/2_Referenzen/Ziemer/ref_zc_1.jpg" alt="" placeholder="blurred"/>
-                <Content>
-                    <Headline2>Weserraum</Headline2>
-                    <Button>zur Referenz ...</Button>
-                </Content>
-            </Item>
-
-            <Item to="/referenzen/people2go">
-                <StaticImage src="../../images/2_Referenzen/Ziemer/ref_zc_1.jpg" alt="" placeholder="blurred"/>
-                <Content>
-                    <Headline2>People2Go</Headline2>
-                    <Button>zur Referenz ...</Button>
-                </Content>
-            </Item>
+            {ReferenzenData.map((referenz, index) => {
+                        return (
+                        <Item to={referenz.link} key={index}>
+                        {referenz.image}
+                        <Content>
+                            <Headline2>{referenz.name}</Headline2>
+                            <Button>zur Referenz ...</Button>
+                        </Content>
+                        </Item>
+                        )
+                    })}
         </Wrap>
     )
 }

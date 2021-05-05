@@ -15,11 +15,16 @@ const Wrap = styled.div`
     margin: 30px auto;
     border-radius: 20px;
     overflow: hidden;
+    transform: translateZ(0);
     box-shadow: 5px 5px 10px black;
     position: relative;
 
     @media screen and (max-width: 1100px){
-        height: auto;
+        height: 60vh;
+        width: 100%;
+        margin: 0;
+        border-radius: 0px;
+        box-shadow: none;
     }
 `
 
@@ -43,6 +48,12 @@ const Background = styled.div`
         background: linear-gradient(0deg, rgba(1,14,30,.9) 0%, rgba(1,14,30,0.2) 100%);
         z-index: 2;
     }
+
+    @media screen and (max-width: 1100px) {
+        &:before {
+            background: linear-gradient(0deg, rgba(1,14,30,1.0) 0%, rgba(1,14,30,0.0) 100%);
+        }
+    }
 `
 
 const Foreground = styled.div`
@@ -59,19 +70,29 @@ const Foreground = styled.div`
         grid-template-columns: 1fr;
         grid-template-rows: 1fr auto auto;
         grid-template-areas: "a" "d" "c" ;
+        padding: 10vw;
+        
+
         & > div {
             max-width: 100%;
         }
+
+    @media screen and (max-width: 900px){
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "a";
+        align-items: flex-end;
+    }
     }
 `
 const fadeInFromBottom = keyframes`
     from {
-      transform: translateY(50%);
-      opacity: 0.0;
+        transform: translateY(50%);
+        opacity: 0.0;
     }
     to {
-      transform: translateY(0);
-      opacity: 1.0;
+        transform: translateY(0);
+        opacity: 1.0;
     }
     `
 
@@ -95,13 +116,13 @@ const Content = styled.div`
     max-width: 700px;
 
     & > ${Headline1} {
-        font-size: 4rem;
+        font-size: 2rem;
         color: white;    
         animation: .5s ease-out 0s 1 ${fadeInFromBottom};    
     }
 
     & > ${Text} {
-        margin-bottom: 20px;
+        margin-bottom: 5vw;
         animation: .7s ease-out 0s 1 ${fadeInFromBottom}; 
     }
 
@@ -141,6 +162,10 @@ const Pagination = styled.div`
     & > div:nth-child(3){
         z-index: 1;
     }
+
+    @media screen and (max-width: 900px){
+        display: none;
+    }
 `
 
 
@@ -154,6 +179,10 @@ const Socials = styled.div`
 
     & > svg {
         font-size: 1.5rem;
+    }
+
+    @media screen and (max-width: 900px){
+        display: none;
     }
 `
 
@@ -176,6 +205,7 @@ const PaginationItem = styled.div`
     transition: 0.3s ease box-shadow, 0.3s ease transform;
     border-radius: 10px;
     overflow: hidden;
+    cursor: pointer;
 
     & > div {
         height: 100%;

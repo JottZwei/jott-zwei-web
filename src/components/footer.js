@@ -8,10 +8,19 @@ const Wrap = styled.footer`
 
 const Container = styled.div`
   width: min(90%, 1150px);
-  margin: 0 auto;
+  margin: 7vw auto 0;
   display: grid;
   color: var(--white);
   grid-template-areas: "a b c" "d d d";
+  grid-template-columns: 1fr 1fr minmax(250px, .5fr);
+  gap: 30px;
+  text-align: center;
+
+  @media screen and (max-width: 850px){
+    grid-template-areas: "a" "b" "c" "d";
+    grid-template-columns: 1fr;
+    margin: 100px auto 100px;
+  }
 `
 
 const Column = styled.div`

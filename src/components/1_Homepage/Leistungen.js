@@ -8,7 +8,7 @@ import {Link} from 'gatsby'
 const Wrap = styled.div`
     width: min(90%, 1150px);
     margin: 0 auto;
-    padding: 10vw 4vw;
+    padding: 5vw 0;
     
     @media screen and (max-width: 1300px){
         width: 100%;
@@ -68,6 +68,7 @@ const Button = styled.button`
     padding: 20px;
     background: var(--secondary-color);
     border:none;
+    color: white;
 `
 
 const TextContent = styled.div`

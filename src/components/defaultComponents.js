@@ -17,7 +17,7 @@ export const Headline1 = styled.h1`
 
 export const Headline2 = styled.h2`
     color: var(--white);
-    font-size: clamp(2rem, 2rem + 0.4848vw, 3rem);
+    font-size: clamp(1.6rem, 1.4rem + 0.4848vw, 3rem);
     margin-bottom: .3em;
     font-weight: 200;
 `
@@ -66,6 +66,7 @@ export const Button = styled.button`
     font-size: 1rem;
     color: var(--white);
     transition: background-color 0.2s ease, transform 0.2s ease; 
+    cursor: pointer;
 
     &:hover, &:focus {
         background: var(--tertiary-color);
@@ -86,6 +87,7 @@ export const ButtonInternal = styled(Link)`
     font-size: 1rem;
     color: var(--white);
     transition: background-color 0.2s ease, transform 0.2s ease; 
+    cursor: pointer;
 
     &:hover, &:focus {
         background: var(--tertiary-color);
@@ -106,6 +108,7 @@ border: none;
 font-size: 1rem;
 color: var(--white);
 transition: background-color 0.2s ease, transform 0.2s ease; 
+cursor: pointer;
 
 &:hover, &:focus {
     background: var(--tertiary-color);

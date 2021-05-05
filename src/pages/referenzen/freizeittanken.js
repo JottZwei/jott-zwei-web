@@ -1,13 +1,14 @@
 import React from 'react'
-import Freizeittankenref from '../../components/2_Referenzen/Freizeittanken-ref'
 import Layout from '../../components/layout'
 import Seo from '../../components/seo'
+import ReferenzenTemplate from '../../components/2_Referenzen/ReferenzenTemplate'
+
 
 const freizeittanken = () => {
     return (
         <Layout>
         <Seo title="Leistungen" keywords={[`gatsby`, `application`, `react`]} />
-        <Freizeittankenref/>
+        <ReferenzenTemplate index="1"/>
         </Layout>
     )
 }

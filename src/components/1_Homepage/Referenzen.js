@@ -10,7 +10,7 @@ const Wrap = styled.div`
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto 1fr 1fr auto;
     gap: 10px;
-    padding: 10vw 4vw;
+    padding: 5vw 4vw;
 
     @media screen and (max-width: 1200px){
         grid-template-areas: "a a" "b c" "d e" "f g" "h h";
@@ -35,6 +35,7 @@ const RefContainer = styled(Link)`
     display: grid;
     grid-template-areas: "a";
     overflow: hidden;
+    transform: translateZ(0);
 
     & > div {
         grid-area: a;

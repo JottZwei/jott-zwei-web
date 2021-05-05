@@ -14,6 +14,7 @@ const Wrap = styled.nav`
     padding: ${({active}) => active ? ".1em 1.5em" : "1.5em 1.5em" };
     z-index: 99;
     transition: 0.3s background-color ease, 0.3s padding ease, backdrop-filter 0.3s ease, border-bottom 0.3s ease;
+    will-change: top;
 
 
     @media screen and (max-width: 1100px) {
@@ -30,10 +31,13 @@ const Wrap = styled.nav`
 const NavMenu = styled.ul`
     display: flex;
     gap: 1.3em;
+    column-gap: 1.3rem;
     color: white;
 
     @media screen and (max-width: 1100px){
         margin: 0 auto;
+        gap: .5em;
+        column-gap: .5em;
     }
 `
 
@@ -53,7 +57,8 @@ const NavItem = styled(Link)`
     }
 
     @media screen and (max-width: 1100px){
-        font-size: 0.8rem;
+        font-size: 0.65rem;
+        text-align: center;
 
         & > svg {
             display: block;
@@ -97,6 +102,11 @@ const Container = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    
+    @media screen and (max-width: 1100px) {
+        width: 100%;
+    }
 `
 
 const Navbar = () => {
