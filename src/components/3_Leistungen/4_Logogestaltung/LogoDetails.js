@@ -11,6 +11,7 @@ const Wrap = styled.div`
     grid-template-rows: auto 1fr;
     grid-template-areas: "a a" "b c";
     gap: 30px;
+    margin-bottom: 50px;
 `
 
 const Logo = styled.div`
@@ -43,6 +44,7 @@ const Farben = styled.div`
     grid-template-rows: auto 1fr;
     grid-template-areas: "a a" "b c";
     grid-area: c;
+    column-gap: 20px;
 
     & > ${Headline2} {
         grid-area: a;

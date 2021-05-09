@@ -62,6 +62,8 @@ const ContentContainer = styled.article`
 const EntryText = styled.div`
     width: min(90%, 1100px);
     margin: 0 auto;
+    white-space: pre-wrap;
+    margin-bottom: 50px;
 `
 
 const ImageList = styled.div`

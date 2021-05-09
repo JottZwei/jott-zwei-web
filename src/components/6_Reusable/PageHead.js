@@ -12,10 +12,14 @@ const Wrap = styled.div`
 const Background = styled.div`
     grid-area: a;
     z-index: -1;
-    display: block;
+    display: grid;
     height: 80vh;
     position: relative;
     overflow: hidden;
+
+    & > div {    
+        align-self: center;
+    }
 
     &:before{
         position: absolute;

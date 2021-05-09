@@ -7,7 +7,7 @@ import { Button, Headline3, Text } from '../defaultComponents'
 const Wrap = styled.section`
     border-radius: 20px;
     background:  var(--tertiary-color);
-    width: min(90%, 1150px);
+    width: min(90%, 1100px);
     margin: 0px auto;
     overflow: hidden;
 

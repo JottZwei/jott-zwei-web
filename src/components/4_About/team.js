@@ -1,48 +1,51 @@
 import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 import styled from 'styled-components'
-import { Headline2, Text } from '../defaultComponents'
+import { ButtonExtern, Headline2, Text } from '../defaultComponents'
 
 const Wrap = styled.div`
     display: grid;
-    grid-template-areas: "a";
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    overflow: hidden;
 `
 
-const Background = styled.div`
-    grid-area: a;
-    display: grid;
-    justify-content: center;
-`
+const Section = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 30px;
 
-const Foreground = styled.div`
-    grid-area: a;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    z-index: 2;
-    padding: 1vw 10vw 1vw 20vw;
-`
+    &:nth-child(1) > div {
 
-const Section = styled.div``
+    }
+
+    &:nth-child(4) > div {
+
+}
+`
 
 const team = () => {
     return (
         <Wrap>
-            <Background>
-                <StaticImage src="../../images/team_jott_zwei_2.png" alt="" placeholder="blurred" objectFit="cover" />
-            </Background>
-            <Foreground>
+                <Section>
+                    <StaticImage src="../../images/4_About/joern_1.png" alt="" placeholder="blurred" />
+                </Section>
                 <Section>
                     <Headline2>Jörn Webert</Headline2>
                     <Text>Medieninformatiker B.Sc. & Mediengestalter <br/>
 Markenentwicklung und Printprodukte sind Jörns Passion. Ein Gespür für die Gestaltung und der Blick fürs Detail zeichnen ihn aus und machen ihn zum verlässlichen Ansprechpartner für Ihre Marke.</Text>
+                    <ButtonExtern href="mailto:webert@jott-zwei.de">Jörn Kontaktieren</ButtonExtern>
                 </Section>
                 <Section>
                     <Headline2>Jan Francksen</Headline2>
                     <Text>Mediengestalter <br />
 Jans Zuhause sind die Konzeption und Umsetzung von Internetseiten. Mit über 10 Jahren Erfahrung in Sachen Webdesign ist er Ihr kompetenter Ansprechpartner für Ihren Webauftritt.</Text>
+                    <ButtonExtern href="mailto:francksen@jott-zwei.de">Jan Kontaktieren</ButtonExtern>
                 </Section>
-            </Foreground>
+                <Section>
+                    <StaticImage src="../../images/4_About/jan_1.png" alt="" placeholder="blurred" />
+                </Section>
         </Wrap>
     )
 }
