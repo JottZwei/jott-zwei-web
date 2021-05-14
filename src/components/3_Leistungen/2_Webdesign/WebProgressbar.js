@@ -6,14 +6,19 @@ import "react-circular-progressbar/dist/styles.css";
 import VisibilitySensor from "react-visibility-sensor";
 
 const Wrap = styled.div`
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-    min-height: 50vh;
-    place-items: center;
+    @media screen and (min-width: 900px){
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+        gap: 2vw;
+        column-gap: 2vw;
+    }
 `
 
 const Column = styled.div`
-    padding: 30px;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 30px;
 `
 
 const Percentage = styled.span`

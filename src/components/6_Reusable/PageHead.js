@@ -18,7 +18,8 @@ const Background = styled.div`
     overflow: hidden;
 
     & > div {    
-        align-self: center;
+        width: 100%;
+        height: 100%;
     }
 
     &:before{
@@ -40,9 +41,10 @@ const Foreground = styled.div`
     justify-content: center;
     align-items: center;
     height: 80vh;
-    max-width: 700px;
+    max-width: 1100px;
     margin: 0 auto;
     text-align: center;
+    padding: 5vw 10vw;
 
     & > ${Text} {
         margin-bottom: 20px;

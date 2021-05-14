@@ -5,14 +5,15 @@ import { ButtonInternal, Headline2, Text, Button } from '../defaultComponents'
 import { Link } from 'gatsby'
 
 const Wrap = styled.div`
-    padding-top: 150px;
+    padding-top: 50px;
     width: min(90%, 1150px);
     display: grid;
     height: auto;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 47% 47%;
+    grid-template-rows: auto auto;
     margin: 0 auto;
-    gap: 40px;
+    gap: 6%;
+    column-gap: 6%;
 `
 
 const Item = styled(Link)`

@@ -35,9 +35,10 @@ const NavMenu = styled.ul`
     color: white;
 
     @media screen and (max-width: 1100px){
-        margin: 0 auto;
-        gap: .5em;
-        column-gap: .5em;
+        gap: 0;
+        column-gap: 0;
+        width: 100%;
+        justify-content: space-around;
     }
 `
 

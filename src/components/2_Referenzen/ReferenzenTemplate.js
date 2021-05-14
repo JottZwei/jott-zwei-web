@@ -4,8 +4,6 @@ import { Headline1, Text, ButtonInternal } from '../defaultComponents'
 import Cta from '../6_Reusable/CTA'
 import { ReferenzenData } from '../2_Referenzen/ReferenzenData'
 
-
-
 const Wrap = styled.div``
 
 const HeaderContainer = styled.div`
@@ -25,6 +23,13 @@ const Background = styled.div`
 
     & > div {    
         align-self: end;
+    }
+
+    & > video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: bottom;
     }
 
     &:before{
@@ -80,7 +85,9 @@ const ImageList = styled.div`
 `
 
 const ImageContainer = styled.div`
-
+    & > div > div {
+        transform: translateZ(0);
+    }
 `
 
 

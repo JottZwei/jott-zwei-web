@@ -1,9 +1,11 @@
 import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
+import video from '../../images/logo_intro.mp4'
 
 export const ReferenzenData = [
     {
         image: <StaticImage src="../../images/2_Referenzen/Ziemer/ref_zc_0_head.jpg" alt="" placeholder="blurred" objectFit="cover" />,
+        titleImage: <StaticImage src="../../images/2_Referenzen/Ziemer/ref_zc_0_head.jpg" alt="" placeholder="blurred" objectFit="cover" />,
         name: 'Ziemer Consult',
         headline: 'Ihr kompetenter Partner für Ihre Lexware Software.',
         leistungen: 'Webdesign, Logogestaltung, Albumcover',
@@ -20,10 +22,11 @@ export const ReferenzenData = [
     },
     {
         image: <StaticImage src="../../images/2_Referenzen/Freizeittanken/ref_ft_0_head.jpg" alt="" placeholder="blurred" objectFit="cover" />,
+        titleImage: <StaticImage src="../../images/2_Referenzen/Freizeittanken/ref_ft_0_head.jpg" alt="" placeholder="blurred" objectFit="cover" />,
         name: 'Freizeit\xADtanken',
         headline: 'Bereit, um mal so richtig Freizeit zu tanken?',
         leistungen: 'Webdesign, Logogestaltung, Albumcover',
-        text: 'Mit Michaelas cooler Idee, Freizeitaktivitäten an Wochenenden zu veranstalten, musste ein passendes Auftreten auf dem Markt her. Ihre peppige Persönlichkeit und Ihr authentisches Auftreten in den sozialen Medien haben uns schnell in die richtige Richtung gelenkt. Herausgekommen ist ein rockiges Erscheinungsbild, welches zum Mitmachen anregt. Das neu geschaffene Erscheinungsbild hat den Weg in die sozialen Medien und auf Ihre Internetseite gefunden. Die Internetseite, ebenfalls von uns realisiert, bietet eine Übersicht über die aktuellen Veranstaltungen und einige Impressionen von Freizeittanken sowie von Michaela. Des Weiteren haben wir mit Michaela nicht nur eine Kundin gewonnen, sondern auch jemanden, mit dem man sich super austauschen kann! Vielen Dank dafür!',
+        text: 'Mit Michaelas cooler Idee, Freizeitaktivitäten an Wochenenden zu veranstalten, musste ein passendes Auftreten auf dem Markt her. Ihre peppige Persönlichkeit und Ihr authentisches Auftreten in den sozialen Medien haben uns schnell in die richtige Richtung gelenkt. Herausgekommen ist ein rockiges Erscheinungsbild, welches zum Mitmachen anregt. \n \nDas neu geschaffene Erscheinungsbild hat den Weg in die sozialen Medien und auf Ihre Internetseite gefunden. Die Internetseite, ebenfalls von uns realisiert, bietet eine Übersicht über die aktuellen Veranstaltungen und einige Impressionen von Freizeittanken sowie von Michaela. \n \nDes Weiteren haben wir mit Michaela nicht nur eine Kundin gewonnen, sondern auch jemanden, mit dem man sich super austauschen kann! Vielen Dank dafür!',
         link: '/referenzen/freizeittanken',
         gallery: [
             <StaticImage src="../../images/2_Referenzen/Freizeittanken/ref_ft_1.jpg" alt="" placeholder="blurred" objectFit="cover" />,
@@ -35,11 +38,12 @@ export const ReferenzenData = [
         ]
     },
     {
-        image: <StaticImage src="../../images/2_Referenzen/RebelPandas/ref_rp_1.jpg" alt="" placeholder="blurred" objectFit="cover"  />,
+        image: <video src={video} type="video/mp4" autoPlay muted loop playsInline />,
+        titleImage: <StaticImage src="../../images/2_Referenzen/RebelPandas/ref_rp_1.jpg" alt="" placeholder="blurred" objectFit="cover" />,
         name: 'Rebel Pandas',
         headline: 'Rebellisch, musikalisch & flauschig',
         leistungen: 'Webdesign, Logogestaltung, Albumcover',
-        text: 'Rebel Pandas, ein Musikprojekt aus der Region, möchte durchstarten. Dafür musste ein ausgeklügeltes, modernes Corporate Design her. Inspiriert vom Brutalismus-Stil ist ein “rebellisches” Corporate Design entstanden, welches thematisch und optisch die Ansprüche perfekt vereint. Das Logo und die Typografie bieten einen großen gestalterischen Spielraum für die Verwendung in den Bereichen Merchandise, Social-Media, Plattencovers und Ähnlichem. Weitere Projekte für Rebel Pandas sind im Aufbau. Diese werden Sie bald hier finden können.',
+        text: 'Rebel Pandas, ein Musikprojekt aus der Region, möchte durchstarten. Dafür musste ein ausgeklügeltes, modernes Corporate Design her. \n \nInspiriert vom Brutalismus-Stil ist ein “rebellisches” Corporate Design entstanden, welches thematisch und optisch die Ansprüche perfekt vereint. \n \nDas Logo und die Typografie bieten einen großen gestalterischen Spielraum für die Verwendung in den Bereichen Merchandise, Social-Media, Plattencovers und Ähnlichem. \n \nWeitere Projekte für Rebel Pandas sind im Aufbau. Diese werden Sie bald hier finden können.',
         link: '/referenzen/rebelpandas',
         gallery: [
             <StaticImage src="../../images/2_Referenzen/Freizeittanken/ref_ft_1.jpg" alt="" placeholder="blurred" objectFit="cover" />,
@@ -52,6 +56,7 @@ export const ReferenzenData = [
     },
     {
         image: <StaticImage src="../../images/2_Referenzen/Reternity/ref_rt_2.jpg" alt="" placeholder="blurred" objectFit="cover"  />,
+        titleImage: <StaticImage src="../../images/2_Referenzen/Reternity/ref_rt_2.jpg" alt="" placeholder="blurred" objectFit="cover"  />,
         name: 'Reternity',
         headline: 'Schlicht, modern & auf den Punkt.',
         leistungen: 'Webdesign, Logogestaltung, Albumcover',
@@ -67,28 +72,13 @@ export const ReferenzenData = [
         ]
     },
     {
-        image: <StaticImage src="../../images/3_Leistungen/Printmedien/Angebotsmappe.jpg" alt="" placeholder="blurred" objectFit="cover" />,
+        image: <StaticImage src="../../images/2_Referenzen/Borchers/ref_bor_0_head.jpg" alt="" placeholder="blurred" objectFit="cover" />,
+        titleImage: <StaticImage src="../../images/2_Referenzen/Borchers/ref_bor_0_head.jpg" alt="" placeholder="blurred" objectFit="cover" />,
         name: 'Weserraum',
         headline: 'Schlicht, modern & auf den Punkt.',
         leistungen: 'Webdesign, Logogestaltung, Albumcover',
         text: 'Direkt auf den ersten Blick „Ein­\xADdruck machen“! Das funk­\xADtio\xADniert immer mit in\xADdi­\xADvi­\xADduel­\xADlen An­\xADge­\xADbots­\xADmap\xADpen in Ih\xADrem Cor\xAD­po­\xADra\xADte De\xADsign. Hoch\xAD­wer­\xADti­\xADger Druck nach Be\xAD­darf mit Vi\xAD­si\xAD­ten\xAD­kar­\xADten­\xADta\xADsche und 2 oder 3 La­\xADschen.',
         link: '/referenzen/weserraum',
-        gallery: [
-            <StaticImage src="../../images/2_Referenzen/Freizeittanken/ref_ft_1.jpg" alt="" placeholder="blurred" objectFit="cover" />,
-            <StaticImage src="../../images/2_Referenzen/Freizeittanken/ref_ft_2.jpg" alt="" placeholder="blurred" objectFit="cover" />,
-            <StaticImage src="../../images/2_Referenzen/Freizeittanken/ref_ft_3.jpg" alt="" placeholder="blurred" objectFit="cover" />,
-            <StaticImage src="../../images/2_Referenzen/Freizeittanken/ref_ft_4.jpg" alt="" placeholder="blurred" objectFit="cover" />,
-            <StaticImage src="../../images/2_Referenzen/Freizeittanken/ref_ft_5.jpg" alt="" placeholder="blurred" objectFit="cover" />,
-            <StaticImage src="../../images/2_Referenzen/Freizeittanken/ref_ft_6.jpg" alt="" placeholder="blurred" objectFit="cover" />
-        ]
-    },
-    {
-        image: <StaticImage src="../../images/3_Leistungen/Printmedien/Angebotsmappe.jpg" alt="" placeholder="blurred" objectFit="cover" />,
-        name: 'People2Go',
-        headline: 'Schlicht, modern & auf den Punkt.',
-        leistungen: 'Webdesign, Logogestaltung, Albumcover',
-        text: 'Direkt auf den ersten Blick „Ein­\xADdruck machen“! Das funk­\xADtio\xADniert immer mit in\xADdi­\xADvi­\xADduel­\xADlen An­\xADge­\xADbots­\xADmap\xADpen in Ih\xADrem Cor\xAD­po­\xADra\xADte De\xADsign. Hoch\xAD­wer­\xADti­\xADger Druck nach Be\xAD­darf mit Vi\xAD­si\xAD­ten\xAD­kar­\xADten­\xADta\xADsche und 2 oder 3 La­\xADschen.',
-        link: '/referenzen/people2go',
         gallery: [
             <StaticImage src="../../images/2_Referenzen/Freizeittanken/ref_ft_1.jpg" alt="" placeholder="blurred" objectFit="cover" />,
             <StaticImage src="../../images/2_Referenzen/Freizeittanken/ref_ft_2.jpg" alt="" placeholder="blurred" objectFit="cover" />,

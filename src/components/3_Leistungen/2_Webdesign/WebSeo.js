@@ -8,7 +8,13 @@ const Wrap = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    gap: 100px;
+    gap: 5vw;
+    column-gap: 5vw;
+
+    @media screen and (max-width: 1100px){
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
 `
 
 const ImageContainer = styled.div`

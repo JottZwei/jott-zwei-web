@@ -73,7 +73,9 @@ const ImageList = styled.div`
 `
 
 const ImageContainer = styled.div`
-
+    & > div {
+        transform: translateZ(0);
+    }
 `
 
 const Video = styled.video`
