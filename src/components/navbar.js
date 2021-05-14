@@ -38,7 +38,7 @@ const NavMenu = styled.ul`
         gap: 0;
         column-gap: 0;
         width: 100%;
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
 `
 
