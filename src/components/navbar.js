@@ -53,9 +53,12 @@ const NavItem = styled(Link)`
         display: none;
     }
 
-    &:hover {
+    @media screen and (min-width: 1100px){
+        &:hover {
         color: var(--secondary-color);
     }
+    }
+
 
     @media screen and (max-width: 1100px){
         font-size: 0.65rem;

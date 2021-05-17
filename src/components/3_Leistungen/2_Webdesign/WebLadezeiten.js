@@ -25,20 +25,20 @@ const TextContainer = styled.div`
 
 `
 
-const WebSeo = () => {
+const WebLadezeiten = () => {
     return (
         <Container>
             <Wrap>
                 <ImageContainer>
-                    <StaticImage src="../../../images/3_Leistungen/Webdesign/seo.png" alt="" placeholder="blurred" />
+                    <StaticImage src="../../../images/3_Leistungen/Webdesign/gatsby-next.png" alt="" placeholder="blurred" />
                 </ImageContainer>
                 <TextContainer>
-                    <Headline2>Such&shy;ma&shy;schi&shy;nen&shy;op&shy;ti&shy;mie&shy;rung</Headline2>
-                    <Text>Zusätzlich zur perfekt konzipierten und gestalteten Internetseite gehört unter anderem auch eine optimale Suchmaschinenoptimierung (SEO) und Such&shy;maschi&shy;nen&shy;werbung (SEA). Denn Sie müssen gefunden werden!</Text>
+                    <Headline2>Optimale Ladezeiten dank modernster Technik.</Headline2>
+                    <Text>Ist der Besucher erst einmal auf Ihrer Website, sorgen eine klare Struktur, schnelle Ladezeiten und ein ansprechendes Design dafür, dass sich Besucher auf Ihrer Website zurechtfinden und gerne nach Informationen und Leistungen suchen.</Text>
                 </TextContainer>
             </Wrap>
         </Container>
     )
 }
 
-export default WebSeo
+export default WebLadezeiten

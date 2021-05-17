@@ -18,21 +18,17 @@ const Item = styled(Link)`
     display: flex;
     flex-direction: column;
     align-items: center;
-    transform: translateZ(0);
 
     & > div:first-child{
-        border-radius: 12px;
         overflow: hidden;
         object-fit: cover;
-        height: 350px;
+        aspect-ratio: 5 / 3;
+        max-width: 100%;
     }
 
-    & > video {
+    & > div {
         border-radius: 12px;
-        overflow: hidden;
-        max-width: 100%;
-        object-fit: cover;
-        height: 350px;
+        transform: translateZ(0);
     }
 `
 

@@ -6,6 +6,8 @@ import WebProgressbar from "../../components/3_Leistungen/2_Webdesign/WebProgres
 import WebSeo from "../../components/3_Leistungen/2_Webdesign/WebSeo"
 import PageHead from "../../components/6_Reusable/PageHead"
 import { StaticImage } from "gatsby-plugin-image"
+import WebResponsive from "../../components/3_Leistungen/2_Webdesign/WebResponsive"
+import WebLadezeiten from "../../components/3_Leistungen/2_Webdesign/WebLadezeiten"
 
 
 const WebdesignPage = () => {
@@ -17,6 +19,8 @@ const WebdesignPage = () => {
                 <WebEntrytext />
                 <WebProgressbar />
                 <WebSeo />
+                <WebResponsive />
+                <WebLadezeiten />
         </Layout>
     )
 }

@@ -1,7 +1,7 @@
 import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 import styled from 'styled-components'
-import { ButtonExtern, Headline2, Headline3, Text } from '../defaultComponents'
+import { ButtonExtern, Headline2, Text } from '../defaultComponents'
 
 const Wrap = styled.div`
     display: grid;

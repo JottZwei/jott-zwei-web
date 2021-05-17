@@ -145,10 +145,13 @@ const Pagination = styled.div`
         box-shadow: 5px 0px 20px -10px black;
         transition: 0.2s ease transform, 0.2s ease box-shadow;
 
-        &:hover {
+        @media screen and (min-width: 1100px){
+            &:hover {
             transform: translateY(-10px);
             box-shadow: 5px 10px 20px -10px black;
         }
+        }
+
     }
 
     & > div:nth-child(1){
@@ -212,10 +215,7 @@ const PaginationItem = styled.div`
         width: 100%;
     }
 
-    &:hover {
-        box-shadow: 0px 32px 20px -15px rgba(0,0,0,0.6);
-        transform: translate(0, -7px);
-    }
+
 `
 
 

@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import {Link} from "gatsby"
+import { Link } from "gatsby"
 
 export const Container = styled.div`
     width: min(90%, 1200px);
@@ -23,6 +23,13 @@ export const Headline2 = styled.h2`
 `
 
 export const Headline3 = styled.h3`
+    color: var(--white);
+    font-size: clamp(1.2rem, 1.2rem + 0.4848vw, 1.7rem);
+    margin-bottom: .3em;
+    font-weight: 400;
+`
+
+export const Headline4 = styled.h4`
     color: var(--white);
     font-size: clamp(1.2rem, 1.2rem + 0.4848vw, 1.7rem);
     margin-bottom: .3em;

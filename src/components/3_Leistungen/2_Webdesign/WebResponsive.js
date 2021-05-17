@@ -25,20 +25,22 @@ const TextContainer = styled.div`
 
 `
 
-const WebSeo = () => {
+const WebResponsive = () => {
     return (
         <Container>
-            <Wrap>
-                <ImageContainer>
-                    <StaticImage src="../../../images/3_Leistungen/Webdesign/seo.png" alt="" placeholder="blurred" />
-                </ImageContainer>
+            <Wrap>                
+
                 <TextContainer>
-                    <Headline2>Such&shy;ma&shy;schi&shy;nen&shy;op&shy;ti&shy;mie&shy;rung</Headline2>
-                    <Text>Zusätzlich zur perfekt konzipierten und gestalteten Internetseite gehört unter anderem auch eine optimale Suchmaschinenoptimierung (SEO) und Such&shy;maschi&shy;nen&shy;werbung (SEA). Denn Sie müssen gefunden werden!</Text>
+                    <Headline2>Wie fürs Handy gemacht</Headline2>
+                    <Text>Ob auf dem Desktop Computer, Laptop, Tablet oder Smartphone - Webseiten werden von überall und diversen Endgeräten aufgerufen. Mit dem sogenannten "Responsive Web Design" lassen wir Ihre Seite nicht nur auf allen Endgeräten gut aussehen, sondern auch noch genauso gut funktionieren.</Text>
                 </TextContainer>
+                <ImageContainer>
+                    <StaticImage src="../../../images/3_Leistungen/Webdesign/responsive.png" alt="" placeholder="blurred" />
+                </ImageContainer>
+
             </Wrap>
         </Container>
     )
 }
 
-export default WebSeo
+export default WebResponsive

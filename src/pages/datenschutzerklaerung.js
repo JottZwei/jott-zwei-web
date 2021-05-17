@@ -2,29 +2,25 @@ import React from 'react'
 import styled from 'styled-components'
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import { Text, Headline1, Headline2, Headline3, Headline4 } from '../components/defaultComponents'
 
 const datenschutzerklaerung = () => {
     const Wrap = styled.section`
+    width: min(90%, 1100px);
+    margin:0 auto;
+    margin-top: 150px;
 
-    `
+    & ${Text} {
+        margin-bottom: 30px;
+    }
 
-    const Headline = styled.h1`
+    & ${Headline2}{
+        margin-top: 30px;
+    }
 
-    `
-    const Headline2 = styled.h2`
-
-    `
-
-    const Headline3 = styled.h3`
-
-    `
-
-    const Headline4 = styled.h4`
-
-    `
-
-    const Text = styled.span`
-
+    & ${Headline3}{
+        margin-top: 30px;
+    }
     `
 
     const Link = styled.a`
@@ -42,8 +38,8 @@ const datenschutzerklaerung = () => {
         <Layout>
         <Seo title="Datenschutzerklärung | Jott Zwei Werbeagentur" />
             <Wrap>
-                <Headline>Datenschutzerklärung</Headline>
-                <Headline2>1.Datenschutz auf einen Blick</Headline2>
+                <Headline1>Datenschutzerklärung</Headline1>
+                <Headline2>1. Datenschutz auf einen Blick</Headline2>
                 <Headline3>Allgemeine Hinweise</Headline3>
                 <Text>Die folgenden Hinweise geben einen einfachen &Uuml;berblick dar&uuml;ber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie pers&ouml;nlich identifiziert werden k&ouml;nnen. Ausf&uuml;hrliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgef&uuml;hrten Datenschutzerkl&auml;rung.</Text>
                 <Headline4>Wer ist verantwortlich f&uuml;r die Datenerfassung auf dieser Website?</Headline4>

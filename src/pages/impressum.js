@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Headline1, Headline2, Headline3, Text } from '../components/defaultComponents'
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
@@ -7,22 +8,21 @@ const impressum = () => {
 
 
     const Wrap = styled.section`
+    width: min(90%, 1100px);
+    margin:0 auto;
+    margin-top: 150px;
 
-    `
+    & ${Text} {
+        margin-bottom: 30px;
+    }
 
-    const Headline = styled.h1`
+    & ${Headline2}{
+        margin-top: 30px;
+    }
 
-    `
-    const Headline2 = styled.h2`
-
-    `
-
-    const Headline3 = styled.h3`
-
-    `
-
-    const Text = styled.span`
-
+    & ${Headline3}{
+        margin-top: 30px;
+    }
     `
 
     const Link = styled.a`
@@ -33,7 +33,7 @@ const impressum = () => {
         <Layout>
         <Seo title="Impressum | Jott Zwei Werebagentur" />
         <Wrap>
-            <Headline>Impressum</Headline>
+            <Headline1>Impressum</Headline1>
             <Headline2>Angaben gemäß § 5 TMG</Headline2>
             <Text>Jott Zwei UG (haftungsbeschränkt) <br />Bühnenstraße 225 <br />49635 Badbergen <br /> <br />Handelsregister: HRB 214834 <br />Registergericht: Amtsgericht Osnabrück<br /><br />
 Vertreten durch:<br />Jan Francksen<br />Jörn Webert</Text>

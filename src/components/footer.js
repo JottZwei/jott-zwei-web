@@ -16,6 +16,10 @@ const Container = styled.div`
   gap: 30px;
   text-align: center;
 
+  @media screen and (max-width: 1100px){
+    margin-bottom: 70px;
+  }
+
   @media screen and (max-width: 850px){
     grid-template-areas: "a" "b" "c" "d";
     grid-template-columns: 1fr;

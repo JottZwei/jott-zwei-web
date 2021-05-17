@@ -1,5 +1,5 @@
 import React from 'react'
-import { Headline3, Leberwurst, Text } from '../../defaultComponents'
+import { Headline3, Leberwurst } from '../../defaultComponents'
 import styled from 'styled-components'
 import { FaArrowDown } from 'react-icons/fa';
 

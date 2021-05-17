@@ -3,7 +3,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Headline2, Headline3, Text, Leberwurst } from '../defaultComponents'
 import { FaChevronRight } from "react-icons/fa"
-import {Link} from 'gatsby'
+import { Link } from 'gatsby'
 
 const Wrap = styled.div`
     width: min(90%, 1150px);
@@ -17,8 +17,6 @@ const Wrap = styled.div`
             padding-left: 20px;
         }
     }
-
-    
 `
 
 const TitleContainer = styled.div`
@@ -31,7 +29,11 @@ const TitleContainer = styled.div`
         font-size: clamp(1.5rem, 1.4rem + 0.4848vw, 1.7rem);
     }
 
-
+    @media screen and (min-width: 1300px){
+        & > svg {
+            display: none;
+        }
+    }
 `
 
 const Content = styled.div`
@@ -41,7 +43,6 @@ const Content = styled.div`
     overflow-x: auto;
     flex-wrap: nowrap;
     padding: 40px 0px;
-
         
     &::-webkit-scrollbar {
         display: none;
@@ -69,9 +70,13 @@ const Card = styled(Link)`
         min-width: 300px;
     }
 
-    &:hover{
-        transform: translateY(-20px);
+    @media screen and (min-width: 1300px){
+        &:hover{
+            transform: translateY(-20px);
+        }
     }
+
+
 `
 
 const Button = styled.button`
