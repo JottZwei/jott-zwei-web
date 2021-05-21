@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { Container, Headline2, Text } from '../../defaultComponents'
 
 const Wrap = styled.div`
-    min-height: 50vh;
+    min-height: 60vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -15,7 +15,10 @@ const Wrap = styled.div`
         grid-template-columns: 1fr;
         gap: 0;
     }
-`
+    
+
+
+    `
 
 const ImageContainer = styled.div`
 
@@ -29,7 +32,6 @@ const WebResponsive = () => {
     return (
         <Container>
             <Wrap>                
-
                 <TextContainer>
                     <Headline2>Wie fürs Handy gemacht</Headline2>
                     <Text>Ob auf dem Desktop Computer, Laptop, Tablet oder Smartphone - Webseiten werden von überall und diversen Endgeräten aufgerufen. Mit dem sogenannten "Responsive Web Design" lassen wir Ihre Seite nicht nur auf allen Endgeräten gut aussehen, sondern auch noch genauso gut funktionieren.</Text>

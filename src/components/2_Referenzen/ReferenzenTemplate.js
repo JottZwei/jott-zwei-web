@@ -84,6 +84,9 @@ const ImageList = styled.div`
     & > div {
         border-radius: 12px;
         overflow: hidden;
+        aspect-ratio: 5 / 3;
+        display: flex;
+        align-items: center;
     }
 `
 

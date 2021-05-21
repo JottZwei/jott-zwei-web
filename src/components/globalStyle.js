@@ -36,8 +36,8 @@ export const GlobalStyle = createGlobalStyle`
     -webkit-text-size-adjust: 100%;
     touch-action: manipulation;
     scroll-behavior: smooth;
-
-
+    -webkit-overflow-scrolling: touch;   
+    scroll-padding-top: 80px;
   }
 
   body {

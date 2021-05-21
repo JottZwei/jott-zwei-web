@@ -23,6 +23,10 @@ const Wrap = styled.div`
 
 const Section = styled.div`
     position: relative;
+    
+    @media screen and (max-width: 1100px){
+        margin-top: 100px;
+    }
 
         & > div:nth-child(1):before {
         content: '';
@@ -50,7 +54,7 @@ const Foreground = styled.div`
 
 const team = () => {
     return (
-        <Wrap id="losgehts">
+        <Wrap>
             <Section>
                 <StaticImage src="../../images/4_About/joern_1.png" alt="" placeholder="blurred" />
                 <Foreground>

@@ -10,7 +10,7 @@ const Wrap = styled.div`
 
 const AboutText = () => {
     return (
-        <Wrap>
+        <Wrap id="losgehts">
             <Headline2>
                 Das doppelte Jottchen
             </Headline2>

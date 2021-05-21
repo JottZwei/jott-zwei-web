@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { Container, Headline2, Text } from '../../defaultComponents'
 
 const Wrap = styled.div`
-    min-height: 50vh;
+    min-height: 60vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;

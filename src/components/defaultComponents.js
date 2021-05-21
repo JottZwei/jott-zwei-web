@@ -18,6 +18,7 @@ export const Headline1 = styled.h1`
 export const Headline2 = styled.h2`
     color: var(--white);
     font-size: clamp(1.6rem, 1.4rem + 0.4848vw, 3rem);
+    line-height: clamp(1.8rem, 1.6rem + 0.4848vw, 3.2rem);
     margin-bottom: .3em;
     font-weight: 200;
 `
@@ -25,6 +26,7 @@ export const Headline2 = styled.h2`
 export const Headline3 = styled.h3`
     color: var(--white);
     font-size: clamp(1.2rem, 1.2rem + 0.4848vw, 1.7rem);
+    line-height: clamp(1.4rem, 1.4rem + 0.4848vw, 1.9rem);
     margin-bottom: .3em;
     font-weight: 400;
 `
@@ -32,6 +34,7 @@ export const Headline3 = styled.h3`
 export const Headline4 = styled.h4`
     color: var(--white);
     font-size: clamp(1.2rem, 1.2rem + 0.4848vw, 1.7rem);
+    line-height: clamp(1.4rem, 1.4rem + 0.4848vw, 1.9rem);
     margin-bottom: .3em;
     font-weight: 400;
 `

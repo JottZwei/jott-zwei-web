@@ -111,18 +111,18 @@ const Referenzen = () => {
             </RefContainer>
 
             <RefContainer to="referenzen/weserraum">
-                <StaticImage src="../../images/1_Homepage/Hero/hero_2.jpg" alt="" />
+                <StaticImage src="../../images/2_Referenzen/Borchers/ref_bor_1.jpg" alt="" />
                 <Foreground >
                     <Headline3>Weserraum</Headline3>
                     <Button>zur Referenz</Button>
                 </Foreground>
             </RefContainer>
 
-            <RefContainer to="referenzen/people2go">
+            <RefContainer to="kontakt">
                 <StaticImage src="../../images/1_Homepage/Hero/hero_2.jpg" alt="" />
                 <Foreground >
-                    <Headline3>People2Go</Headline3>
-                    <Button >zur Referenz</Button>
+                    <Headline3>Hier könnten Sie stehen ...</Headline3>
+                    <Button >jetzt anfragen</Button>
                 </Foreground>
             </RefContainer>
             <ButtonInternal to="referenzen">zur Referenz-Übersicht</ButtonInternal>

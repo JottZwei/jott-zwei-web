@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import styled, { keyframes } from 'styled-components'
 import { StaticImage } from 'gatsby-plugin-image'
 import { Headline1, Text, ButtonInternal } from '../defaultComponents'
-import { FaFacebook, FaInstagram, FaLinkedin, FaXing } from "react-icons/fa"
+import { FaFacebook, FaInstagram } from "react-icons/fa"
 
 
 const Wrap = styled.div`
@@ -116,13 +116,13 @@ const Content = styled.div`
     max-width: 700px;
 
     & > ${Headline1} {
-        font-size: 2rem;
+        font-size: 2.5rem;
         color: white;    
         animation: .5s ease-out 0s 1 ${fadeInFromBottom};    
     }
 
     & > ${Text} {
-        margin-bottom: 5vw;
+        margin-bottom: 30px;
         animation: .7s ease-out 0s 1 ${fadeInFromBottom}; 
     }
 
@@ -214,26 +214,24 @@ const PaginationItem = styled.div`
         height: 100%;
         width: 100%;
     }
-
-
 `
 
 
 const Hero = () => {
     const Array = [{
-        image: <StaticImage src="../../images/1_Homepage/Hero/hero_2.jpg" alt="" placeholder="blurred" objectFit="cover" />,
-        headline: "Doppelt so geil.",
-        text: "Lorem IpsumLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo d"
+        image: <StaticImage src="../../images/1_Homepage/Hero/hero_1.jpg" alt="" placeholder="blurred" objectFit="cover" />,
+        headline: "Doppelt so viel Potenzial.",
+        text: "Wir, Jan und Jörn, ergänzen uns perfekt indem wir unsere individuellen Stärken und Fähigkeiten optimal kombinieren. Kreativität mit Workflow. Weil doppelt einfach besser hält."
     },
     {
-        image: <StaticImage src="../../images/1_Homepage/Hero/hero_1.jpg" alt="" placeholder="blurred" objectFit="cover" />,
+        image: <StaticImage src="../../images/1_Homepage/Hero/hero_2.jpg" alt="" placeholder="blurred" objectFit="cover" />,
         headline: "Doppelt so viel Mut.",
-        text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo d"
+        text: "Neue Wege, neue Marke? Kühnheit und Mut sind der Schlüssel zum Erfolg. Wir bringen Ihr Unternehmen auf das nächste Level. Reichen Sie uns die Hand und wir gehen gemeinsam diesen Weg.        "
     },
     {
         image: <StaticImage src="../../images/1_Homepage/Hero/hero_3.jpg" alt="" placeholder="blurred" objectFit="cover" />,
         headline: "Doppelt so viel Perspektive.",
-        text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo d"
+        text: "Öfter mal die Perspektive wechseln. Ein guter Perspektivwechsel ist der Impuls zu etwas Neuem und bringt frischen Wind in Ihr Unternehmen. Wir zeigen Ihnen die Orte mit der besten Aussicht."
     }
 ]
 
@@ -256,7 +254,6 @@ const Hero = () => {
                         })}
             </Background>
             <Foreground>
-
                     {Array.map((slide, index) => {
                         return (                
                             <Content key={index}>
@@ -264,6 +261,7 @@ const Hero = () => {
                                     <>
                                         <Headline1>{slide.headline}</Headline1>
                                         <Text>{slide.text}</Text>
+                                        <Text>Jott Zwei Werbeagentur - Wir sind Ihre Werbeagentur im Artland.</Text>
                                         <ButtonInternal to="#referenzen">Los geht's</ButtonInternal>
                                     </>
                                     )}
@@ -281,9 +279,8 @@ const Hero = () => {
                 <Socials>
                     <SocialLink href="https://www.facebook.com/jottzweiwerbeagentur" target="_blank" rel="noopener"><FaFacebook /></SocialLink>
                     <SocialLink href="https://www.instagram.com/jottzwei/" target="_blank" rel="noopener"><FaInstagram /></SocialLink>
-                    <SocialLink href="https://twitter.com/gatsbyjs" target="_blank" rel="noopener"><FaLinkedin /></SocialLink>
-                    <SocialLink href="https://twitter.com/gatsbyjs" target="_blank" rel="noopener"><FaXing /></SocialLink>
                 </Socials>
+                
             </Foreground>
         </Wrap>
     )

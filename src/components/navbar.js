@@ -30,13 +30,9 @@ const Wrap = styled.nav`
 
 const NavMenu = styled.ul`
     display: flex;
-    gap: 1.3em;
-    column-gap: 1.3rem;
     color: white;
 
     @media screen and (max-width: 1100px){
-        gap: 0;
-        column-gap: 0;
         width: 100%;
         justify-content: space-evenly;
     }
@@ -54,6 +50,8 @@ const NavItem = styled(Link)`
     }
 
     @media screen and (min-width: 1100px){
+        
+    margin-left: 1.3rem;
         &:hover {
         color: var(--secondary-color);
     }

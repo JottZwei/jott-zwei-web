@@ -59,8 +59,8 @@ const Card = styled(Link)`
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     transition: transform 0.3s ease;
+    justify-content: space-between;
 
     & > div > div {
         aspect-ratio: 16 / 10;
@@ -75,8 +75,6 @@ const Card = styled(Link)`
             transform: translateY(-20px);
         }
     }
-
-
 `
 
 const Button = styled.button`
@@ -85,10 +83,19 @@ const Button = styled.button`
     background: var(--secondary-color);
     border:none;
     color: white;
+    justify-self: flex-end;
 `
 
 const TextContent = styled.div`
     padding: 20px;
+
+    & > ${Text}{
+        font-size: 0.85rem;
+    }
+`
+
+const ContentWrap = styled.div`
+
 `
 
 const Leistungen = () => {
@@ -97,35 +104,43 @@ const Leistungen = () => {
             <TitleContainer><Headline2>Unsere <Leberwurst>Leistungen</Leberwurst></Headline2><FaChevronRight /></TitleContainer>
             <Content>
                 <Card to="/leistungen/printmedien">
+                    <ContentWrap>
                     <StaticImage src="../../images/3_Leistungen/Printmedien/Flyer.jpg" alt=""/>
                     <TextContent>
                         <Headline3>Printmedien</Headline3>
                         <Text>Print&shy;­me&shy;­di&shy;en o&shy;der ger&shy;ne auch “Druck­&shy;sa­&shy;chen” sind zu fast al­&shy;len An&shy;­läs­&shy;sen ei&shy;ne gu&shy;te Ent­&shy;schei&shy;­dung. Ob Spei­&shy;se­&shy;kar&shy;­ten, Fly­&shy;er, Ka­&shy;ta­&shy;lo&shy;­ge o&shy;der Pla­&shy;ka&shy;­te, Ihr Un­&shy;ter­&shy;neh&shy;­men wird mit dem von uns er­&shy;stell&shy;­ten De&shy;sign aus der Men&shy;­ge her­&shy;vor&shy;­ste­&shy;chen.</Text>
                     </TextContent>
+                    </ContentWrap>
                     <Button>mehr erfahren ...</Button>
                 </Card>
                 <Card to="/leistungen/webdesign">
+                <ContentWrap>
                     <StaticImage src="../../images/3_Leistungen/Webdesign/titelbild_webdesign.jpg" alt=""/>
                     <TextContent>
                         <Headline3>Webdesign</Headline3>
-                        <Text>Print&shy;­me&shy;­di&shy;en o&shy;der ger&shy;ne auch “Druck­&shy;sa­&shy;chen” sind zu fast al­&shy;len An&shy;­läs­&shy;sen ei&shy;ne gu&shy;te Ent­&shy;schei&shy;­dung. Ob Spei­&shy;se­&shy;kar&shy;­ten, Fly­&shy;er, Ka­&shy;ta­&shy;lo&shy;­ge o&shy;der Pla­&shy;ka&shy;­te, Ihr Un­&shy;ter­&shy;neh&shy;­men wird mit dem von uns er­&shy;stell&shy;­ten De&shy;sign aus der Men&shy;­ge her­&shy;vor&shy;­ste­&shy;chen.</Text>
+                        <Text>Print&shy;me&shy;dien sind eine gu&shy;te Sa&shy;che, aber wer kennt es nicht … Sie hö&shy;ren von einer Fir&shy;ma, einem Pro&shy;dukt oder einer Dienst&shy;lei&shy;stung und geben die&shy;se in Ih&shy;ren Web&shy;brow&shy;ser ein, um … nichts zu fin&shy;den?! Das muss nicht sein.</Text>
                     </TextContent>
+                    </ContentWrap>
                     <Button>mehr erfahren ...</Button>
                 </Card>
                 <Card to="/leistungen/logodesign">
+                <ContentWrap>
                     <StaticImage src="../../images/3_Leistungen/Logo/header-logodesign.jpg" alt=""/>
                     <TextContent>
                         <Headline3>Logo</Headline3>
-                        <Text>In­&shy;­ter­­&shy;net­­&shy;sei­&shy;­ten, On­­&shy;line­&shy;­shops, in­&shy;­ter­­&shy;ak­&shy;­ti­&shy;­ve For­­&shy;mu­­&shy;la­­&shy;re, So­&shy;­cial-Me­­&shy;dia-Mar­&shy;­ke­&shy;­ting, Vi­&shy;deos & Apps. Es ist Zeit für Di­­&shy;gi­­&shy;ta­&shy;­li­&shy;­sie­­&shy;rung. Wir hel­­&shy;fen Ih­­&shy;nen bei dem Mo­­&shy;der­­&shy;ni­­&shy;sie­&shy;­ren und der Um­&shy;­stel­­&shy;lung auf di­&shy;­gi­&shy;­ta­&shy;­les Höchst­&shy;ni­veau.</Text>
+                        <Text>Ihr Logo ist der wich&shy;tig&shy;ste Fak&shy;tor für den Wie&shy;der&shy;er&shy;ken&shy;nungs&shy;wert Ih&shy;rer Mar&shy;ke bzw. Ih&shy;res Pro&shy;duk&shy;tes. Da&shy;zu ein durch&shy;gän&shy;gi&shy;ges De&shy;sign, das sich vom Brief&shy;kopf bis in die so&shy;zia&shy;len Me&shy;dien hi&shy;nein wie&shy;der&shy;fin&shy;det, gibt Ih&shy;rer Mar&shy;ke ei&shy;nen un&shy;ver&shy;wech&shy;sel&shy;ba&shy;ren Auf&shy;tritt.</Text>
                     </TextContent>
+                    </ContentWrap>
                     <Button>mehr erfahren ...</Button>
                 </Card>
                 <Card to="/leistungen/ecommerce">
+                <ContentWrap>
                     <StaticImage src="../../images/3_Leistungen/E-Commerce/header-e-commerce.jpg" alt=""/>
                     <TextContent>
                         <Headline3>E-Commerce</Headline3>
-                        <Text>Ihr Lo­&shy;­go ist der wich­&shy;­tig­­&shy;ste Fak­&shy;­tor für den Wie­&shy;­der­­&shy;er­­&shy;ken­­&shy;nungs­&shy;­wert Ih­­&shy;rer Mar­&shy;­ke. Da­­&shy;zu ein durch­&shy;­gän­&shy;­gi­­&shy;ges De­­&shy;sign, das sich vom Brief­&shy;­kopf bis in die so­&shy;­zia­­&shy;len Me­­&shy;dien hi­­&shy;nein wie­­&shy;der­­&shy;fin­&shy;­det, gibt Ih­­&shy;rer Mar­&shy;­ke ei­­&shy;nen un­­&shy;ver­­&shy;wech­­&shy;sel­&shy;­ba­ren Auf­­&shy;tritt.</Text>
+                        <Text>Online-Ver&shy;kauf – oder auch E-Com&shy;merce der ei&shy;ge&shy;nen Pro&shy;duk&shy;te wird im&shy;mer wich&shy;ti&shy;ger. Dies wird uns vor al&shy;lem in der ak&shy;tuel&shy;len Si&shy;tua&shy;tion be&shy;wusst. Wir ver&shy;lei&shy;hen Ih&shy;ren Pro&shy;duk&shy;ten den per&shy;fek&shy;ten Auf&shy;tritt mit op&shy;ti&shy;mier&shy;ter, für Sie leicht zu&shy;gäng&shy;li&shy;cher Auf&shy;trags&shy;ab&shy;wick&shy;lung.</Text>
                     </TextContent>
+                    </ContentWrap>
                     <Button>mehr erfahren ...</Button>
                 </Card>
             </Content>

@@ -17,72 +17,65 @@ const Wrap = styled.section`
 `
 
 const Container = styled(Link)`
-    color: white;
-    position: relative;
-    &:hover > div {
-        transform: scale(1.1);
-    }
+    display: grid;
+    grid-template-columns: 1fr auto 7vw;
+    grid-template-areas: "a b c";
+    align-items: center;
+    height: 250px;
 
-    &:hover > div:first-child {
-        left: 0px;
-    }
-`
+    @media screen and (max-width: 900px){
 
-const Content = styled.div`
-    display: flex;
-    padding: 100px 20px;
-    gap: 20px;
-    justify-content: center;    
-    transition: 0.3s transform ease;
-    margin-left: 20%;
-    z-index: 10;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto 1fr;
+            grid-template-areas: "b" "a";
+            height: auto;
 
-    @media screen and (max-width: 1200px){
-        padding: 3vw 5vw;
-        margin: 0;
-        flex-direction: column;
-        align-items: center;
+            & > div:first-child{
+                align-self: flex-end;
+                z-index: 0;
+                margin-bottom:-10px;
+            }
+        }
+
+    & > div:first-child{
+        align-self: center;
+        grid-area: a;
+        justify-self: center;
     }
 `
 
 const TextContent = styled.div`   
+    grid-area: b;
     text-align: right;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 2;
 
-    @media screen and (max-width: 1200px){
-        text-align: center;
+    & > ${Text}{
+        margin-bottom: 15px;
     }
-`
 
-
-const Image = styled.div`
-    position:absolute;
-    width: 550px;
-    top: 0px;
-    left: -30px;
-    transition: 0.3s transform ease, 0.2s left ease;
-    z-index: 5;
-
-    @media screen and (max-width: 1200px){
-        display: none;
+    @media screen and (max-width: 900px){
+        text-align: center;
+        align-items: center;
+        padding: 50px 5vw 0px;
     }
 `
 
 const CTA = () => {
     return (
-                    <Wrap>
-                    <Container to="/kontakt">
-                        <Image>
-                            <StaticImage src="../../images/team_jott_zwei_2.png" alt=""/>
-                        </Image>
-                        <Content>
-                            <TextContent>
-                                <Headline3>Neugierig geworden?</Headline3>
-                                <Text>Lernen Sie uns kennen!</Text>
-                            </TextContent>
-                            <Button >zum Kontakt</Button>
-                        </Content>
-                    </Container>
-                </Wrap>
+        <Wrap>
+            <Container to="/kontakt">
+                <StaticImage src="../../images/team_jott_zwei_2.png" alt=""/>
+                <TextContent>
+                    <Headline3>Neugierig geworden?</Headline3>
+                    <Text>Lernen Sie uns kennen!</Text>
+                    <Button >zum Kontakt</Button>
+                </TextContent>
+            </Container>
+        </Wrap>
     )
 }
 

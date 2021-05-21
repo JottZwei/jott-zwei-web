@@ -12,12 +12,12 @@ export const ReferenzenData = [
         text: 'Michael Ziemer und sein Team helfen seit 1985 kleinen und mittelständischen Unternehmen, Handwerkern, Dienstleistern, Handels- und Produktionsunternehmen, Steuerberatern und Rechtsanwälten bei der Auswahl, Einführung sowie Optimierung von Betriebssoftware und Organisationslösungen für Büro und Verwaltung. \n \n Nun war es an der Zeit neben den hervorragenden Services und Produkten ein brandneues Corporate Design und einen modernen Auftritt im Internet zu schaffen. \n \n Das Ergebnis ist eine schlichte, aber modernisierte Bildmarke, versehen mit einer ästhetischen Typographie. Der Internetauftritt ist ein großer Schritt in die Moderne. Responsive und mit neuer Farbgebung macht es einiges her, sich durch die neuen Produkte zu klicken. Des Weiteren bietet der neue Internetauftritt auch die Möglichkeit, die Produkte direkt online zu kaufen mit Hilfe eines intuitiven Onlineshops. Im Shop sind sowohl physische als auch digitale Produkte erhältlich. Dies lässt für die Zukunft noch großen Spielraum für weitere digitale Produkte, welche sich momentan in Planung befinden.',
         link: '/referenzen/ziemer-consult',
         gallery: [
-            <StaticImage src="../../images/2_Referenzen/Ziemer/ref_zc_1.jpg" alt="" layout="fullWidth" placeholder="blurred" objectFit="cover" />,
-            <StaticImage src="../../images/2_Referenzen/Ziemer/ref_zc_2.jpg" alt="" layout="fullWidth" placeholder="blurred" objectFit="cover" />,
-            <StaticImage src="../../images/2_Referenzen/Ziemer/ref_zc_3.jpg" alt="" layout="fullWidth" placeholder="blurred" objectFit="cover" />,
-            <StaticImage src="../../images/2_Referenzen/Ziemer/ref_zc_4.jpg" alt="" layout="fullWidth" placeholder="blurred" objectFit="cover" />,
-            <StaticImage src="../../images/2_Referenzen/Ziemer/ref_zc_5.jpg" alt="" layout="fullWidth" placeholder="blurred" objectFit="cover" />,
-            <StaticImage src="../../images/2_Referenzen/Ziemer/ref_zc_6.jpg" alt="" layout="fullWidth" placeholder="blurred" objectFit="cover" />
+            <StaticImage src="../../images/2_Referenzen/Ziemer/ref_zc_1.jpg" alt="" placeholder="blurred" objectFit="cover" />,
+            <StaticImage src="../../images/2_Referenzen/Ziemer/ref_zc_2.jpg" alt="" placeholder="blurred" objectFit="cover" />,
+            <StaticImage src="../../images/2_Referenzen/Ziemer/ref_zc_3.jpg" alt="" placeholder="blurred" objectFit="cover" />,
+            <StaticImage src="../../images/2_Referenzen/Ziemer/ref_zc_4.jpg" alt="" placeholder="blurred" objectFit="cover" />,
+            <StaticImage src="../../images/2_Referenzen/Ziemer/ref_zc_5.jpg" alt="" placeholder="blurred" objectFit="cover" />,
+            <StaticImage src="../../images/2_Referenzen/Ziemer/ref_zc_6.jpg" alt="" placeholder="blurred" objectFit="cover" />
         ]
     },
     {
@@ -46,12 +46,11 @@ export const ReferenzenData = [
         text: 'Rebel Pandas, ein Musikprojekt aus der Region, möchte durchstarten. Dafür musste ein ausgeklügeltes, modernes Corporate Design her. \n \nInspiriert vom Brutalismus-Stil ist ein “rebellisches” Corporate Design entstanden, welches thematisch und optisch die Ansprüche perfekt vereint. \n \nDas Logo und die Typografie bieten einen großen gestalterischen Spielraum für die Verwendung in den Bereichen Merchandise, Social-Media, Plattencovers und Ähnlichem. \n \nWeitere Projekte für Rebel Pandas sind im Aufbau. Diese werden Sie bald hier finden können.',
         link: '/referenzen/rebelpandas',
         gallery: [
-            <StaticImage src="../../images/2_Referenzen/Freizeittanken/ref_ft_1.jpg" alt="" placeholder="blurred" objectFit="cover" />,
-            <StaticImage src="../../images/2_Referenzen/Freizeittanken/ref_ft_2.jpg" alt="" placeholder="blurred" objectFit="cover" />,
-            <StaticImage src="../../images/2_Referenzen/Freizeittanken/ref_ft_3.jpg" alt="" placeholder="blurred" objectFit="cover" />,
-            <StaticImage src="../../images/2_Referenzen/Freizeittanken/ref_ft_4.jpg" alt="" placeholder="blurred" objectFit="cover" />,
-            <StaticImage src="../../images/2_Referenzen/Freizeittanken/ref_ft_5.jpg" alt="" placeholder="blurred" objectFit="cover" />,
-            <StaticImage src="../../images/2_Referenzen/Freizeittanken/ref_ft_6.jpg" alt="" placeholder="blurred" objectFit="cover" />
+            <StaticImage src="../../images/2_Referenzen/RebelPandas/ref_rp_2.jpg" alt="" placeholder="blurred" objectFit="cover" />,
+            <StaticImage src="../../images/2_Referenzen/RebelPandas/ref_rp_3.jpg" alt="" placeholder="blurred" objectFit="cover" />,
+            <StaticImage src="../../images/2_Referenzen/RebelPandas/ref_rp_4.jpg" alt="" placeholder="blurred" objectFit="cover" />,
+            <StaticImage src="../../images/2_Referenzen/RebelPandas/ref_rp_5.jpg" alt="" placeholder="blurred" objectFit="cover" />,
+            <StaticImage src="../../images/2_Referenzen/RebelPandas/ref_rp_6.jpg" alt="" placeholder="blurred" objectFit="cover" />
         ]
     },
     {
@@ -63,12 +62,10 @@ export const ReferenzenData = [
         text: 'Lässige Looks verpackt in einem übersichtlichen und aufgeräumten Webshop? Kein Problem. Mit viel Platz dank groß in Szene gesetzter Bilder wurde ein moderner, responsiver Webauftritt geschaffen, auf dem die Kunden die neuesten Kollektionen direkt einkaufen können. Sowohl die Einrichtung des Shopsystemes als auch die Gestaltung der Website sowie Werbemaßnahmen in den sozialen Medien und ein Flyer wurden von uns übernommen.',
         link: '/referenzen/reternity',
         gallery: [
-            <StaticImage src="../../images/2_Referenzen/Freizeittanken/ref_ft_1.jpg" alt="" placeholder="blurred" objectFit="cover" />,
-            <StaticImage src="../../images/2_Referenzen/Freizeittanken/ref_ft_2.jpg" alt="" placeholder="blurred" objectFit="cover" />,
-            <StaticImage src="../../images/2_Referenzen/Freizeittanken/ref_ft_3.jpg" alt="" placeholder="blurred" objectFit="cover" />,
-            <StaticImage src="../../images/2_Referenzen/Freizeittanken/ref_ft_4.jpg" alt="" placeholder="blurred" objectFit="cover" />,
-            <StaticImage src="../../images/2_Referenzen/Freizeittanken/ref_ft_5.jpg" alt="" placeholder="blurred" objectFit="cover" />,
-            <StaticImage src="../../images/2_Referenzen/Freizeittanken/ref_ft_6.jpg" alt="" placeholder="blurred" objectFit="cover" />
+            <StaticImage src="../../images/2_Referenzen/Reternity/ref_rt_1.jpg" alt="" placeholder="blurred" objectFit="cover" />,
+            <StaticImage src="../../images/2_Referenzen/Reternity/ref_rt_2.jpg" alt="" placeholder="blurred" objectFit="cover" />,
+            <StaticImage src="../../images/2_Referenzen/Reternity/ref_rt_3.jpg" alt="" placeholder="blurred" objectFit="cover" />,
+            <StaticImage src="../../images/2_Referenzen/Reternity/ref_rt_4.jpg" alt="" placeholder="blurred" objectFit="cover" />
         ]
     },
     {
@@ -80,12 +77,12 @@ export const ReferenzenData = [
         text: 'Direkt auf den ersten Blick „Ein­\xADdruck machen“! Das funk­\xADtio\xADniert immer mit in\xADdi­\xADvi­\xADduel­\xADlen An­\xADge­\xADbots­\xADmap\xADpen in Ih\xADrem Cor\xAD­po­\xADra\xADte De\xADsign. Hoch\xAD­wer­\xADti­\xADger Druck nach Be\xAD­darf mit Vi\xAD­si\xAD­ten\xAD­kar­\xADten­\xADta\xADsche und 2 oder 3 La­\xADschen.',
         link: '/referenzen/weserraum',
         gallery: [
-            <StaticImage src="../../images/2_Referenzen/Freizeittanken/ref_ft_1.jpg" alt="" placeholder="blurred" objectFit="cover" />,
-            <StaticImage src="../../images/2_Referenzen/Freizeittanken/ref_ft_2.jpg" alt="" placeholder="blurred" objectFit="cover" />,
-            <StaticImage src="../../images/2_Referenzen/Freizeittanken/ref_ft_3.jpg" alt="" placeholder="blurred" objectFit="cover" />,
-            <StaticImage src="../../images/2_Referenzen/Freizeittanken/ref_ft_4.jpg" alt="" placeholder="blurred" objectFit="cover" />,
-            <StaticImage src="../../images/2_Referenzen/Freizeittanken/ref_ft_5.jpg" alt="" placeholder="blurred" objectFit="cover" />,
-            <StaticImage src="../../images/2_Referenzen/Freizeittanken/ref_ft_6.jpg" alt="" placeholder="blurred" objectFit="cover" />
+            <StaticImage src="../../images/2_Referenzen/Borchers/ref_bor_1.jpg" alt="" placeholder="blurred" objectFit="cover" />,
+            <StaticImage src="../../images/2_Referenzen/Borchers/ref_bor_2.jpg" alt="" placeholder="blurred" objectFit="cover" />,
+            <StaticImage src="../../images/2_Referenzen/Borchers/ref_bor_3.jpg" alt="" placeholder="blurred" objectFit="cover" />,
+            <StaticImage src="../../images/2_Referenzen/Borchers/ref_bor_4.jpg" alt="" placeholder="blurred" objectFit="cover" />,
+            <StaticImage src="../../images/2_Referenzen/Borchers/ref_bor_5.jpg" alt="" placeholder="blurred" objectFit="cover" />,
+            <StaticImage src="../../images/2_Referenzen/Borchers/ref_bor_6.jpg" alt="" placeholder="blurred" objectFit="cover" />
         ]
     }
 ]

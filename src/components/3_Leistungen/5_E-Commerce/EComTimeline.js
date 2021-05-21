@@ -22,6 +22,10 @@ const Wrap = styled.div`
         font-size: 2.5rem;
         line-height: 2.5rem;
     }
+
+    @media screen and (max-width: 1100px){
+        justify-content: center;
+    }    
 `
 
 const Timeline = styled.div`
@@ -29,6 +33,12 @@ const Timeline = styled.div`
     width: 40%;
     margin: 100px auto 0;
     background-image: linear-gradient(90deg, transparent 0%, transparent 49%, var(--secondary-color) 49%, var(--secondary-color) 50%, transparent 50%, transparent 100%);
+
+    @media screen and (max-width: 1100px){
+        width: auto;
+        background-image: none;
+        margin-left: 70px;
+    }    
 `
 
 const Item = styled.span`
@@ -38,6 +48,30 @@ const Item = styled.span`
     align-items: center;
     position: relative;
     text-align: left;
+
+
+    &::before {
+        counter-increment: section;             
+        content: counter(section);
+        background: var(--secondary-color);
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        border-radius: 50%;
+    }
+
+    @media screen and (max-width: 1100px){
+        &::before {
+            left: -70px;
+        }
+
+
+    }
+
+    @media screen and (min-width: 1100px){
 
     &:nth-child(even){
         text-align: right;
@@ -55,20 +89,6 @@ const Item = styled.span`
     &:last-child{
         margin-bottom: 0;
     }
-
-    &::before {
-        counter-increment: section;             
-        content: counter(section);
-        background: var(--secondary-color);
-        width: 50px;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        border-radius: 50%;
-    }
-
     &:nth-child(even)::before {
         right: -70px;
     }
@@ -76,6 +96,11 @@ const Item = styled.span`
     &:nth-child(odd)::before {
         left: -70px;
     }
+}
+
+
+
+
 `
 
 const EComTimeline = () => {
