@@ -25,11 +25,12 @@ const Label = styled.label`
 
 const Input = styled.input`
     background: var(--tertiary-color);
-    padding: 20px 25px;
+    padding: 15px;
     border-radius: 40px;
     border: 3px solid transparent;
     color: white;
     box-sizing: border-box;
+    font-size: 1rem;
 
     &:focus, &:hover {
         border: 3px solid var(--secondary-color);
@@ -45,6 +46,7 @@ const TextArea = styled.textarea`
     color: white;
     box-sizing: border-box;
     grid-column: 1 / 3;
+    font-size: 1rem;
 
     &:focus, &:hover {
         border: 3px solid var(--secondary-color);
@@ -57,7 +59,7 @@ const FormItem = styled.div`
     flex-direction: column;
 `
 
-const FormItemFull= styled.div`
+const FormItemFull = styled.div`
     display: flex;
     flex-direction: column;
     grid-column: span 2;

@@ -54,7 +54,7 @@ const Galerie = styled.div`
 
 const BildSprache = () => {
 
-    const Data = ReferenzenData[3].gallery;
+    const Data = ReferenzenData[1].gallery;
 
     return (
         <Wrap>

@@ -15,7 +15,7 @@ const WebdesignPage = () => {
 
         <Layout>
             <Seo title="Home" keywords={[`gatsby`, `application`, `react`]} />
-                <PageHead image={<StaticImage src="../../images/3_Leistungen/Webdesign/titelbild_webdesign.jpg" alt="" placeholder="blurred" objectFit="cover" layout="fullWidth" />} headline="Webdesign" text="Ein Auszug unserer Projekte. Klicken Sie auf ein Projekt, um mehr über dieses zu erfahren!" />
+                <PageHead image={<StaticImage src="../../images/3_Leistungen/Webdesign/titelbild_webdesign.jpg" alt="" placeholder="blurred" objectFit="cover" layout="fullWidth" />} headline="Webdesign" text="Wir bringen über 10 Jahre Erfahrung im Webdesign mit und bieten ein fundiertes Fachwissen rund um die Frage “Wie bekomme ich mehr Besucher auf meine Seite?”. Entscheidend ist: Ihre Website ist Ihr digitales Aushängeschild." />
                 <WebEntrytext />
                 <WebProgressbar />
                 <WebSeo />

@@ -21,10 +21,15 @@ const datenschutzerklaerung = () => {
     & ${Headline3}{
         margin-top: 30px;
     }
-    `
 
+    & ${Headline4}{
+        margin-top: 30px;
+    }
+`
     const Link = styled.a`
-
+        &:hover {
+            color: var(--secondary-color);
+        }
     `
 
     const Liste = styled.ul``
@@ -68,8 +73,8 @@ const datenschutzerklaerung = () => {
                 <Text>Die verantwortliche Stelle f&uuml;r die Datenverarbeitung auf dieser Website ist: <br/><br/>Jott Zwei UG (haftungsbeschr&auml;nkt)<br />
                 B&uuml;hnenstra&szlig;e 225<br />
                 49635 Badbergen<br/><br/>
-                Telefon: 017634404998<br />
-                E-Mail: info@jott-zwei.de<br/><br/>Verantwortliche Stelle ist die nat&uuml;rliche oder juristische Person, die allein oder gemeinsam mit anderen &uuml;ber die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.&nbsp;B. Namen, E-Mail-Adressen o. &Auml;.) entscheidet.</Text>
+                Telefon: <Link href="tel:017634404998">017634404998</Link><br />
+                E-Mail: <Link href="mailto:info@jott-zwei.de">info@jott-zwei.de</Link><br/><br/>Verantwortliche Stelle ist die nat&uuml;rliche oder juristische Person, die allein oder gemeinsam mit anderen &uuml;ber die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.&nbsp;B. Namen, E-Mail-Adressen o. &Auml;.) entscheidet.</Text>
                 <Headline3>Speicherdauer</Headline3>
                 <Text>Soweit innerhalb dieser Datenschutzerkl&auml;rung keine speziellere Speicherdauer genannt wurde, verbleiben Ihre personenbezogenen Daten bei uns, bis der Zweck f&uuml;r die Datenverarbeitung entf&auml;llt. Wenn Sie ein berechtigtes L&ouml;schersuchen geltend machen oder eine Einwilligung zur Datenverarbeitung widerrufen, werden Ihre Daten gel&ouml;scht, sofern wir keine anderen rechtlich zul&auml;ssigen Gr&uuml;nde f&uuml;r die Speicherung Ihrer personenbezogenen Daten haben (z.B. steuer- oder handelsrechtliche Aufbewahrungsfristen); im letztgenannten Fall erfolgt die L&ouml;schung nach Fortfall dieser Gr&uuml;nde.</Text>
                 <Headline3>Widerruf Ihrer Einwilligung zur Datenverarbeitung</Headline3>

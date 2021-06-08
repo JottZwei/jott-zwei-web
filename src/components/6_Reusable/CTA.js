@@ -7,7 +7,7 @@ import { Button, Headline3, Text } from '../defaultComponents'
 const Wrap = styled.section`
     border-radius: 20px;
     background:  var(--tertiary-color);
-    width: min(90%, 1100px);
+    width: min(90%, 1150px);
     margin: 0px auto;
     overflow: hidden;
 
@@ -55,6 +55,12 @@ const TextContent = styled.div`
 
     & > ${Text}{
         margin-bottom: 15px;
+    }
+
+    & > ${Button}{
+        &:hover {
+            background: rgb(17,40,54);
+        }
     }
 
     @media screen and (max-width: 900px){

@@ -59,13 +59,18 @@ const Text = styled.span`
 `
 
 const FooterLink = styled.a`
-  display: block;
   color: white;
+  &:hover{
+    color: var(--secondary-color);
+  }
 `
 
 const FooterLinkIntern = styled(Link)`
   display: block;
   color: white;
+  &:hover{
+    color: var(--secondary-color);
+  }
 `
 
 const Footer = () => (
@@ -77,22 +82,22 @@ const Footer = () => (
           Jott Zwei UG (haftungsbeschränkt) <br/>
           Bühnenstraße 225<br/>
           49635 Badbergen<br/><br/>
-          Telefon: 0176 34404998<br/>
-          E-Mail: info@jott-zwei.de
+          Telefon: <FooterLink href="tel:017634404998">0176 34404998</FooterLink><br/>
+          E-Mail: <FooterLink href="mailto:info@jott-zwei.de">info@jott-zwei.de</FooterLink>
         </Text>
       </Column>
       <Column>
         <Headline>Links</Headline>
-          <FooterLink href="https://www.instagram.com/jottzwei/" target="_blank" rel="noopener">Instagram</FooterLink>
+          <FooterLink href="https://www.instagram.com/jottzwei/" target="_blank" rel="noopener">Instagram</FooterLink><br />
           <FooterLink href="https://www.facebook.com/jottzweiwerbeagentur" target="_blank" rel="noopener">Facebook</FooterLink>
           <FooterLinkIntern to="/impressum">Impressum</FooterLinkIntern>
-          <FooterLinkIntern to="/datenschutzerklärung">Datenschutzerklärung</FooterLinkIntern>
+          <FooterLinkIntern to="/datenschutzerklaerung">Datenschutzerklärung</FooterLinkIntern>
       </Column>
       <Column>
-        <StaticImage src="../images/logo.png" alt="A dinosaur" placeholder="blurred" loading="eager" />
+        <StaticImage src="../images/logo.png" alt="Das Logo der Jott Zwei Werbeagentur." placeholder="blurred" />
       </Column>
       <CredentialFooter>
-      © {new Date().getFullYear()}, Jott Zwei Werbeagentur
+      © {new Date().getFullYear()} Jott Zwei Werbeagentur | Alle Rechte vorbehalten.
         </CredentialFooter>
     </Container>
     </Wrap>

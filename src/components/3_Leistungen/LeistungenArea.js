@@ -1,79 +1,135 @@
 import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 import styled from 'styled-components'
-import { ButtonInternal, Headline2, Text, Button } from '../defaultComponents'
+import { Headline3, Text} from '../defaultComponents'
 import { Link } from 'gatsby'
 
 const Wrap = styled.div`
-    padding-top: 50px;
     width: min(90%, 1150px);
-    display: grid;
-    height: auto;
-    grid-template-columns: 47% 47%;
-    grid-template-rows: auto auto;
     margin: 0 auto;
-    gap: 6%;
-    column-gap: 6%;
-`
-
-const Item = styled(Link)`
-    display: block;
+    padding: 5vh 0;
     
-    & > div:first-child{
-        border-radius: 12px;
-        overflow: hidden;
-        aspect-ratio: 5/3;
+    @media screen and (max-width: 1300px){
         width: 100%;
+
+        & > div {
+            padding-left: 20px;
+        }
     }
 `
 
 const Content = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding: 40px 0px;
+        
+    &::-webkit-scrollbar {
+        display: none;
+    }
 
-    & > ${Text}{
-        margin-bottom: 20px;
+    @media screen and (max-width: 1300px){
+        padding: .3em;
     }
 `
 
+const Card = styled(Link)`
+    background: rgb(17, 40, 54);
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    justify-content: space-between;
+
+    & > div > div {
+        aspect-ratio: 16 / 10;
+    }
+
+    @media screen and (max-width: 1300px){
+        min-width: 300px;
+    }
+
+    @media screen and (min-width: 1300px){
+        transform: translateZ(0);
+
+        &:hover{
+            transform: translateY(-20px);
+        }
+    }
+`
+
+const Button = styled.button`
+    width: 100%;
+    padding: 20px;
+    background: var(--secondary-color);
+    border:none;
+    color: white;
+    justify-self: flex-end;
+    font-family: 'code-next', sans-serif;
+    font-size: .85rem;
+    cursor: pointer;
+`
+
+const TextContent = styled.div`
+    padding: 20px;
+
+    & > ${Text}{
+        font-size: 0.85rem;
+    }
+`
+
+const ContentWrap = styled.div`
+
+`
 
 const LeistungenArea = () => {
     return (
-        <Wrap id="losgehts">
-            <Item to="/leistungen/printmedien">
-                <StaticImage src="../../images/3_Leistungen/Printmedien/Flyer.jpg" alt="" placeholder="blurred"/>
-                <Content>
-                    <Headline2>Printmedien</Headline2>
-                    <Text>Print&shy;­me&shy;­di&shy;en o&shy;der ger&shy;ne auch “Druck­&shy;sa­&shy;chen” sind zu fast al­&shy;len An&shy;­läs­&shy;sen ei&shy;ne gu&shy;te Ent­&shy;schei&shy;­dung. Ob Spei­&shy;se­&shy;kar&shy;­ten, Fly­&shy;er, Ka­&shy;ta­&shy;lo&shy;­ge o&shy;der Pla­&shy;ka&shy;­te, Ihr Un­&shy;ter­&shy;neh&shy;­men wird mit dem von uns er­&shy;stell&shy;­ten De&shy;sign aus der Men&shy;­ge her­&shy;vor&shy;­ste­&shy;chen.</Text>
-                    <Button>zur Referenz ...</Button>
-                </Content>
-            </Item>
-            <Item to="/leistungen/webdesign">
-                <StaticImage src="../../images/3_Leistungen/Webdesign/titelbild_webdesign.jpg" alt="" placeholder="blurred"/>
-                <Content>
-                    <Headline2>Webdesign</Headline2>
-                    <Text>Print&shy;­me&shy;­di&shy;en o&shy;der ger&shy;ne auch “Druck­&shy;sa­&shy;chen” sind zu fast al­&shy;len An&shy;­läs­&shy;sen ei&shy;ne gu&shy;te Ent­&shy;schei&shy;­dung. Ob Spei­&shy;se­&shy;kar&shy;­ten, Fly­&shy;er, Ka­&shy;ta­&shy;lo&shy;­ge o&shy;der Pla­&shy;ka&shy;­te, Ihr Un­&shy;ter­&shy;neh&shy;­men wird mit dem von uns er­&shy;stell&shy;­ten De&shy;sign aus der Men&shy;­ge her­&shy;vor&shy;­ste­&shy;chen.</Text>
-                    <Button>zur Referenz ...</Button>
-                </Content>
-            </Item>
-            <Item to="/leistungen/logodesign">
-                <StaticImage src="../../images/3_Leistungen/Logo/header-logodesign.jpg" alt="" placeholder="blurred"/>
-                <Content>
-                    <Headline2>Logo</Headline2>
-                    <Text>Print&shy;­me&shy;­di&shy;en o&shy;der ger&shy;ne auch “Druck­&shy;sa­&shy;chen” sind zu fast al­&shy;len An&shy;­läs­&shy;sen ei&shy;ne gu&shy;te Ent­&shy;schei&shy;­dung. Ob Spei­&shy;se­&shy;kar&shy;­ten, Fly­&shy;er, Ka­&shy;ta­&shy;lo&shy;­ge o&shy;der Pla­&shy;ka&shy;­te, Ihr Un­&shy;ter­&shy;neh&shy;­men wird mit dem von uns er­&shy;stell&shy;­ten De&shy;sign aus der Men&shy;­ge her­&shy;vor&shy;­ste­&shy;chen.</Text>
-                    <Button>zur Referenz ...</Button>
-                </Content>
-            </Item>
-            <Item to="/leistungen/ecommerce">
-                <StaticImage src="../../images/3_Leistungen/E-Commerce/header-e-commerce.jpg" alt="" placeholder="blurred"/>
-                <Content>
-                    <Headline2>E-Commerce</Headline2>
-                    <Text>Online-Verkauf – oder auch E-Commerce der eigenen Produkte wird immer wichtiger. Dies wird uns vor allem in der aktuellen Situation bewusst. Wir verleihen Ihren Produkten den perfekten Auftritt mit optimierter, für Sie leicht zugänglicher Auftragsabwicklung. Sobald ein Kauf getätigt wurde, bekommen Sie eine Nachricht und können direkt mit der Versandabwicklung loslegen.</Text>
-                    <Button>zur Referenz ...</Button>
-                </Content>
-            </Item>
+        <Wrap>
+            <Content id="losgehts">
+                <Card to="/leistungen/printmedien">
+                    <ContentWrap>
+                    <StaticImage src="../../images/3_Leistungen/Printmedien/Flyer.jpg" alt=""/>
+                    <TextContent>
+                        <Headline3>Printmedien</Headline3>
+                        <Text>Print&shy;­me&shy;­di&shy;en o&shy;der ger&shy;ne auch “Druck­&shy;sa­&shy;chen” sind zu fast al­&shy;len An&shy;­läs­&shy;sen ei&shy;ne gu&shy;te Ent­&shy;schei&shy;­dung. Ob Spei­&shy;se­&shy;kar&shy;­ten, Fly­&shy;er, Ka­&shy;ta­&shy;lo&shy;­ge o&shy;der Pla­&shy;ka&shy;­te, Ihr Un­&shy;ter­&shy;neh&shy;­men wird mit dem von uns er­&shy;stell&shy;­ten De&shy;sign aus der Men&shy;­ge her­&shy;vor&shy;­ste­&shy;chen.</Text>
+                    </TextContent>
+                    </ContentWrap>
+                    <Button>mehr erfahren ...</Button>
+                </Card>
+                <Card to="/leistungen/webdesign">
+                <ContentWrap>
+                    <StaticImage src="../../images/3_Leistungen/Webdesign/titelbild_webdesign.jpg" alt=""/>
+                    <TextContent>
+                        <Headline3>Webdesign</Headline3>
+                        <Text>Print&shy;me&shy;dien sind eine gu&shy;te Sa&shy;che, aber wer kennt es nicht … Sie hö&shy;ren von einer Fir&shy;ma, einem Pro&shy;dukt oder einer Dienst&shy;lei&shy;stung und geben die&shy;se in Ih&shy;ren Web&shy;brow&shy;ser ein, um … nichts zu fin&shy;den?! Das muss nicht sein.</Text>
+                    </TextContent>
+                    </ContentWrap>
+                    <Button>mehr erfahren ...</Button>
+                </Card>
+                <Card to="/leistungen/logodesign">
+                <ContentWrap>
+                    <StaticImage src="../../images/3_Leistungen/Logo/header-logodesign.jpg" alt=""/>
+                    <TextContent>
+                        <Headline3>Logo</Headline3>
+                        <Text>Ihr Logo ist der wich&shy;tig&shy;ste Fak&shy;tor für den Wie&shy;der&shy;er&shy;ken&shy;nungs&shy;wert Ih&shy;rer Mar&shy;ke bzw. Ih&shy;res Pro&shy;duk&shy;tes. Da&shy;zu ein durch&shy;gän&shy;gi&shy;ges De&shy;sign, das sich vom Brief&shy;kopf bis in die so&shy;zia&shy;len Me&shy;dien hi&shy;nein wie&shy;der&shy;fin&shy;det, gibt Ih&shy;rer Mar&shy;ke ei&shy;nen un&shy;ver&shy;wech&shy;sel&shy;ba&shy;ren Auf&shy;tritt.</Text>
+                    </TextContent>
+                    </ContentWrap>
+                    <Button>mehr erfahren ...</Button>
+                </Card>
+                <Card to="/leistungen/ecommerce">
+                <ContentWrap>
+                    <StaticImage src="../../images/3_Leistungen/E-Commerce/header-e-commerce.jpg" alt=""/>
+                    <TextContent>
+                        <Headline3>E-Commerce</Headline3>
+                        <Text>Online-Ver&shy;kauf – oder auch E-Com&shy;merce der ei&shy;ge&shy;nen Pro&shy;duk&shy;te wird im&shy;mer wich&shy;ti&shy;ger. Dies wird uns vor al&shy;lem in der ak&shy;tuel&shy;len Si&shy;tua&shy;tion be&shy;wusst. Wir ver&shy;lei&shy;hen Ih&shy;ren Pro&shy;duk&shy;ten den per&shy;fek&shy;ten Auf&shy;tritt mit op&shy;ti&shy;mier&shy;ter, für Sie leicht zu&shy;gäng&shy;li&shy;cher Auf&shy;trags&shy;ab&shy;wick&shy;lung.</Text>
+                    </TextContent>
+                    </ContentWrap>
+                    <Button>mehr erfahren ...</Button>
+                </Card>
+            </Content>
         </Wrap>
     )
 }

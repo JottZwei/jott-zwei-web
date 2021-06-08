@@ -31,7 +31,7 @@ const Wrap = styled.div`
 const Timeline = styled.div`
     counter-reset: section;
     width: 40%;
-    margin: 100px auto 0;
+    margin: 100px auto;
     background-image: linear-gradient(90deg, transparent 0%, transparent 49%, var(--secondary-color) 49%, var(--secondary-color) 50%, transparent 50%, transparent 100%);
 
     @media screen and (max-width: 1100px){
@@ -73,13 +73,19 @@ const Item = styled.span`
 
     @media screen and (min-width: 1100px){
 
+        width: 100%;
+
     &:nth-child(even){
         text-align: right;
         transform: translateX(-64%);
+        margin-left: auto;
+        margin-right: 0;
+        padding-left: auto;
     }
 
     &:nth-child(odd){
         transform: translateX(63%);
+        margin-right: auto;
     }
 
     &:first-child{
@@ -89,6 +95,7 @@ const Item = styled.span`
     &:last-child{
         margin-bottom: 0;
     }
+
     &:nth-child(even)::before {
         right: -70px;
     }
@@ -112,12 +119,12 @@ const EComTimeline = () => {
                 <Timeline>
                     <Item>Zielgruppe und Konkurrenz analysieren</Item>
                     <Item>Das richtige Shop-System auswählen</Item>
-                    <Item>Einfache und klase Navigation verwenden</Item>
+                    <Item>Einfache und klare Navigation verwenden</Item>
                     <Item>Produkte ansprechend und übersichtlich präsentieren</Item>
                     <Item>Kundenbewertungen zur Verfügung stellen</Item>
                     <Item>Verschiedene Zahlungsarten anbieten</Item>
                     <Item>Versandprozess optimieren</Item>
-                    <Item>"Mobile First" berücksichtigen</Item>
+                    <Item>"Mobile First" berücksichtigen und umsetzen</Item>
                 </Timeline>
             </Wrap>
     )

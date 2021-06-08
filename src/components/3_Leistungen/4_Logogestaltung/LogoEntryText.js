@@ -13,7 +13,7 @@ const Wrap = styled.div`
 
 const LogoEntrytext = () => {
     return (
-            <Wrap>
+            <Wrap id="losgehts">
                 <Headline2>Logo & Corporate Design</Headline2>
                 <Text>
                 Ihr Logo ist der wichtigste Faktor für den Wiedererkennungswert Ihrer Marke bzw. Ihres Produktes. Dazu ein durchgängiges Design, das sich vom Briefkopf bis in die sozialen Medien hinein wiederfindet, gibt Ihrer Marke einen unverwechselbaren Auftritt. Wir gestalten Ihnen professionelle und zeitgemäße Logos, die genau zu Ihren Ansprüchen passen. Bei Bedarf übernehmen wir nicht nur die Gestaltung des Logos, sondern erschaffen auch Ihr gesamtes Branding. Dies beinhaltet unter anderem passende Schriften, Farben, visuelles Auftreten und mehr.

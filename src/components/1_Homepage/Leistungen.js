@@ -8,7 +8,7 @@ import { Link } from 'gatsby'
 const Wrap = styled.div`
     width: min(90%, 1150px);
     margin: 0 auto;
-    padding: 5vw 0;
+    padding: 5vh 0;
     
     @media screen and (max-width: 1300px){
         width: 100%;
@@ -71,6 +71,8 @@ const Card = styled(Link)`
     }
 
     @media screen and (min-width: 1300px){
+        transform: translateZ(0);
+
         &:hover{
             transform: translateY(-20px);
         }
@@ -84,6 +86,9 @@ const Button = styled.button`
     border:none;
     color: white;
     justify-self: flex-end;
+    font-family: 'code-next', sans-serif;
+    font-size: .85rem;
+    cursor: pointer;
 `
 
 const TextContent = styled.div`

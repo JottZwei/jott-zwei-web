@@ -51,7 +51,7 @@ const WebProgressbar = () => {
                                         stroke: `var(--secondary-color)`,
                                     },
                                     trail: {
-                                        stroke: 'transparent',
+                                        stroke: 'rgba(20,20,20,0.6)',
                                     }
                                     }}
                                 >
@@ -93,7 +93,7 @@ const WebProgressbar = () => {
                                         stroke: `var(--secondary-color)`,
                                     },
                                     trail: {
-                                        stroke: 'transparent',
+                                        stroke: 'rgba(20,20,20,0.6)',
                                     }
                                     }}
                                 >

@@ -3,6 +3,8 @@ import styled, { keyframes } from 'styled-components'
 import { StaticImage } from 'gatsby-plugin-image'
 import { Headline1, Text, ButtonInternal } from '../defaultComponents'
 import { FaFacebook, FaInstagram } from "react-icons/fa"
+import scrollTo from 'gatsby-plugin-smoothscroll'
+
 
 
 const Wrap = styled.div`
@@ -140,6 +142,7 @@ const Pagination = styled.div`
     width: 100%;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
+    column-gap:20px;
 
     & > div {
         box-shadow: 5px 0px 20px -10px black;
@@ -262,7 +265,7 @@ const Hero = () => {
                                         <Headline1>{slide.headline}</Headline1>
                                         <Text>{slide.text}</Text>
                                         <Text>Jott Zwei Werbeagentur - Wir sind Ihre Werbeagentur im Artland.</Text>
-                                        <ButtonInternal to="#referenzen">Los geht's</ButtonInternal>
+                                        <ButtonInternal onClick={() => scrollTo('#referenzen')} href="#referenzen">Los geht's</ButtonInternal>
                                     </>
                                     )}
                             </Content>

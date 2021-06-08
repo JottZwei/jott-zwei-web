@@ -26,7 +26,9 @@ const impressum = () => {
     `
 
     const Link = styled.a`
-
+        &:hover {
+            color: var(--secondary-color);
+        }
     `
 
     return (

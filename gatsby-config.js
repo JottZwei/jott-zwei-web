@@ -18,17 +18,18 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Jott Zwei Werbeagentur`,
+        short_name: `Jott Zwei`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#010e1e`,
+        theme_color: `#F26F71`,
         display: `minimal-ui`,
         icon: `src/images/logo.png`,
       },
     },
     `gatsby-plugin-styled-components`,
     'gatsby-plugin-offline',
-    'gatsby-plugin-image'
+    'gatsby-plugin-image',
+    `gatsby-plugin-smoothscroll`
   ],
 }

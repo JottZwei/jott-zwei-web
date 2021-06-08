@@ -28,6 +28,7 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-weight: 100;
+    font-family: 'code-next', sans-serif;
   }
 
   html {
@@ -35,14 +36,13 @@ export const GlobalStyle = createGlobalStyle`
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     touch-action: manipulation;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;   
     scroll-padding-top: 80px;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
   }
 
   body {
     background: var(--primary-color);
-    scroll-behavior: smooth;
     scrollbar-color: #006464;
     font-weight: 200;
   }

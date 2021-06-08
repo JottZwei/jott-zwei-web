@@ -19,7 +19,7 @@ const EComEntrytext = () => {
                 <Text>
                 Online-Verkauf – oder auch E-Commerce der eigenen Produkte wird immer wichtiger. Dies wird uns vor allem in der aktuellen Situation bewusst. Wir verleihen Ihren Produkten den perfekten Auftritt mit optimierter, für Sie leicht zugänglicher Auftragsabwicklung. Sobald ein Kauf getätigt wurde, bekommen Sie eine Nachricht und können direkt mit der Versandabwicklung loslegen. Der Bezahlvorgang läuft komplett automatisiert.
                 <br /><br />
-                Durch Ihren Onlineshop erweitern Sie Ihre Verkaufsplattform und bieten Ihren Kunden schnellen Zugang zu Ihren Produkten. Auf Wunsch implementieren wir in Ihrem Shop auch weitere Support-Features wie einen Produktauswahlassistenten, Chat-Support oder FAQ’s. So bieten Sie auch online einen vollwertigen Kundensupport an, welcher Ihre Kunden glücklich machen wird.
+                Auf Wunsch implementieren wir in Ihrem Shop auch weitere Support-Features wie einen Produktauswahlassistenten, Chat-Support oder FAQ’s. So bieten Sie auch online einen vollwertigen Kundensupport an, welcher Ihre Kunden glücklich machen wird.
                 </Text>
             </Wrap>
     )
