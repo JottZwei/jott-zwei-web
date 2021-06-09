@@ -13,6 +13,11 @@ const Wrap = styled.div`
         gap: 2vw;
         column-gap: 2vw;
     }
+    
+    @media screen and (max-width: 899px){
+        max-width: 80%;
+        margin: 0 auto;
+    }
 `
 
 const Column = styled.div`

@@ -10,6 +10,7 @@ const Wrap = styled.div`
     display: grid;
     align-content: center;
     padding-top: 80px;
+    margin-bottom: 50px;
 `
 
 const EComEntrytext = () => {

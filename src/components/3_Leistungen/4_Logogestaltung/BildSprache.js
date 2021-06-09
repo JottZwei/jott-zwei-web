@@ -44,6 +44,12 @@ const Galerie = styled.div`
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 1fr 1fr;
     gap: 30px;
+    column-gap: 30px;
+
+    @media screen and (max-width: 1100px){
+        gap: 20px;
+        column-gap:20px;
+    }
 
     & > div {
         border-radius: 20px;

@@ -103,7 +103,7 @@ const Referenzen = () => {
             </RefContainer>
 
             <RefContainer to="referenzen/rebelpandas">
-                <StaticImage src="../../images/2_Referenzen/RebelPandas/ref_rp_1.jpg" alt="" />
+                <StaticImage src="../../images/2_Referenzen/RebelPandas/ref_rp_2.jpg" alt="" />
                 <Foreground >
                     <Headline3>Rebel Pandas</Headline3>
                     <Button>zur Referenz</Button>

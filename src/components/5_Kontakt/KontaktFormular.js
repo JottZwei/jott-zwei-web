@@ -11,6 +11,8 @@ const Form = styled.form`
     display: grid;
     gap: 30px;
     padding: 6vw 0;
+    grid-template-columns: 1fr;
+    max-width: 100%;
 
     @media screen and (min-width: 1000px){
         grid-template-columns: 1fr 1fr;
@@ -45,8 +47,11 @@ const TextArea = styled.textarea`
     border: 3px solid transparent;
     color: white;
     box-sizing: border-box;
-    grid-column: 1 / 3;
     font-size: 1rem;
+
+    @media screen and (min-width: 1000px){
+        grid-column: 1 / 3;
+    }
 
     &:focus, &:hover {
         border: 3px solid var(--secondary-color);
@@ -57,12 +62,17 @@ const TextArea = styled.textarea`
 const FormItem = styled.div`
     display: flex;
     flex-direction: column;
+    max-width: 100%;
 `
 
 const FormItemFull = styled.div`
     display: flex;
     flex-direction: column;
-    grid-column: span 2;
+    max-width: 100%;
+
+    @media screen and (min-width: 1000px){
+        grid-column: span 2;
+    }
 `
 
 const KontaktFormular = () => {
@@ -98,7 +108,7 @@ const KontaktFormular = () => {
 
                 <FormItemFull>
                     <Label for="message">Ihre Nachricht</Label>
-                    <TextArea type="textarea" name="message" cols="50" rows="10"/>
+                    <TextArea type="textarea" name="message" rows="10"/>
                 </FormItemFull>
 
                 <FormItemFull>

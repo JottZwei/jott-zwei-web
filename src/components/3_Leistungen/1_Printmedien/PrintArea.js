@@ -65,7 +65,7 @@ const ContentWrap = styled.div`
 
 const PrintArea = () => {
     return (
-        <Wrap>
+        <Wrap id="losgehts">
         {PrintData.map((leistung, index) => {
             return (
                 <Card to="/kontakt" key={index}>

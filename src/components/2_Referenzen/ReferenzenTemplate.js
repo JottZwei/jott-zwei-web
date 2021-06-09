@@ -81,6 +81,11 @@ const ImageList = styled.div`
     width: min(90%, 1120px);
     margin: 0 auto;
 
+    @media screen and (max-width: 1100px){
+        gap: 20px;
+        column-gap: 20px;
+    }
+
     & > div {
         border-radius: 12px;
         overflow: hidden;

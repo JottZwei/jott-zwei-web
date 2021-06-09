@@ -11,9 +11,11 @@ const Wrap = styled.div`
     gap: 5vw;
     column-gap: 5vw;
 
-    @media screen and (max-width: 1100px){
+    @media screen and (max-width: 700px){
         grid-template-columns: 1fr;
         gap: 0;
+        column-gap: 0;
+        margin-bottom: 50px;
     }
 `
 

@@ -31,7 +31,7 @@ const Wrap = styled.div`
 const Timeline = styled.div`
     counter-reset: section;
     width: 40%;
-    margin: 100px auto;
+    margin: 50px auto;
     background-image: linear-gradient(90deg, transparent 0%, transparent 49%, var(--secondary-color) 49%, var(--secondary-color) 50%, transparent 50%, transparent 100%);
 
     @media screen and (max-width: 1100px){
@@ -93,7 +93,7 @@ const Item = styled.span`
     }
 
     &:last-child{
-        margin-bottom: 0;
+        margin-bottom: -10px;
     }
 
     &:nth-child(even)::before {

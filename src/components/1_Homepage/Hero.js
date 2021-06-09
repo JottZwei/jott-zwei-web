@@ -179,6 +179,7 @@ const Socials = styled.div`
     display: flex;
     color: white;
     gap: 30px;
+    column-gap: 30px;
     grid-area: c;
     justify-content: flex-start;
     align-items: flex-end;
@@ -264,7 +265,7 @@ const Hero = () => {
                                     <>
                                         <Headline1>{slide.headline}</Headline1>
                                         <Text>{slide.text}</Text>
-                                        <Text>Jott Zwei Werbeagentur - Wir sind Ihre Werbeagentur im Artland.</Text>
+                                        <Text>Jott Zwei Werbeagentur – wir sind Ihre Werbeagentur im Artland.</Text>
                                         <ButtonInternal onClick={() => scrollTo('#referenzen')} href="#referenzen">Los geht's</ButtonInternal>
                                     </>
                                     )}

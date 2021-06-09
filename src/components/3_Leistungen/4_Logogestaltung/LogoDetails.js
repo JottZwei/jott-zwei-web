@@ -1,6 +1,7 @@
 import React from 'react'
-import { Headline2 } from '../../defaultComponents'
+import { Headline2, Headline3 } from '../../defaultComponents'
 import styled from 'styled-components'
+import { FaArrowDown } from 'react-icons/fa';
 import { StaticImage } from 'gatsby-plugin-image'
 
 const Wrap = styled.div`
@@ -8,10 +9,23 @@ const Wrap = styled.div`
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 1fr;
-    grid-template-areas: "a a" "b c";
+    grid-template-rows: auto auto auto 1fr;
+    grid-template-areas: "head head" "arrow arrow" "a a" "b c";
     gap: 30px;
     margin-bottom: 50px;
+
+    & > ${Headline2} {
+        grid-area: head;
+        text-align: center;
+    }
+
+    & > svg {
+        grid-area: arrow;
+        color: white;
+        font-size: 3rem;
+        color: white;
+        margin: 30px auto;
+    }
 `
 
 const Logo = styled.div`
@@ -21,16 +35,16 @@ const Logo = styled.div`
     grid-template-rows: auto 1fr;
     grid-template-areas: "a a" "b c";
 
-    & > ${Headline2} {
+    & > ${Headline3} {
         grid-area: a;
     }
 
     & > div::nth-child(1) {
-        grid-area: "b";
+        grid-area: b;
     }
 
     & > div::nth-child(2) {
-        grid-area: "c";
+        grid-area: c;
     }
 `
 
@@ -46,7 +60,7 @@ const Farben = styled.div`
     grid-area: c;
     column-gap: 20px;
 
-    & > ${Headline2} {
+    & > ${Headline3} {
         grid-area: a;
     }
 
@@ -62,17 +76,19 @@ const Farben = styled.div`
 const LogoDetails = () => {
     return (
         <Wrap>
+                <Headline2>Genug geschwafelt, hier gibt's Marke</Headline2>
+                <FaArrowDown />
             <Logo>
-                <Headline2>Logo</Headline2>
+                <Headline3>Logo</Headline3>
                 <StaticImage src="../../../images/3_Leistungen/Logo/rz_logo_freizeittanken_w.svg" alt="" placeholder="blurred" objectFit="cover" />
                 <StaticImage src="../../../images/3_Leistungen/Logo/rz_logo_freizeittanken_weiss.svg" alt="" placeholder="blurred" objectFit="cover" />
             </Logo>
             <Schriften>
-                <Headline2>Schriften</Headline2>
+                <Headline3>Schriften</Headline3>
                 <StaticImage src="../../../images/3_Leistungen/Logo/schriften.svg" alt="" placeholder="blurred" />
             </Schriften>
             <Farben>
-                <Headline2>Farben</Headline2>
+                <Headline3>Farben</Headline3>
                 <StaticImage src="../../../images/3_Leistungen/Logo/farben.png" alt="" placeholder="blurred" objectFit="cover" />
                 <StaticImage src="../../../images/3_Leistungen/Logo/farben7.png" alt="" placeholder="blurred" objectFit="cover" />
             </Farben>

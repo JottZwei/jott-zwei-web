@@ -124,13 +124,13 @@ export const PrintData = [
     },
     {
         image: <StaticImage src="../../../images/3_Leistungen/Printmedien/Loseblattsammlung.jpg" alt="" placeholder="blurred" objectFit="cover" />,
-        name: 'Loseblatt­sammlung',
-        text: 'Passende Ordner im hauseigenen Design sorgen für Struktur in Ihrem Büroalltag. Verschiedene Papiersorten, unterschiedliche Papierstärken, matt oder glänzender Qualitätsdruck sowie farbige Trennblätter machen Ihre individuelle Loseblattsammlung zu einem professionellen Gesamtwerk.',
+        name: 'Lose\xADblatt­\xADsamm\xADlung',
+        text: 'Pas\xADsen\xADde Ord\xADner im haus\xADei\xADgenen Design sorgen für Struktur in Ihrem Büroalltag. Verschiedene Papiersorten, unterschiedliche Papierstärken, matt oder glänzender Qualitätsdruck sowie farbige Trennblätter machen Ihre individuelle Loseblattsammlung zu einem professionellen Gesamtwerk.',
     },
     {
         image: <StaticImage src="../../../images/3_Leistungen/Printmedien/Messeartikel.jpg" alt="" placeholder="blurred" objectFit="cover" />,
-        name: 'Messeartikel',
-        text: 'Professionell designte Messewände, Messetheken oder ganze Messesysteme machen Ihren Messestand zu etwas ganz Besonderem. Ein echter Hingucker, um mit potentiellen Kunden und Geschäftspartnern ins Gespräch zu kommen.',
+        name: 'Mes\xADse\xADar\xADti\xADkel',
+        text: 'Pro\xADfes\xADsio\xADnell design\xADte Messe\xADwän\xADde, Mes\xADse\xADthe\xADken oder gan\xADze Mes\xADse\xADsys\xADte\xADme ma\xADchen Ih\xADren Mes\xADse\xADstand zu etwas ganz Be\xADson\xADde\xADrem. Ein ech\xADter Hin\xADgu\xADcker, um mit po\xADten\xADtiel\xADlen Kun\xADden und Ge\xADschäfts\xADpart\xADnern ins Ge\xADspräch zu kom\xADmen.',
     },
     {
         image: <StaticImage src="../../../images/3_Leistungen/Printmedien/Mousepads.jpg" alt="" placeholder="blurred" objectFit="cover" />,

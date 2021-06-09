@@ -12,22 +12,21 @@ const Wrap = styled.div`
 
     & ${Headline2}{
         font-size: 2rem;
-        line-height: 1rem;
+        line-height: 1.4rem;
     }
 
     & ${Text}{
         margin-bottom: 20px;
         margin-top: 10px;
     }
+
+    @media screen and (max-width: 1100px){
+        grid-template-columns: 1fr;
+    }
 `
 
 const Section = styled.div`
     position: relative;
-    
-    @media screen and (max-width: 1100px){
-        margin-top: 100px;
-    }
-
         & > div:nth-child(1):before {
         content: '';
         position: absolute;
@@ -37,6 +36,10 @@ const Section = styled.div`
         bottom:0;
         background: linear-gradient(0deg, rgba(1,14,30,1) 0%, rgba(1,14,30,0.1) 100%);
         z-index: 2;
+    }
+
+    @media screen and (max-width: 1100px){
+        padding-bottom: 100px;
     }
 `
 
@@ -50,6 +53,9 @@ const Foreground = styled.div`
     left: 50%;
     text-align: center;
     transform: translate(-50%, -50%);
+    width: 90%;
+
+
 `
 
 const team = () => {
