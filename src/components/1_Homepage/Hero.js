@@ -181,13 +181,15 @@ const Pagination = styled.div`
 const Socials = styled.div`
     display: flex;
     color: white;
-    gap: 30px;
-    column-gap: 30px;
     grid-area: c;
     justify-content: flex-start;
     align-items: flex-end;
 
-    & > svg {
+    & svg:first-child{
+        margin-right: 20px;
+    }
+
+    & svg {
         font-size: 1.5rem;
     }
 

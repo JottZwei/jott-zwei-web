@@ -17,11 +17,12 @@ const Wrap = styled.nav`
     will-change: top;
     transform: translate3d(0,0,0);
 
-
     @media screen and (max-width: 1100px) {
         background: ${({ click }) => (click ? "#fff" : "transparent")};
         height: auto;
+        position: sticky;
         top: 100%;
+        margin-top: -80px;
         transform: translateY(-100%);
         background: var(--secondary-color);
         margin-bottom:0;
@@ -33,7 +34,7 @@ const NavMenu = styled.ul`
     display: flex;
     color: white;
     transform: translate3d(0,0,0);
-    
+
     @media screen and (max-width: 1100px){
         width: 100%;
         justify-content: space-evenly;

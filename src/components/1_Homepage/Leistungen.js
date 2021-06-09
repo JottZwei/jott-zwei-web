@@ -74,6 +74,8 @@ const Card = styled(Link)`
             transform: translateY(-20px);
         }
     }
+
+
 `
 
 const Button = styled.button`
