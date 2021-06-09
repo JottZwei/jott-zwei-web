@@ -39,7 +39,7 @@ export const ReferenzenData = [
     },
     {
         image: <video src={video} type="video/mp4" autoPlay muted loop playsInline />,
-        titleImage: <StaticImage src="../../images/2_Referenzen/RebelPandas/ref_rp_1.jpg" alt="" placeholder="blurred" objectFit="cover" />,
+        titleImage: <StaticImage src="../../images/2_Referenzen/RebelPandas/ref_rp_2.jpg" alt="" placeholder="blurred" objectFit="cover" />,
         name: 'Rebel Pandas',
         headline: 'Rebellisch, musikalisch & flauschig',
         leistungen: 'Webdesign, Logogestaltung, Albumcover',
@@ -72,9 +72,9 @@ export const ReferenzenData = [
         image: <StaticImage src="../../images/2_Referenzen/Borchers/ref_bor_0_head.jpg" alt="" placeholder="blurred" objectFit="cover" />,
         titleImage: <StaticImage src="../../images/2_Referenzen/Borchers/ref_bor_0_head.jpg" alt="" placeholder="blurred" objectFit="cover" />,
         name: 'Weserraum',
-        headline: 'Schlicht, modern & auf den Punkt.',
+        headline: 'Platz da! Weserraum hat immer die passende Garage für euch frei.',
         leistungen: 'Webdesign, Visitenkarten, Stempel',
-        text: 'Direkt auf den ersten Blick „Ein­\xADdruck machen“! Das funk­\xADtio\xADniert immer mit in\xADdi­\xADvi­\xADduel­\xADlen An­\xADge­\xADbots­\xADmap\xADpen in Ih\xADrem Cor\xAD­po­\xADra\xADte De\xADsign. Hoch\xAD­wer­\xADti­\xADger Druck nach Be\xAD­darf mit Vi\xAD­si\xAD­ten\xAD­kar­\xADten­\xADta\xADsche und 2 oder 3 La­\xADschen.',
+        text: 'Ein prägnantes Logo, Visitenkarten, Stempel, sowie ein kleiner Webauftritt. Dank dieser Umsetzungen werden die Leistungen von Weserraum klar und gut sichtbar nach außen kommuniziert, abgerundet durch coole Farben und heiße Karren.',
         link: '/referenzen/weserraum',
         gallery: [
             <StaticImage src="../../images/2_Referenzen/Borchers/ref_bor_1.jpg" alt="" placeholder="blurred" objectFit="cover" />,

@@ -16,8 +16,7 @@ const WebEntrytext = () => {
             <Wrap id="losgehts">
                 <Headline2>Websites</Headline2>
                 <Text>
-                    Printmedien sind eine gute Sache, aber wer kennt es nicht … Sie hören von einer Firma, einem Produkt oder einer Dienstleistung und geben diese in Ihren Webbrowser ein, um … nichts zu finden?! Das muss nicht sein. Genauso muss das lästige Formular nicht sein, welches per Post in Ihr Haus kommt, per Hand ausgefüllt werden muss und per Post wieder zurückgesendet wird. Und Ihre Vorstellung auf Messen und in den sozialen Medien regt in Videoform doch auch mehr Interesse an. Es ist Zeit für Digitalisierung. Wir helfen Ihnen beim Modernisieren und bei der Umstellung auf digitales Höchstniveau.
-                </Text>
+                Wie sagt man so schön? Für den ersten Eindruck, gibt es keine zweite Chance. Neben der Informationen für Ihre Kunden dient Ihre Firmenwebsite auch der Darstellung Ihres Unternehmens. Es ist wichtig, dass Ihre Website visuell und inhaltlich spannende und attraktive Anreize für die Besucher bereithält. Gutes Design ist nicht mehr optional, es ist entscheidend, um erfolgreich zu sein.                </Text>
             </Wrap>
     )
 }

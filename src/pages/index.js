@@ -8,7 +8,7 @@ import Cta from '../components/6_Reusable/CTA'
 
 const IndexPage = () => (
   <Layout>
-      <Seo title="Home" keywords={[`gatsby`, `application`, `react`]} />
+      <Seo title="Home" keywords={[`gatsby`, `application`, `react`]} description="" meta="" />
       <Hero />
       <Referenzen />
       <Leistungen />

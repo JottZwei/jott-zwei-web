@@ -1,5 +1,5 @@
 import React from 'react'
-import { Headline2, Headline3, Text } from '../../defaultComponents'
+import { Headline2 } from '../../defaultComponents'
 import styled from 'styled-components'
 import { StaticImage } from 'gatsby-plugin-image'
 
@@ -69,11 +69,7 @@ const LogoDetails = () => {
             </Logo>
             <Schriften>
                 <Headline2>Schriften</Headline2>
-                <Headline3>Suez One</Headline3>
-                <Text>Regular <br />A B C D E F G H I J K L M N O P Q R S T U V X Y Z <br /> a b c d e f g h i j k l m n o p q r s t u v w x y z <br /> 1 2 3 4 5 6 7 8 9 0</Text>
-                <Headline3>Open Sans</Headline3>
-                <Text>Regular <br />A B C D E F G H I J K L M N O P Q R S T U V X Y Z <br /> a b c d e f g h i j k l m n o p q r s t u v w x y z <br /> 1 2 3 4 5 6 7 8 9 0<br /></Text>
-                <Text>Bold <br />A B C D E F G H I J K L M N O P Q R S T U V X Y Z <br /> a b c d e f g h i j k l m n o p q r s t u v w x y z <br /> 1 2 3 4 5 6 7 8 9 0</Text>
+                <StaticImage src="../../../images/3_Leistungen/Logo/schriften.svg" alt="" placeholder="blurred" />
             </Schriften>
             <Farben>
                 <Headline2>Farben</Headline2>

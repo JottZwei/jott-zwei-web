@@ -3,13 +3,17 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { StaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, keywords, title }) {
+function SEO({ description, lang, meta, image: metaImage, keywords, title }) {
   return (
     <StaticQuery
       query={detailsQuery}
       render={data => {
         const metaDescription =
           description || data.site.siteMetadata.description
+        const image =
+          metaImage && metaImage.src
+            ? `${data.site.siteMetadata.siteUrl}${metaImage.src}`
+            : null
         return (
           <Helmet
             htmlAttributes={{
@@ -57,7 +61,26 @@ function SEO({ description, lang, meta, keywords, title }) {
                       name: `keywords`,
                       content: keywords.join(`, `),
                     }
-                  : []
+                  : [],
+                  metaImage
+                    ? [
+                        {
+                          property: "og:image",
+                          content: image,
+                        },
+                        {
+                          property: "og:image:width",
+                          content: metaImage.width,
+                        },
+                        {
+                          property: "og:image:height",
+                          content: metaImage.height,
+                        },
+                        {
+                          name: "twitter:card",
+                          content: "summary_large_image",
+                        },
+                      ] : []
               )
               .concat(meta)}
           />
@@ -70,7 +93,8 @@ function SEO({ description, lang, meta, keywords, title }) {
 SEO.defaultProps = {
   lang: `de`,
   meta: [],
-  keywords: [],
+  keywords: [`Jott`, `Zwei`, `Werbeagentur`, `Webdesign`, `Internetseiten`, `Website erstellen`, `Drucksachen`, `Logodesign`, `Logogestaltung`, ],
+  description: `Jott Zwei Werbeagentur | Ihr Ansprechpartner in Sachen Website, E-Commerce und Print`,
 }
 
 SEO.propTypes = {

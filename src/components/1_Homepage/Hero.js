@@ -22,7 +22,7 @@ const Wrap = styled.div`
     position: relative;
 
     @media screen and (max-width: 1100px){
-        height: 60vh;
+        height: auto;
         width: 100%;
         margin: 0;
         border-radius: 0px;
@@ -223,18 +223,18 @@ const PaginationItem = styled.div`
 const Hero = () => {
     const Array = [{
         image: <StaticImage src="../../images/1_Homepage/Hero/hero_1.jpg" alt="" placeholder="blurred" objectFit="cover" />,
-        headline: "Doppelt so viel Potenzial.",
-        text: "Wir, Jan und Jörn, ergänzen uns perfekt indem wir unsere individuellen Stärken und Fähigkeiten optimal kombinieren. Kreativität mit Workflow. Weil doppelt einfach besser hält."
+        headline: "Dop\xADpelt so viel Po\xADten\xADzial.",
+        text: "Wir, Jan und Jörn, er\xADgän\xADzen uns per\xADfekt in\xADdem wir un\xADse\xADre in\xADdi\xADvi\xADduel\xADlen Stär\xADken und Fä\xADhig\xADkei\xADten op\xADti\xADmal kom\xADbi\xADnie\xADren. Krea\xADti\xADvi\xADtät mit Work\xADflow. Weil dop\xADpelt ein\xADfach bes\xADser hält."
     },
     {
         image: <StaticImage src="../../images/1_Homepage/Hero/hero_2.jpg" alt="" placeholder="blurred" objectFit="cover" />,
-        headline: "Doppelt so viel Mut.",
-        text: "Neue Wege, neue Marke? Kühnheit und Mut sind der Schlüssel zum Erfolg. Wir bringen Ihr Unternehmen auf das nächste Level. Reichen Sie uns die Hand und wir gehen gemeinsam diesen Weg.        "
+        headline: "Dop\xADpelt so viel Mut.",
+        text: "Neue We\xADge, neue Mar\xADke? Kühn\xADheit und Mut sind der Schlüs\xADsel zum Er\xADfolg. Wir brin\xADgen Ihr Un\xADter\xADneh\xADmen auf das näch\xADste Le\xADvel. Rei\xADchen Sie uns die Hand und wir ge\xADhen ge\xADmein\xADsam die\xADsen Weg.        "
     },
     {
         image: <StaticImage src="../../images/1_Homepage/Hero/hero_3.jpg" alt="" placeholder="blurred" objectFit="cover" />,
-        headline: "Doppelt so viel Perspektive.",
-        text: "Öfter mal die Perspektive wechseln. Ein guter Perspektivwechsel ist der Impuls zu etwas Neuem und bringt frischen Wind in Ihr Unternehmen. Wir zeigen Ihnen die Orte mit der besten Aussicht."
+        headline: "Dop\xADpelt so viel Pers\xADpek\xADti\xADve.",
+        text: "Öfter mal die Pers\xADpek\xADti\xADve wech\xADseln. Ein gu\xADter Pers\xADpek\xADtiv\xADwech\xADsel ist der Im\xADpuls zu et\xADwas Neu\xADem und bringt fri\xADschen Wind in Ihr Un\xADter\xADneh\xADmen. Wir zei\xADgen Ih\xADnen die Orte mit der bes\xADten Aus\xADsicht."
     }
 ]
 
