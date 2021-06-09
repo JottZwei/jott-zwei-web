@@ -20,10 +20,7 @@ const Card = styled(Link)`
     flex-direction: column;
     transition: transform 0.3s ease;
     justify-content: space-between;
-
-    & > div > div {
-        aspect-ratio: 16 / 10;
-    }
+    transform:translateZ(0);
 
     @media screen and (max-width: 1300px){
         min-width: 300px;
@@ -59,7 +56,13 @@ const TextContent = styled.div`
 `
 
 const ContentWrap = styled.div`
+    & > div:first-child {
+        aspect-ratio: 16 / 10;  
 
+        @supports not (aspect-ratio: 16 / 10){
+            height: 200px;
+        }
+    }
 `
 
 

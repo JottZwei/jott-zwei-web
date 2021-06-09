@@ -7,10 +7,10 @@ import Navbar from "./navbar"
 const Layout = ({ children }) => (
       <>
         <GlobalStyle />
-
+        <Navbar />
             <main>
-            <Navbar />
-              {children}</main>
+              {children}
+            </main>
           <Footer />
       </>
 )

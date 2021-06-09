@@ -15,6 +15,7 @@ const Wrap = styled.nav`
     z-index: 99;
     transition: 0.3s background-color ease, 0.3s padding ease, backdrop-filter 0.3s ease, border-bottom 0.3s ease;
     will-change: top;
+    transform: translate3d(0,0,0);
 
 
     @media screen and (max-width: 1100px) {
@@ -31,7 +32,8 @@ const Wrap = styled.nav`
 const NavMenu = styled.ul`
     display: flex;
     color: white;
-
+    transform: translate3d(0,0,0);
+    
     @media screen and (max-width: 1100px){
         width: 100%;
         justify-content: space-evenly;

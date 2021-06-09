@@ -92,13 +92,14 @@ const ImageList = styled.div`
         aspect-ratio: 5 / 3;
         display: flex;
         align-items: center;
+        transform: translateZ(0);
     }
 `
 
 const ImageContainer = styled.div`
-    & > div > div {
-        transform: translateZ(0);
-    }
+    border-radius: 12px;
+    overflow: hidden;
+    transform: translateZ(0);
 `
 
 
