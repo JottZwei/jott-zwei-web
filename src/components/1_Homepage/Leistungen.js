@@ -10,6 +10,11 @@ const Wrap = styled.div`
     margin: 0 auto;
     padding: 5vh 0;
     
+    @supports not (width: min(90%, 1150px)){
+        width: 90%;
+        max-width: 1150px;
+    }
+
     @media screen and (max-width: 1300px){
         width: 100%;
 

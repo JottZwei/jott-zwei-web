@@ -8,7 +8,7 @@ import Cta from '../components/6_Reusable/CTA'
 
 const IndexPage = () => (
   <Layout>
-      <Seo title="Home" keywords={[`gatsby`, `application`, `react`]} description="" meta="" />
+      <Seo title="Ihre Lieblingsagentur ♥ | Jott Zwei Werbeagentur" description="Broschüren, Flyer, Websites und mehr – wir geben Ihnen und Ihrem Unternehmen einen prägnanten und unverwechselbaren Auftritt auf dem Markt." meta="" keywords={[`Jott`, `Zwei`, `Werbeagentur`, `Marken`, `Logodesign`, `Internetseiten erstellen`, `Internetseiten`, `Gestaltung`, `Artland`, `Osnabrück`, `Quakenbrück`, `Badbergen`, `Cloppenburg`, `Printmedien`, `Logo`, `E-Commerce`, `Onlineshop`, `eCommerce`, `Online verkauf`, `Drucksachen`, `Corporate Design`, `Flyer`, `Schilder`, `Visitenkarten`, `Stempel`, `Briefpapier`]} />
       <Hero />
       <Referenzen />
       <Leistungen />

@@ -11,6 +11,11 @@ const Wrap = styled.div`
     align-content: center;
     padding-top: 80px;
     margin-bottom: 50px;
+
+    @supports not (width: min(90%, 850px)){
+        width: 90%;
+        max-width: 850px;
+    }
 `
 
 const EComEntrytext = () => {

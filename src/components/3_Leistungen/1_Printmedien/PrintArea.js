@@ -10,6 +10,12 @@ const Wrap = styled.section`
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(283px, 1fr));
     gap: 20px;
+
+    @supports not (width: min(90%, 1200px)){
+        width: 90%;
+        max-width: 1200px;
+    }
+
 `
 
 const Card = styled(Link)`

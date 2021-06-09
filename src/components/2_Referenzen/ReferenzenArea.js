@@ -12,6 +12,12 @@ const Wrap = styled.div`
     width: min(95%, 1150px);
     margin: 0 auto;
     padding-top: 50px;
+
+    @supports not (width: min(90%, 1150px)){
+        width: 95%;
+        max-width: 1150px;
+    }
+
 `
 
 const Item = styled(Link)`

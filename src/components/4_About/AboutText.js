@@ -6,6 +6,11 @@ const Wrap = styled.div`
     width: min(90%, 800px);
     margin: 50px auto;
     text-align: center;
+
+    @supports not (width: min(90%, 800px)){
+        width: 90%;
+        max-width: 800px;
+    }
 `
 
 const AboutText = () => {

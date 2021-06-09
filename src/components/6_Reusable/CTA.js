@@ -11,6 +11,11 @@ const Wrap = styled.section`
     margin: 0px auto;
     overflow: hidden;
 
+    @supports not (width: min(90%, 1150px)){
+        width: 90%;
+        max-width: 1150px;
+    }
+
     @media screen and (max-width: 1200px){
         margin: 20px auto;
     }

@@ -72,6 +72,12 @@ const EntryText = styled.div`
     margin: 0 auto;
     white-space: pre-wrap;
     margin-bottom: 50px;
+
+    @supports not (width: min(90%, 1100px)){
+        width: 90%;
+        max-width: 1100px;
+    }
+
 `
 
 const ImageList = styled.div`
@@ -80,6 +86,12 @@ const ImageList = styled.div`
     gap: 30px;    
     width: min(90%, 1120px);
     margin: 0 auto;
+
+    @supports not (width: min(90%, 1120px)){
+        width: 90%;
+        max-width: 1120px;
+    }
+
 
     @media screen and (max-width: 1100px){
         gap: 20px;

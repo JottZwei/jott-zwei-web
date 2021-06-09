@@ -9,6 +9,12 @@ const Wrap = styled.div`
     min-height: 50vh;
     display: grid;
     align-content: center;
+
+    @supports not (width: min(90%, 850px)){
+        width: 90%;
+        max-width: 850px;
+    }
+
 `
 
 const LogoEntrytext = () => {

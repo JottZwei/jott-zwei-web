@@ -5,6 +5,11 @@ import { Button } from '../defaultComponents'
 const Wrap = styled.div`
     width: min(90%, 1100px);
     margin: 0 auto;
+
+    @supports not (width: min(90%, 1100px)){
+        width: 90%;
+        max-width: 1100px;
+    }
 `
 
 const Form = styled.form`

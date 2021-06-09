@@ -14,6 +14,12 @@ const Wrap = styled.div`
     gap: 30px;
     margin-bottom: 50px;
 
+    @supports not (width: min(90%, 850px)){
+        width: 90%;
+        max-width: 850px;
+    }
+
+
     & > ${Headline2} {
         grid-area: head;
         text-align: center;

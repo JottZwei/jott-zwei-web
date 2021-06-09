@@ -12,6 +12,11 @@ const Wrap = styled.div`
     align-content: center;
     text-align: center;
 
+    @supports not (width: min(90%, 850px)){
+        width: 90%;
+        max-width: 850px;
+    }
+
     & > svg {
         font-size: 3rem;
         color: white;

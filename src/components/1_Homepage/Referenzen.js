@@ -21,6 +21,12 @@ const Wrap = styled.div`
     & > h2 {
         grid-area: a;
         width: min(90%, 1200px);
+
+        @supports not (width: min(90%, 1150px)){
+        width: 90%;
+        max-width: 1150px;
+    }
+
     }
 
     & > ${ButtonInternal} {

@@ -10,6 +10,11 @@ const Wrap = styled.div`
     margin: 0 auto;
     overflow: hidden;
 
+    @supports not (width: min(90%, 1400px)){
+        width: 90%;
+        max-width: 1400px;
+    }
+
     & ${Headline2}{
         font-size: 2rem;
         line-height: 1.4rem;

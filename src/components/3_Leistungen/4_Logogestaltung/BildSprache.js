@@ -46,6 +46,12 @@ const Galerie = styled.div`
     gap: 30px;
     column-gap: 30px;
 
+    @supports not (width: min(90%, 1100px)){
+        width: 90%;
+        max-width: 1100px;
+    }
+
+
     @media screen and (max-width: 1100px){
         gap: 20px;
         column-gap:20px;

@@ -4,6 +4,11 @@ import { Link } from "gatsby"
 export const Container = styled.div`
     width: min(90%, 1200px);
     margin: 0 auto;
+
+    @supports not (width: min(90%, 1200px)){
+        width: 90%;
+        max-width: 1200px;
+    }
 `
 
 export const Headline1 = styled.h1`

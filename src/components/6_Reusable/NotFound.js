@@ -9,6 +9,11 @@ const Wrapper = styled.section`
     margin: 0 auto;
     margin-top: 150px;
     padding: 30px 0px;
+
+    @supports not (width: min(90%, 1100px)){
+        width: 90%;
+        max-width: 1100px;
+    }
 `
 
 
