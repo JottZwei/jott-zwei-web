@@ -120,15 +120,18 @@ const Content = styled.div`
     & > ${Headline1} {
         font-size: 2.5rem;
         color: white;    
+        opacity: 1.0;
         animation: .5s ease-out 0s 1 ${fadeInFromBottom};    
     }
 
     & > ${Text} {
         margin-bottom: 30px;
+        opacity: 1.0;
         animation: .7s ease-out 0s 1 ${fadeInFromBottom}; 
     }
 
     & > ${ButtonInternal}{
+        opacity: 1.0;
         animation: 1s ease-out 0s 1 ${fadeInFromBottom}; 
     }
 `
