@@ -1,11 +1,6 @@
 import { createGlobalStyle } from "styled-components"
 import codenext from '../fonts/code-next.woff2';
 
-window.addEventListener('resize', () => {
-  let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
-});
-
 export const GlobalStyle = createGlobalStyle`
 
   @font-face {
