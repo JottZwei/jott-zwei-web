@@ -1,7 +1,10 @@
 import { createGlobalStyle } from "styled-components"
 import codenext from '../fonts/code-next.woff2';
 
-
+window.addEventListener('resize', () => {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
 
 export const GlobalStyle = createGlobalStyle`
 
@@ -39,13 +42,15 @@ export const GlobalStyle = createGlobalStyle`
     scroll-padding-top: 80px;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
-    max-height: 100%;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
   }
 
   body {
     background: var(--primary-color);
     scrollbar-color: #006464;
     font-weight: 200;
+    transform: translate3d(0,0,0)
   }
 
   a {
