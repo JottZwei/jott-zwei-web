@@ -1,11 +1,8 @@
 import React, { useState } from 'react'
 import styled, { keyframes } from 'styled-components'
 import { StaticImage } from 'gatsby-plugin-image'
-import { Headline1, Text, ButtonInternal } from '../defaultComponents'
+import { Headline1, Text, ButtonExternal } from '../defaultComponents'
 import { FaFacebook, FaInstagram } from "react-icons/fa"
-import scrollTo from 'gatsby-plugin-smoothscroll'
-
-
 
 const Wrap = styled.div`
     height: 90vh;
@@ -121,18 +118,19 @@ const Content = styled.div`
         font-size: 2.5rem;
         color: white;    
         opacity: 1.0;
-        animation: .5s ease-out 0s 1 ${fadeInFromBottom};    
+        //animation: .5s ease-out 0s 1 ${fadeInFromBottom};    
     }
 
     & > ${Text} {
         margin-bottom: 30px;
         opacity: 1.0;
-        animation: .7s ease-out 0s 1 ${fadeInFromBottom}; 
+        //animation: .7s ease-out 0s 1 ${fadeInFromBottom}; 
     }
 
-    & > ${ButtonInternal}{
+    & > ${ButtonExternal}{
         opacity: 1.0;
-        animation: 1s ease-out 0s 1 ${fadeInFromBottom}; 
+        
+        //animation: 1s ease-out 0s 1 ${fadeInFromBottom}; 
     }
 `
 
@@ -271,7 +269,7 @@ const Hero = () => {
                                         <Headline1>{slide.headline}</Headline1>
                                         <Text>{slide.text}</Text>
                                         <Text>Jott Zwei Werbeagentur – wir sind Ihre Werbeagentur im Artland.</Text>
-                                        <ButtonInternal onClick={() => scrollTo('#referenzen')} href="#referenzen">Los geht's</ButtonInternal>
+                                        <ButtonExternal href="#referenzen">Los geht's</ButtonExternal>
                                     </>
                                     )}
                             </Content>

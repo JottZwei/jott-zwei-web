@@ -106,6 +106,10 @@ const Container = styled.div`
     justify-content: space-between;
     align-items: center;
 
+    @supports not (width: min(90%, 1400px)){
+        width: 90%;
+        max-width: 1400px;
+    }
     
     @media screen and (max-width: 1100px) {
         width: 100%;
