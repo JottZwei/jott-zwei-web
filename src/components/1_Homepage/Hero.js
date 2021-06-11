@@ -84,16 +84,6 @@ const Foreground = styled.div`
     }
     }
 `
-const fadeInFromBottom = keyframes`
-    from {
-        transform: translateY(50%);
-        opacity: 0.0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1.0;
-    }
-    `
 
 const fadeIn = keyframes`
     from {
@@ -118,19 +108,10 @@ const Content = styled.div`
         font-size: 2.5rem;
         color: white;    
         opacity: 1.0;
-        //animation: .5s ease-out 0s 1 ${fadeInFromBottom};    
     }
 
     & > ${Text} {
         margin-bottom: 30px;
-        opacity: 1.0;
-        //animation: .7s ease-out 0s 1 ${fadeInFromBottom}; 
-    }
-
-    & > ${ButtonExternal}{
-        opacity: 1.0;
-        
-        //animation: 1s ease-out 0s 1 ${fadeInFromBottom}; 
     }
 `
 

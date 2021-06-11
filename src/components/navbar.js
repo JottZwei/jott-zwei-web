@@ -24,8 +24,6 @@ const Wrap = styled.nav`
         background: ${({ click }) => (click ? "#fff" : "transparent")};
         height: auto;
         bottom: 0px;
-        /*top: 100%;
-        transform: translateY(-100%);*/
         background: var(--secondary-color);
         margin-bottom:0;
         padding: 20px 10px 30px 10px;
