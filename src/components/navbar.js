@@ -10,7 +10,8 @@ const Wrap = styled.nav`
     border-bottom: ${({active}) => active ? "1px solid rgba(255,255,255,0.2)" : "1px solid rgba(255,255,255,0.0)"};
     top: 0;
     width: 100%;
-    position: fixed;
+    margin-bottom: -155px;
+    position: sticky;
     padding: ${({active}) => active ? ".1em 1.5em" : "1.5em 1.5em" };
     z-index: 99;
     transition: 0.3s background-color ease, 0.3s padding ease, backdrop-filter 0.3s ease, border-bottom 0.3s ease;
@@ -116,10 +117,6 @@ const Container = styled.div`
     }
 `
 
-const Wrapall = styled.div`
-
-`
-
 const Navbar = () => {
 
     const [scroll, setScroll] = useState(false)
@@ -138,7 +135,6 @@ const Navbar = () => {
     }, [])
 
     return(
-        <Wrapall>
         <Wrap active={scroll}>
             <Container>
                 <Logo to="/">
@@ -169,7 +165,6 @@ const Navbar = () => {
                 </NavMenu>
             </Container>
         </Wrap>
-        </Wrapall>
         )
    }
 
