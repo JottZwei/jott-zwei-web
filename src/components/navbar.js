@@ -18,6 +18,7 @@ const Wrap = styled.nav`
     will-change: top;
     backface-visibility: hidden;
     
+    
     @media screen and (max-width: 1100px) {
         background: ${({ click }) => (click ? "#fff" : "transparent")};
         height: auto;
