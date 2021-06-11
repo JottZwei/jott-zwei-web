@@ -4,6 +4,7 @@ module.exports = {
     description: `Ihre neue Lieblingsagentur. ♥`,
     author: `Jan Francksen`,
   },
+  flags: { PRESERVE_WEBPACK_CACHE: true },
   plugins: [
     `gatsby-plugin-react-helmet`,
     {

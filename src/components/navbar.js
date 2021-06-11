@@ -28,7 +28,7 @@ const Wrap = styled.nav`
         transform: translateY(-100%);*/
         background: var(--secondary-color);
         margin-bottom:0;
-        padding: 20px 10px;
+        padding: 20px 10px 30px 10px;
     }
 `
 

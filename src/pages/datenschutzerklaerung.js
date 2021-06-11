@@ -43,7 +43,7 @@ const datenschutzerklaerung = () => {
         <Layout>
         <Seo title="Datenschutzerklärung | Jott Zwei Werbeagentur" />
             <Wrap>
-                <Headline1>Datenschutzerklärung</Headline1>
+                <Headline1>Daten&shy;schutz&shy;erklärung</Headline1>
                 <Headline2>1. Datenschutz auf einen Blick</Headline2>
                 <Headline3>Allgemeine Hinweise</Headline3>
                 <Text>Die folgenden Hinweise geben einen einfachen &Uuml;berblick dar&uuml;ber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie pers&ouml;nlich identifiziert werden k&ouml;nnen. Ausf&uuml;hrliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgef&uuml;hrten Datenschutzerkl&auml;rung.</Text>
