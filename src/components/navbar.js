@@ -8,22 +8,24 @@ const Wrap = styled.nav`
     background: ${({active}) => active ? "#010e1e88" : "rgba(255,255,255,0.0)"};
     backdrop-filter: ${({active}) => active ? "blur(10px)" : "blur(0px)"};
     border-bottom: ${({active}) => active ? "1px solid rgba(255,255,255,0.2)" : "1px solid rgba(255,255,255,0.0)"};
-    top: 0;
     width: 100%;
-    margin-bottom: -155px;
-    position: sticky;
+    position: fixed;
     padding: ${({active}) => active ? ".1em 1.5em" : "1.5em 1.5em" };
     z-index: 99;
     transition: 0.3s background-color ease, 0.3s padding ease, backdrop-filter 0.3s ease, border-bottom 0.3s ease;
     will-change: top;
     backface-visibility: hidden;
-    
+
+    @media screen and (min-width: 1101px){
+        top: 0;
+    }
     
     @media screen and (max-width: 1100px) {
         background: ${({ click }) => (click ? "#fff" : "transparent")};
         height: auto;
-        top: 100%;
-        transform: translateY(-100%);
+        bottom: 0px;
+        /*top: 100%;
+        transform: translateY(-100%);*/
         background: var(--secondary-color);
         margin-bottom:0;
         padding: 20px 10px;
