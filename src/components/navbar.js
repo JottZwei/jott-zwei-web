@@ -16,7 +16,7 @@ const Wrap = styled.nav`
     transition: 0.3s background-color ease, 0.3s padding ease, backdrop-filter 0.3s ease, border-bottom 0.3s ease;
     will-change: top;
     backface-visibility: hidden;
-
+    
     @media screen and (max-width: 1100px) {
         background: ${({ click }) => (click ? "#fff" : "transparent")};
         height: auto;
@@ -116,6 +116,10 @@ const Container = styled.div`
     }
 `
 
+const Wrapall = styled.div`
+
+`
+
 const Navbar = () => {
 
     const [scroll, setScroll] = useState(false)
@@ -134,6 +138,7 @@ const Navbar = () => {
     }, [])
 
     return(
+        <Wrapall>
         <Wrap active={scroll}>
             <Container>
                 <Logo to="/">
@@ -164,6 +169,7 @@ const Navbar = () => {
                 </NavMenu>
             </Container>
         </Wrap>
+        </Wrapall>
         )
    }
 

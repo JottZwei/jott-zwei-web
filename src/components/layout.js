@@ -8,7 +8,7 @@ const Layout = ({ children }) => (
       <>
         <GlobalStyle />
         <Navbar />
-            <main>
+            <main id="content">
               {children}
             </main>
           <Footer />

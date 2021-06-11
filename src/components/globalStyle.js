@@ -19,8 +19,6 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 18px;
   }
 
-
-
   * {
     box-sizing: border-box;
     margin: 0;
