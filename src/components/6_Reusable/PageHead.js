@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { ButtonInternal, Headline1, Text } from '../defaultComponents'
+import { Button, Headline1, Text } from '../defaultComponents'
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 const Wrap = styled.div`
     height: 80vh;
@@ -60,7 +61,7 @@ const PageHead = ({ image, headline, text }) => {
             <Foreground>
                 <Headline1>{headline}</Headline1>
                 <Text>{text}</Text>
-                <ButtonInternal to="#losgehts">Los geht's</ButtonInternal>
+                <Button><AnchorLink to="/#losgehts" title="Referenzen">Los geht's</AnchorLink></Button>
             </Foreground>
         </Wrap>
     )

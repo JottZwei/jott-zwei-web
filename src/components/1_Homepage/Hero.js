@@ -3,7 +3,7 @@ import styled, { keyframes } from 'styled-components'
 import { StaticImage } from 'gatsby-plugin-image'
 import { Headline1, Text, Button } from '../defaultComponents'
 import { FaFacebook, FaInstagram } from "react-icons/fa"
-import { AnchorLink } from "gatsby-plugin-anchor-links";
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 
 const Wrap = styled.div`
@@ -46,7 +46,7 @@ const Background = styled.div`
         left:0;
         right:0;
         bottom:0;
-        background: linear-gradient(0deg, rgba(1,14,30,.9) 0%, rgba(1,14,30,0.2) 100%);
+        background: linear-gradient(0deg, rgba(1,14,30,.9) 0%, rgba(1,14,30,0.2) 50%, rgba(1,14,30,0.2) 70%, #010e1eaa 100%);
         z-index: 2;
     }
 
@@ -252,7 +252,7 @@ const Hero = () => {
                                         <Headline1>{slide.headline}</Headline1>
                                         <Text>{slide.text}</Text>
                                         <Text>Jott Zwei Werbeagentur – wir sind Ihre Werbeagentur im Artland.</Text>
-                                        <Button><AnchorLink to="#referenzen" title="Referenzen">Los geht's</AnchorLink></Button>
+                                        <Button><AnchorLink to="/#referenzen" title="Referenzen">Los geht's</AnchorLink></Button>
                                         
                                     </>
                                     )}
