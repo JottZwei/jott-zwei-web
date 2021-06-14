@@ -69,7 +69,7 @@ const Card = styled(Link)`
     transform:translateZ(0);
 
     @media screen and (max-width: 1300px){
-        min-width: 300px;
+        min-width: 320px;
     }
 
     @media screen and (min-width: 1300px){

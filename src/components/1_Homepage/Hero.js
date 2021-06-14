@@ -1,12 +1,14 @@
 import React, { useState } from 'react'
 import styled, { keyframes } from 'styled-components'
 import { StaticImage } from 'gatsby-plugin-image'
-import { Headline1, Text, ButtonExternal } from '../defaultComponents'
+import { Headline1, Text, Button } from '../defaultComponents'
 import { FaFacebook, FaInstagram } from "react-icons/fa"
+import { AnchorLink } from "gatsby-plugin-anchor-links";
+
 
 const Wrap = styled.div`
     height: 90vh;
-    width: 90vw;
+    width: 92vw;
     display: grid;
     grid-template-areas: "a";
     grid-template-rows: 100%;
@@ -250,7 +252,8 @@ const Hero = () => {
                                         <Headline1>{slide.headline}</Headline1>
                                         <Text>{slide.text}</Text>
                                         <Text>Jott Zwei Werbeagentur – wir sind Ihre Werbeagentur im Artland.</Text>
-                                        <ButtonExternal href="#referenzen">Los geht's</ButtonExternal>
+                                        <Button><AnchorLink to="#referenzen" title="Referenzen">Los geht's</AnchorLink></Button>
+                                        
                                     </>
                                     )}
                             </Content>

@@ -33,7 +33,6 @@ export const GlobalStyle = createGlobalStyle`
     -webkit-text-size-adjust: 100%;
     touch-action: manipulation;
     scroll-padding-top: 80px;
-    scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
   }
 

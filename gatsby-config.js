@@ -30,21 +30,23 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     'gatsby-plugin-offline',
     'gatsby-plugin-image',
-    `gatsby-plugin-smoothscroll`,
     {
-      resolve: `gatsby-plugin-google-gtag`,
+      resolve: "gatsby-plugin-anchor-links",
       options: {
-        trackingIds: [
-          "UA-159919953-3", // Google Analytics / GA
-          //"AW-CONVERSION_ID", Google Ads / Adwords / AW
-          //"DC-FLOODIGHT_ID" Marketing Platform advertising products (Display & Video 360, Search Ads 360, and Campaign Manager)
-        ],
-        pluginConfig: {
-          head: false,
-          respectDNT: true,
-          exclude: ["/preview/**", "/do-not-track/me/too/"],
-        },
-      },
+        offset: -100
+      }
     },
+    {
+      resolve: `gatsby-plugin-gdpr-cookies`,
+      options: {
+        googleAnalytics: {
+          trackingId: 'UA-159919953-3',
+          cookieName: 'gatsby-gdpr-google-analytics', 
+          anonymize: true,
+          allowAdFeatures: false
+        },
+        environments: ['production', 'development']
+      },
+    }
   ],
 }

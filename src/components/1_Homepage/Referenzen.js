@@ -125,7 +125,7 @@ const Referenzen = () => {
             </RefContainer>
 
             <RefContainer to="kontakt">
-                <StaticImage src="../../images/1_Homepage/Hero/hero_2.jpg" alt="" />
+                <StaticImage src="../../images/2_Referenzen/platzhalter.jpg" alt="" />
                 <Foreground >
                     <Headline3>Hier könnten Sie stehen ...</Headline3>
                     <Button >jetzt anfragen</Button>

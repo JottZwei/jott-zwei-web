@@ -33,11 +33,15 @@ const Wrap = styled.nav`
 const NavMenu = styled.ul`
     display: flex;
     color: white;
-    transform: translate3d(0,0,0);
 
     @media screen and (max-width: 1100px){
         width: 100%;
         justify-content: space-evenly;
+
+    }
+
+    @media screen and (max-width: 500px){
+        justify-content: space-between;
     }
 `
 
@@ -68,6 +72,10 @@ const NavItem = styled(Link)`
         & > svg {
             display: block;
         }
+    }
+
+    @media screen and (max-width: 600px){
+        font-size: 3vw;
     }
 `
 
