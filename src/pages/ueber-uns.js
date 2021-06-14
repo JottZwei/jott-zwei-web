@@ -10,7 +10,7 @@ const UeberUnsPage = () => {
     return (
         <Layout>
           <Seo title="Über Uns" keywords={[`gatsby`, `application`, `react`]} />
-          <PageHead image={<StaticImage src="../images/4_About/jott_zwei_team.jpg" alt="" placeholder="blurred" objectFit="cover" layout="fullWidth" />} headline="Das sind wir" text="Erfahren Sie mehr über uns." />
+          <PageHead image={<StaticImage src="../images/4_About/jott_zwei_team.jpg" alt="" placeholder="blurred" objectFit="cover" layout="fullWidth" />} link="ueber-uns" headline="Das sind wir" text="Erfahren Sie mehr über uns." />
           <AboutText />
           <Team />
       </Layout>

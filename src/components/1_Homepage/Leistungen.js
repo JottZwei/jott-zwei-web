@@ -68,7 +68,7 @@ const Card = styled(Link)`
     justify-content: space-between;
     transform:translateZ(0);
 
-    @media screen and (max-width: 1300px){
+    @media screen and (max-width: 1100px){
         min-width: 320px;
     }
 

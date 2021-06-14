@@ -52,7 +52,7 @@ const Foreground = styled.div`
     }
 `
 
-const PageHead = ({ image, headline, text }) => {
+const PageHead = ({ image, headline, text, link }) => {
     return (
         <Wrap>
             <Background>
@@ -61,7 +61,7 @@ const PageHead = ({ image, headline, text }) => {
             <Foreground>
                 <Headline1>{headline}</Headline1>
                 <Text>{text}</Text>
-                <Button><AnchorLink to="/#losgehts" title="Referenzen">Los geht's</AnchorLink></Button>
+                <Button><AnchorLink to={`/${link}/#losgehts`} title="Los geht's">Los geht's</AnchorLink></Button>
             </Foreground>
         </Wrap>
     )
