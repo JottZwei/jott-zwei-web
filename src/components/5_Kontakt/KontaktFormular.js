@@ -83,7 +83,7 @@ const FormItemFull = styled.div`
 const KontaktFormular = () => {
     return (
         <Wrap id="losgehts">
-            <Form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">
+            <Form method="POST" netlify-honeypot="bot-field" data-netlify="true" name="contact">
                     <Input type="hidden" name="bot-field" />
                     <Input type="hidden" name="form-name" value="contact" />
                 <FormItem>

@@ -51,7 +51,6 @@ const NavItem = styled(Link)`
     list-style-type: none;
     margin: 0;
     transition: color 0.2s ease;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
 
     & > svg {
         width: 100%;
@@ -60,6 +59,7 @@ const NavItem = styled(Link)`
     }
 
     @media screen and (min-width: 1100px){
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
         
     margin-left: 1.3rem;
         &:hover {
