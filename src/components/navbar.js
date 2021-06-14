@@ -26,7 +26,7 @@ const Wrap = styled.nav`
         bottom: 0px;
         background: var(--secondary-color);
         margin-bottom:0;
-        padding: 20px 10px 30px 10px;
+        padding: 20px 10px 25px 10px;
     }
 `
 
@@ -42,6 +42,8 @@ const NavMenu = styled.ul`
 
     @media screen and (max-width: 500px){
         justify-content: space-between;
+        padding-left: 2vw;
+        padding-right: 2vw;
     }
 `
 
@@ -49,6 +51,7 @@ const NavItem = styled(Link)`
     list-style-type: none;
     margin: 0;
     transition: color 0.2s ease;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
 
     & > svg {
         width: 100%;

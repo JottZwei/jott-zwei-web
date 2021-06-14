@@ -10,7 +10,7 @@ const ReferenzenPage = () => {
     return (
         <Layout>
           <Seo title="Home" keywords={[`gatsby`, `application`, `react`]} />
-          <PageHead image={<StaticImage src="../images/2_Referenzen/Ziemer/ref_zc_2.jpg" alt="" placeholder="blurred" objectFit="cover" layout="fullWidth" />} link="referenzen" headline="Referenzen gefällig?" text="Ein Auszug unserer Projekte. Klicken Sie auf ein Projekt, um mehr über dieses zu erfahren!" />
+          <PageHead image={<StaticImage src="../images/2_Referenzen/Ziemer/ref_zc_2.jpg" alt="" placeholder="blurred" objectFit="cover" layout="fullWidth" />} headline="Referenzen gefällig?" text="Ein Auszug unserer Projekte. Klicken Sie auf ein Projekt, um mehr über dieses zu erfahren!" />
           <ReferenzenArea />
       </Layout>
     )

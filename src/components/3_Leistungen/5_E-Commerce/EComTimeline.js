@@ -11,6 +11,7 @@ const Wrap = styled.div`
     display: grid;
     align-content: center;
     text-align: center;
+    margin-bottom: 3vw;
 
     @supports not (width: min(90%, 850px)){
         width: 90%;

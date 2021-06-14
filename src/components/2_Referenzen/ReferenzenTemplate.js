@@ -1,8 +1,10 @@
 import React from 'react'
-import styled from 'styled-components'
-import { Headline1, Text, ButtonInternal } from '../defaultComponents'
+import styled, {keyframes} from 'styled-components'
+import { Headline1, Text } from '../defaultComponents'
 import Cta from '../6_Reusable/CTA'
 import { ReferenzenData } from '../2_Referenzen/ReferenzenData'
+import { FaChevronDown } from 'react-icons/fa';
+
 
 const Wrap = styled.div``
 
@@ -47,6 +49,11 @@ const Background = styled.div`
     }
 `
 
+const wiggle = keyframes`
+    from {transform: translateY(0)}
+    to {transform: translateY(-10px)}
+`
+
 const Foreground = styled.div`
     grid-area: a;
     display: flex;
@@ -57,9 +64,16 @@ const Foreground = styled.div`
     max-width: 700px;
     margin: 0 auto;
     text-align: center;
+    padding: 0vw 2vw;
 
     & > ${Text} {
         margin-bottom: 20px;
+    }
+
+    & > svg {
+        color: white;
+        font-size: 1.5rem;
+        animation: ${wiggle} .5s ease infinite alternate-reverse;
     }
 `
 
@@ -128,10 +142,10 @@ return (
             <Foreground>
                 <Headline1>{ReferenzenData[index].name}</Headline1>
                 <Text>{ReferenzenData[index].leistungen}</Text>
-                <ButtonInternal to="#losgehts">Los geht's</ButtonInternal>
+                <FaChevronDown />
             </Foreground>
         </HeaderContainer>
-        <ContentContainer id="losgehts">
+        <ContentContainer>
             <EntryText>
                 <Headline1>{ReferenzenData[index].headline}</Headline1>
                 <Text>

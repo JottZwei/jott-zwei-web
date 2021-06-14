@@ -1,7 +1,7 @@
 import React from 'react'
-import styled from 'styled-components'
-import { Button, Headline1, Text } from '../defaultComponents'
-import { AnchorLink } from "gatsby-plugin-anchor-links"
+import styled, {keyframes} from 'styled-components'
+import { Headline1, Text } from '../defaultComponents'
+import { FaChevronDown } from 'react-icons/fa';
 
 const Wrap = styled.div`
     height: 80vh;
@@ -35,6 +35,12 @@ const Background = styled.div`
     }
 `
 
+const wiggle = keyframes`
+    from {transform: translateY(0)}
+    to {transform: translateY(-10px)}
+`
+
+
 const Foreground = styled.div`
     grid-area: a;
     display: flex;
@@ -49,10 +55,16 @@ const Foreground = styled.div`
 
     & > ${Text} {
         margin-bottom: 20px;
+    }    
+    
+    & > svg {
+        color: white;
+        font-size: 1.5rem;
+        animation: ${wiggle} .5s ease infinite alternate-reverse;
     }
 `
 
-const PageHead = ({ image, headline, text, link }) => {
+const PageHead = ({ image, headline, text }) => {
     return (
         <Wrap>
             <Background>
@@ -61,7 +73,7 @@ const PageHead = ({ image, headline, text, link }) => {
             <Foreground>
                 <Headline1>{headline}</Headline1>
                 <Text>{text}</Text>
-                <Button><AnchorLink to={`/${link}/#losgehts`} title="Los geht's">Los geht's</AnchorLink></Button>
+                <FaChevronDown />
             </Foreground>
         </Wrap>
     )

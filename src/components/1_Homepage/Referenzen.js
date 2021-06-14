@@ -66,7 +66,7 @@ const Foreground = styled.div`
 
     @media screen and (max-width: 1200px){
         opacity: 1.0;
-        background: linear-gradient(0deg, rgba(1,14,30,.9) 0%, rgba(1,14,30,0.2) 100%);
+        background: linear-gradient(0deg, rgba(1,14,30,.8) 0%, rgba(1,14,30,0.0) 100%);
         justify-content: flex-end;
         align-items: flex-start;
         padding: 1vw 3vw;
