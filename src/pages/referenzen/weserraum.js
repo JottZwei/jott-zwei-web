@@ -6,7 +6,7 @@ import Seo from '../../components/seo'
 const WeserraumPage = () => {
     return (
         <Layout>
-        <Seo title="Leistungen" keywords={[`gatsby`, `application`, `react`]} />
+        <Seo title="Leistungen" keywords={[`Webdesign`, `Visitenkarten`, `Stempel`]} description="Ein prägnantes Logo, Visitenkarten, Stempel, sowie ein kleiner Webauftritt." />
         <ReferenzenTemplate index="4"/>
         </Layout>
     )

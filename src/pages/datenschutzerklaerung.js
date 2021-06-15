@@ -41,7 +41,7 @@ const datenschutzerklaerung = () => {
     return (
 
         <Layout>
-        <Seo title="Datenschutzerklärung | Jott Zwei Werbeagentur" />
+        <Seo title="Datenschutzerklärung | Jott Zwei Werbeagentur" description="Informationen zum Datenschutz und der Datensicherheit bei der Jott Zwei UG (haftungsbeschränkt)." />
             <Wrap>
                 <Headline1>Daten&shy;schutz&shy;erklärung</Headline1>
                 <Headline2>1. Daten&shy;schutz auf einen Blick</Headline2>

@@ -33,7 +33,7 @@ const impressum = () => {
 
     return (
         <Layout>
-        <Seo title="Impressum | Jott Zwei Werebagentur" />
+        <Seo title="Impressum | Jott Zwei Werebagentur" description="Alles was Sie brauchen um uns zu kontaktieren: Jott Zwei UG (​haftungsbeschränkt), Bühnenstraße 225, 49635 Badbergen. 0176 34404998, info@jott-zwei.de." />
         <Wrap>
             <Headline1>Impres&shy;sum</Headline1>
             <Headline2>Angaben gemäß § 5 TMG</Headline2>

@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import styled, { keyframes } from 'styled-components'
 import { StaticImage } from 'gatsby-plugin-image'
-import { Headline1, Text, Button } from '../defaultComponents'
+import { Headline1, Text } from '../defaultComponents'
 import { FaFacebook, FaInstagram } from "react-icons/fa"
-import { AnchorLink } from "gatsby-plugin-anchor-links"
+import { FaChevronDown } from 'react-icons/fa';
 
 
 const Wrap = styled.div`
@@ -57,6 +57,11 @@ const Background = styled.div`
     }
 `
 
+const wiggle = keyframes`
+    from {transform: translateY(0)}
+    to {transform: translateY(-10px)}
+`
+
 const Foreground = styled.div`
     grid-area: a;
     z-index: 10;
@@ -66,6 +71,9 @@ const Foreground = styled.div`
     grid-template-areas: "a b" "c d";
     gap: 30px;
     padding: 5vw;
+
+
+
 
     @media screen and (max-width: 1100px) {
         grid-template-columns: 1fr;
@@ -114,6 +122,19 @@ const Content = styled.div`
 
     & > ${Text} {
         margin-bottom: 30px;
+    }
+
+    
+    & > svg {
+        color: white;
+        font-size: 1.5rem;
+        animation: ${wiggle} .5s ease infinite alternate-reverse;
+    }
+
+    @media screen and (max-width: 900px){
+        & > svg {
+            margin: 0 auto;
+        }
     }
 `
 
@@ -252,8 +273,7 @@ const Hero = () => {
                                         <Headline1>{slide.headline}</Headline1>
                                         <Text>{slide.text}</Text>
                                         <Text>Jott Zwei Werbeagentur – wir sind Ihre Werbeagentur im Artland.</Text>
-                                        <AnchorLink to="/#referenzen" title="Referenzen"><Button>Los geht's</Button></AnchorLink>
-                                        
+                                        <FaChevronDown />
                                     </>
                                     )}
                             </Content>

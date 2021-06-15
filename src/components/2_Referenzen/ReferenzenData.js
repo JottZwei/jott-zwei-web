@@ -42,7 +42,7 @@ export const ReferenzenData = [
         titleImage: <StaticImage src="../../images/2_Referenzen/RebelPandas/ref_rp_2.jpg" alt="" placeholder="blurred" objectFit="cover" />,
         name: 'Rebel Pandas',
         headline: 'Rebellisch, musikalisch & flauschig',
-        leistungen: 'Webdesign, Logogestaltung, Albumcover',
+        leistungen: 'Webdesign, Logogestaltung, Albumcover, Social-Media, Merchandise',
         text: 'Rebel Pandas, ein Musikprojekt aus der Region, möchte durchstarten. Dafür musste ein ausgeklügeltes, modernes Corporate Design her. \n \nInspiriert vom Brutalismus-Stil ist ein “rebellisches” Corporate Design entstanden, welches thematisch und optisch die Ansprüche perfekt vereint. Das Logo und die Typografie bieten einen großen gestalterischen Spielraum für die Verwendung in den Bereichen Merchandise, Social-Media, Plattencovers und Ähnlichem. \n \nWeitere Projekte für Rebel Pandas sind im Aufbau. Diese werden Sie bald hier finden können.',
         link: '/referenzen/rebelpandas',
         gallery: [
@@ -58,7 +58,7 @@ export const ReferenzenData = [
         titleImage: <StaticImage src="../../images/2_Referenzen/Reternity/ref_rt_2.jpg" alt="" placeholder="blurred" objectFit="cover"  />,
         name: 'Reternity',
         headline: 'Schlicht, modern & auf den Punkt.',
-        leistungen: 'E-Commerce',
+        leistungen: 'E-Commerce, Flyer',
         text: 'Lässige Looks verpackt in einem übersichtlichen und aufgeräumten Webshop? Kein Problem. Mit viel Platz dank groß in Szene gesetzter Bilder wurde ein moderner, responsiver Webauftritt geschaffen, auf dem die Kunden die neuesten Kollektionen direkt einkaufen können. Sowohl die Einrichtung des Shopsystemes als auch die Gestaltung der Website sowie Werbemaßnahmen in den sozialen Medien und ein Flyer wurden von uns übernommen.',
         link: '/referenzen/reternity',
         gallery: [

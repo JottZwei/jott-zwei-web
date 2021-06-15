@@ -6,7 +6,7 @@ import Seo from '../../components/seo'
 const ReternityPage = () => {
     return (
         <Layout>
-        <Seo title="Leistungen" keywords={[`gatsby`, `application`, `react`]} />
+        <Seo title="Reterniy Referenz" keywords={[`E-Commerce`, `eCommerce`, `Flyer`, `Onlineshop`]} description="Lässige Looks verpackt in einem übersichtlichen und aufgeräumten Webshop? Kein Problem ..." />
         <ReferenzenTemplate index="3"/>
         </Layout>
     )
