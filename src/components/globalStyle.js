@@ -9,6 +9,7 @@ export const GlobalStyle = createGlobalStyle`
     url(${codenext}) format('woff2-variations');
     font-weight: 100 1000;
     font-stretch: 25% 151%;
+    font-display: swap;
   }
 
   :root {

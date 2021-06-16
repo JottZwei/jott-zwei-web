@@ -22,7 +22,7 @@ module.exports = {
         short_name: `Jott Zwei`,
         start_url: `/`,
         background_color: `#010e1e`,
-        theme_color: `#F26F71`,
+        theme_color: `#010e1e`,
         display: `minimal-ui`,
         icon: `src/images/logo.png`,
       },
@@ -31,6 +31,7 @@ module.exports = {
     'gatsby-plugin-offline',
     'gatsby-plugin-image',
     `gatsby-plugin-preact`,
-    `gatsby-plugin-preload-fonts`
+    `gatsby-plugin-preload-fonts`,
+    `gatsby-plugin-minify`
   ],
 }
