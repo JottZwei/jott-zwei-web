@@ -37,25 +37,6 @@ module.exports = {
           families: ['Code Next']
         }
       }
-    },
-    {
-      resolve: "gatsby-plugin-anchor-links",
-      options: {
-        offset: -100,
-        duration: 500
-      }
-    },
-    {
-      resolve: `gatsby-plugin-gdpr-cookies`,
-      options: {
-        googleAnalytics: {
-          trackingId: 'UA-159919953-3',
-          cookieName: 'gatsby-gdpr-google-analytics', 
-          anonymize: true,
-          allowAdFeatures: false
-        },
-        environments: ['production', 'development']
-      },
     }
   ],
 }
