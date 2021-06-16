@@ -9,6 +9,7 @@ import { FaChevronDown } from 'react-icons/fa';
 const Wrap = styled.div`
     height: 90vh;
     width: 92vw;
+    max-width: 1920px;
     display: grid;
     grid-template-areas: "a";
     grid-template-rows: 100%;
@@ -230,17 +231,20 @@ const PaginationItem = styled.div`
 
 const Hero = () => {
     const Array = [{
-        image: <StaticImage src="../../images/1_Homepage/Hero/123.jpg" alt="" placeholder="blurred" objectFit="cover" />,
+        image: <StaticImage src="../../images/1_Homepage/Hero/hero_1.jpg" alt="" placeholder="blurred" objectFit="cover" width="1920" />,
+        paginationImage: <StaticImage src="../../images/1_Homepage/Hero/hero_1.jpg" alt="" placeholder="blurred" objectFit="cover" width="250"  />,
         headline: "Dop\xADpelt so viel Po\xADten\xADzial.",
         text: "Wir, Jan und Jörn, er\xADgän\xADzen uns per\xADfekt in\xADdem wir un\xADse\xADre in\xADdi\xADvi\xADduel\xADlen Stär\xADken und Fä\xADhig\xADkei\xADten op\xADti\xADmal kom\xADbi\xADnie\xADren. Krea\xADti\xADvi\xADtät mit Work\xADflow. Weil dop\xADpelt ein\xADfach bes\xADser hält."
     },
     {
-        image: <StaticImage src="../../images/1_Homepage/Hero/hero_2.jpg" alt="" placeholder="blurred" objectFit="cover" />,
+        image: <StaticImage src="../../images/1_Homepage/Hero/hero_2.jpg" alt="" placeholder="blurred" objectFit="cover" width="1920" loading="lazy" />,
+        paginationImage: <StaticImage src="../../images/1_Homepage/Hero/hero_2.jpg" alt="" placeholder="blurred" objectFit="cover" width="250" />,
         headline: "Dop\xADpelt so viel Mut.",
         text: "Neue We\xADge, neue Mar\xADke? Kühn\xADheit und Mut sind der Schlüs\xADsel zum Er\xADfolg. Wir brin\xADgen Ihr Un\xADter\xADneh\xADmen auf das näch\xADste Le\xADvel. Rei\xADchen Sie uns die Hand und wir ge\xADhen ge\xADmein\xADsam die\xADsen Weg.        "
     },
     {
-        image: <StaticImage src="../../images/1_Homepage/Hero/hero_3.jpg" alt="" placeholder="blurred" objectFit="cover" />,
+        image: <StaticImage src="../../images/1_Homepage/Hero/hero_3.jpg" alt="" placeholder="blurred" objectFit="cover" width="1920" loading="lazy" />,
+        paginationImage: <StaticImage src="../../images/1_Homepage/Hero/hero_3.jpg" alt="" placeholder="blurred" objectFit="cover" width="250" />,
         headline: "Dop\xADpelt so viel Pers\xADpek\xADti\xADve.",
         text: "Öfter mal die Pers\xADpek\xADti\xADve wech\xADseln. Ein gu\xADter Pers\xADpek\xADtiv\xADwech\xADsel ist der Im\xADpuls zu et\xADwas Neu\xADem und bringt fri\xADschen Wind in Ihr Un\xADter\xADneh\xADmen. Wir zei\xADgen Ih\xADnen die Orte mit der bes\xADten Aus\xADsicht."
     }
@@ -283,7 +287,7 @@ const Hero = () => {
                     {Array.map((slide, index) => {
                         return (
                             <PaginationItem key={index} onClick={ () => { setCurrent(index)}}>
-                                {slide.image}
+                                {slide.paginationImage}
                             </PaginationItem>)
                     })}
                 </Pagination>

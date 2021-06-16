@@ -31,6 +31,14 @@ module.exports = {
     'gatsby-plugin-offline',
     'gatsby-plugin-image',
     {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Code Next']
+        }
+      }
+    },
+    {
       resolve: "gatsby-plugin-anchor-links",
       options: {
         offset: -100,
