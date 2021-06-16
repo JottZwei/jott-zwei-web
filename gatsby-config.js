@@ -30,6 +30,7 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     'gatsby-plugin-offline',
     'gatsby-plugin-image',
+    `gatsby-plugin-preact`,
     {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {

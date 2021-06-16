@@ -231,7 +231,7 @@ const PaginationItem = styled.div`
 
 const Hero = () => {
     const Array = [{
-        image: <StaticImage src="../../images/1_Homepage/Hero/hero_1.jpg" alt="" placeholder="blurred" objectFit="cover" width="1920" />,
+        image: <StaticImage src="../../images/1_Homepage/Hero/hero_1.jpg" alt="" placeholder="blurred" objectFit="cover" width="1920" fadeIn="false" loading="eager" />,
         paginationImage: <StaticImage src="../../images/1_Homepage/Hero/hero_1.jpg" alt="" placeholder="blurred" objectFit="cover" width="250"  />,
         headline: "Dop\xADpelt so viel Po\xADten\xADzial.",
         text: "Wir, Jan und Jörn, er\xADgän\xADzen uns per\xADfekt in\xADdem wir un\xADse\xADre in\xADdi\xADvi\xADduel\xADlen Stär\xADken und Fä\xADhig\xADkei\xADten op\xADti\xADmal kom\xADbi\xADnie\xADren. Krea\xADti\xADvi\xADtät mit Work\xADflow. Weil dop\xADpelt ein\xADfach bes\xADser hält."
