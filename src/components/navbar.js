@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 import { StaticImage } from "gatsby-plugin-image"
 import { FaHome, FaStar, FaMap, FaUserAlt, FaEnvelope } from "react-icons/fa"
 
-const Wrap = styled.nav`
+const Wrap = styled.header`
     background: ${({active}) => active ? "#010e1e88" : "rgba(255,255,255,0.0)"};
     backdrop-filter: ${({active}) => active ? "blur(10px)" : "blur(0px)"};
     border-bottom: ${({active}) => active ? "1px solid rgba(255,255,255,0.2)" : "1px solid rgba(255,255,255,0.0)"};
@@ -30,7 +30,7 @@ const Wrap = styled.nav`
     }
 `
 
-const NavMenu = styled.ul`
+const NavMenu = styled.nav`
     display: flex;
     color: white;
 

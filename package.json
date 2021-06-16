@@ -12,10 +12,10 @@
     "gatsby-plugin-netlify": "^3.7.1",
     "gatsby-plugin-offline": "^4.4.0",
     "gatsby-plugin-preact": "^5.7.1",
+    "gatsby-plugin-preload-fonts": "^2.7.1",
     "gatsby-plugin-react-helmet": "^4.4.0",
     "gatsby-plugin-sharp": "^3.4.0",
     "gatsby-plugin-styled-components": "^4.4.0",
-    "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^3.4.0",
     "gatsby-transformer-sharp": "^3.4.0",
     "preact": "^10.5.13",
@@ -42,7 +42,8 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
+    "preload-fonts": "gatsby-preload-fonts"
   },
   "repository": {
     "type": "git",

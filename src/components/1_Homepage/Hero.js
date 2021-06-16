@@ -292,8 +292,8 @@ const Hero = () => {
                     })}
                 </Pagination>
                 <Socials>
-                    <SocialLink href="https://www.facebook.com/jottzweiwerbeagentur" target="_blank" rel="noopener"><FaFacebook /></SocialLink>
-                    <SocialLink href="https://www.instagram.com/jottzwei/" target="_blank" rel="noopener"><FaInstagram /></SocialLink>
+                    <SocialLink href="https://www.facebook.com/jottzweiwerbeagentur" aria-label="Facebook" target="_blank" rel="noopener"><FaFacebook /></SocialLink>
+                    <SocialLink href="https://www.instagram.com/jottzwei/" target="_blank" aria-label="Instagram" rel="noopener"><FaInstagram /></SocialLink>
                 </Socials>
                 
             </Foreground>

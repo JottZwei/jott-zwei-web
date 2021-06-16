@@ -31,13 +31,6 @@ module.exports = {
     'gatsby-plugin-offline',
     'gatsby-plugin-image',
     `gatsby-plugin-preact`,
-    {
-      resolve: 'gatsby-plugin-web-font-loader',
-      options: {
-        google: {
-          families: ['Code Next']
-        }
-      }
-    }
+    `gatsby-plugin-preload-fonts`
   ],
 }
