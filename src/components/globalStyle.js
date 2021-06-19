@@ -1,16 +1,13 @@
 import { createGlobalStyle } from "styled-components"
-import codenext from '../fonts/code-next.woff2';
 
 export const GlobalStyle = createGlobalStyle`
+@import url("//hello.myfonts.net/count/3d92dc");
 
-  @font-face {
-    font-family: "code-next";
-    src: url(${codenext}) format('woff2 supports variations'),
-    url(${codenext}) format('woff2-variations');
-    font-weight: 100 1000;
-    font-stretch: 25% 151%;
-    font-display: swap;
-  }
+
+@font-face {
+  font-family: "CodeNext-Regular";
+  src: url('webFonts/CodeNextRegular/font.woff2') format('woff2'), url('webFonts/CodeNextRegular/font.woff') format('woff');
+}
 
   :root {
     --primary-color: #010e1e;
@@ -25,11 +22,11 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-weight: 100;
-    font-family: 'code-next', sans-serif;
+    font-family: 'CodeNext-Regular', sans-serif;
   }
 
   html {
-    font-family: 'code-next', sans-serif;
+    font-family: 'CodeNext-Regular', sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     touch-action: manipulation;
