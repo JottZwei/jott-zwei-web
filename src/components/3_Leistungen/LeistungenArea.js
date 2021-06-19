@@ -70,7 +70,7 @@ const Button = styled.button`
     border:none;
     color: white;
     justify-self: flex-end;
-    font-family: 'code-next', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: .85rem;
     cursor: pointer;
 `
