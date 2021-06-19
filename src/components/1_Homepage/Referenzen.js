@@ -82,18 +82,22 @@ const Foreground = styled.div`
 `
 
 const Referenzen = () => {
+
+    const width = 550;
+    const quality = 40;
+    
     return (
         <Wrap id="referenzen">
             <Headline2><Leberwurst>Referenzen</Leberwurst> gefällig?</Headline2>
             <RefContainer to="referenzen/ziemer-consult">
-                <StaticImage src="../../images/2_Referenzen/Ziemer/ref_zc_2.jpg" width={600} alt="Die von uns gestaltete Website für Ziemer Consult. Dargestellt auf einem Smartphone und einem Tablet-Computer" loading="lazy" />
+                <StaticImage src="../../images/2_Referenzen/Ziemer/ref_zc_2.jpg" width={width} quality={quality} alt="Die von uns gestaltete Website für Ziemer Consult. Dargestellt auf einem Smartphone und einem Tablet-Computer" loading="lazy" />
                 <Foreground >
                     <Headline3>Ziemer Consult</Headline3>
                     <Button>zur Referenz</Button>
                 </Foreground>
             </RefContainer>
             <RefContainer to="referenzen/freizeittanken">
-            <StaticImage src="../../images/2_Referenzen/Freizeittanken/ref_ft_1.jpg" width={600} alt="Das Freizeittanken-Logo von uns gestaltet." loading="lazy"/>
+            <StaticImage src="../../images/2_Referenzen/Freizeittanken/ref_ft_1.jpg" width={width} quality={quality} alt="Das Freizeittanken-Logo von uns gestaltet." loading="lazy"/>
             <Foreground >
                     <Headline3>Freizeittanken</Headline3>
                     <Button>zur Referenz</Button>
@@ -101,7 +105,7 @@ const Referenzen = () => {
             </RefContainer>
 
             <RefContainer to="referenzen/reternity">
-                <StaticImage src="../../images/2_Referenzen/Reternity/ref_rt_2.jpg" width={600} alt="Eine Ansicht eines Laptops mit dem Shop von Reternity vor einem schönen Ambiente." loading="lazy" />
+                <StaticImage src="../../images/2_Referenzen/Reternity/ref_rt_2.jpg" width={width} quality={quality} alt="Eine Ansicht eines Laptops mit dem Shop von Reternity vor einem schönen Ambiente." loading="lazy" />
                 <Foreground >
                     <Headline3>Reternity</Headline3>
                     <Button>zur Referenz</Button>
@@ -109,7 +113,7 @@ const Referenzen = () => {
             </RefContainer>
 
             <RefContainer to="referenzen/rebelpandas">
-                <StaticImage src="../../images/2_Referenzen/RebelPandas/ref_rp_2.jpg" width={600} alt="Ein junger Mann mit einem Rebel Pandas Shirt in einer dunklen Gasse." loading="lazy" />
+                <StaticImage src="../../images/2_Referenzen/RebelPandas/ref_rp_2.jpg" width={width} quality={quality} alt="Ein junger Mann mit einem Rebel Pandas Shirt in einer dunklen Gasse." loading="lazy" />
                 <Foreground >
                     <Headline3>Rebel Pandas</Headline3>
                     <Button>zur Referenz</Button>
@@ -117,7 +121,7 @@ const Referenzen = () => {
             </RefContainer>
 
             <RefContainer to="referenzen/weserraum">
-                <StaticImage src="../../images/2_Referenzen/Borchers/ref_bor_1.jpg" width={600} alt="Die von uns gestaltete Website für Weserraum. Dargestellt auf einem Laptop mit Büro Ambiente drumherum." loading="lazy"/>
+                <StaticImage src="../../images/2_Referenzen/Borchers/ref_bor_1.jpg" width={width} quality={quality} alt="Die von uns gestaltete Website für Weserraum. Dargestellt auf einem Laptop mit Büro Ambiente drumherum." loading="lazy"/>
                 <Foreground >
                     <Headline3>Weserraum</Headline3>
                     <Button>zur Referenz</Button>
@@ -125,7 +129,7 @@ const Referenzen = () => {
             </RefContainer>
 
             <RefContainer to="kontakt">
-                <StaticImage src="../../images/2_Referenzen/platzhalter.jpg" width={600} alt="Ein Platzhalter-Bild mit dem Jott Zwei Logo darauf." loading="lazy"/>
+                <StaticImage src="../../images/2_Referenzen/platzhalter.jpg" width={width} quality={quality} alt="Ein Platzhalter-Bild mit dem Jott Zwei Logo darauf." loading="lazy"/>
                 <Foreground >
                     <Headline3>Hier könnten Sie stehen ...</Headline3>
                     <Button >jetzt anfragen</Button>

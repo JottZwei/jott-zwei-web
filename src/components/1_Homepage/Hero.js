@@ -162,7 +162,7 @@ const Hero = () => {
         <Wrap>
             <Background>
                 <ImageWrap>
-                    <StaticImage src="../../images/1_Homepage/Hero/hero_3.jpg" alt="Ein Mann ist vertieft in seine Arbeit am Laptop vor der Silhouette einer großen Stadt" placeholder="blurred" objectFit="cover" width={1920} loading="eager" />
+                    <StaticImage src="../../images/1_Homepage/Hero/hero_3.jpg" alt="Ein Mann ist vertieft in seine Arbeit am Laptop vor der Silhouette einer großen Stadt" placeholder="blurred" quality="40" objectFit="cover" width={1920} loading="eager" />
                 </ImageWrap>
             </Background>
             <Foreground>
