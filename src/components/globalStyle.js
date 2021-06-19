@@ -3,10 +3,11 @@ import { createGlobalStyle } from "styled-components"
 export const GlobalStyle = createGlobalStyle`
 @import url("//hello.myfonts.net/count/3d92dc");
 
-
 @font-face {
-  font-family: "CodeNext-Regular";
-  src: url('webFonts/CodeNextRegular/font.woff2') format('woff2'), url('webFonts/CodeNextRegular/font.woff') format('woff');
+  font-family: "Code Next";
+  src: local("Code Next"), url('../fonts/code-next.woff2') format('woff2'), url('../fonts/code-next.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
   :root {
@@ -21,12 +22,11 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-weight: 100;
-    font-family: 'CodeNext-Regular', sans-serif;
+    font-family: 'Code Next', sans-serif;
   }
 
   html {
-    font-family: 'CodeNext-Regular', sans-serif;
+    font-family: 'Code Next', sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     touch-action: manipulation;
@@ -37,7 +37,6 @@ export const GlobalStyle = createGlobalStyle`
   body {
     background: var(--primary-color);
     scrollbar-color: #006464;
-    font-weight: 200;
   }
 
   a {

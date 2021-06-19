@@ -22,18 +22,32 @@ const Wrap = styled.div`
     box-shadow: 5px 5px 10px black;
     max-width: 1920px;
 }
+
+/* code der wegfällt
+    @media screen and (max-width: 1100px){
+        height: auto;
+        width: 100%;
+        margin: 0;
+        border-radius: 0px;
+        box-shadow: none;
+    }*/
 `
 
 const Background = styled.div`
     grid-area: a;
     display: grid;
     grid-template-areas: "a";    
+    
+    /*& > div {
+        height: 100%;
+        width: 100%;
+    }*/
 
     &::before {
         content: '';
         position: absolute;
         inset: 0;
-        background: linear-gradient(0deg, rgba(1,14,30,1.0) 0%, rgba(1,14,30,0.0) 100%);
+        background: linear-gradient(0deg, rgba(1,14,30,.9) 0%, rgba(1,14,30,0.0) 100%);
         z-index: 0;
 
         @supports not (inset: 0){
@@ -66,6 +80,24 @@ const Foreground = styled.div`
         padding: 5vw;
         align-self: auto;
     }
+  /*  @media screen and (max-width: 1100px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto auto;
+        grid-template-areas: "a" "d" "c" ;
+        padding: 10vw;
+        
+
+        & > div {
+            max-width: 100%;
+        }
+
+    @media screen and (max-width: 900px){
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "a";
+        align-items: flex-end;
+    }
+    }*/
 `
 
 const fadeIn = keyframes`
@@ -117,6 +149,33 @@ const Content = styled.div`
 `
 
 
+
+const Pagination = styled.div`
+
+display: none;
+
+
+    @media screen and (min-width: 1100px){
+
+        display: grid;
+        grid-area: d;
+        height: 100%;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        column-gap:20px;
+
+        & > div {
+            transition: 0.2s ease transform;
+            
+            &:hover {
+                transform: translateY(-10px);
+            }
+        }
+    }
+`
+
+
 const Socials = styled.div`
 
     display: none;
@@ -155,29 +214,92 @@ const ImageWrap = styled.div`
     }
 `
 
+const PaginationItem = styled.div`
+
+@media screen and (min-width: 1101px){
+    box-shadow: 0px 16px 10px -8px rgba(0,0,0,0.8);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+
+    & > div {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+`
+
 
 const Hero = () => {
+    const Array = [{
+        image: <StaticImage src="../../images/1_Homepage/Hero/hero_1.jpg" alt="Zwei Männer auf einer Brücke über einem Fluss. Einer von Ihnen zeigt auf etwas in der Ferne." placeholder="blurred" objectFit="cover" width={1920} fadeIn="false" loading="eager" />,
+        paginationImage: <StaticImage src="../../images/1_Homepage/Hero/hero_1.jpg" alt="Zwei Männer auf einer Brücke über einem Fluss. Einer von Ihnen zeigt auf etwas in der Ferne." placeholder="blurred" objectFit="cover" width={250} loading="lazy" fadeIn="false" />,
+        headline: "Dop\xADpelt so viel Po\xADten\xADzial.",
+        text: "Wir, Jan und Jörn, er\xADgän\xADzen uns per\xADfekt in\xADdem wir un\xADse\xADre in\xADdi\xADvi\xADduel\xADlen Stär\xADken und Fä\xADhig\xADkei\xADten op\xADti\xADmal kom\xADbi\xADnie\xADren. Krea\xADti\xADvi\xADtät mit Work\xADflow. Weil dop\xADpelt ein\xADfach bes\xADser hält. Jott Zwei Werbeagentur – wir sind Ihre Werbeagentur im Artland."
+    },
+    {
+        image: <StaticImage src="../../images/1_Homepage/Hero/hero_2.jpg" alt="Ein Mann in einem grünen Gebirge, welcher mit einer Kamera ein Bild von sich selbst und dem Ausblick macht." placeholder="blurred" objectFit="cover" width={1920} loading="lazy" />,
+        paginationImage: <StaticImage src="../../images/1_Homepage/Hero/hero_2.jpg" alt="Ein Mann in einem grünen Gebirge, welcher mit einer Kamera ein Bild von sich selbst und dem Ausblick macht." placeholder="blurred" objectFit="cover" width={250}  loading="lazy" fadeIn="false"/>,
+        headline: "Dop\xADpelt so viel Mut.",
+        text: "Neue We\xADge, neue Mar\xADke? Kühn\xADheit und Mut sind der Schlüs\xADsel zum Er\xADfolg. Wir brin\xADgen Ihr Un\xADter\xADneh\xADmen auf das näch\xADste Le\xADvel. Rei\xADchen Sie uns die Hand und wir ge\xADhen ge\xADmein\xADsam die\xADsen Weg. Jott Zwei Werbeagentur – wir sind Ihre Werbeagentur im Artland."
+    },
+    {
+        image: <StaticImage src="../../images/1_Homepage/Hero/hero_3.jpg" alt="Ein Mann ist vertieft in seine Arbeit am Laptop vor der Silhouette einer großen Stadt" placeholder="blurred" objectFit="cover" width={1920} loading="lazy" />,
+        paginationImage: <StaticImage src="../../images/1_Homepage/Hero/hero_3.jpg" alt="Ein Mann ist vertieft in seine Arbeit am Laptop vor der Silhouette einer großen Stadt" placeholder="blurred" objectFit="cover" width={250} loading="lazy" fadeIn="false"/>,
+        headline: "Dop\xADpelt so viel Pers\xADpek\xADti\xADve.",
+        text: "Öfter mal die Pers\xADpek\xADti\xADve wech\xADseln. Ein gu\xADter Pers\xADpek\xADtiv\xADwech\xADsel ist der Im\xADpuls zu et\xADwas Neu\xADem und bringt fri\xADschen Wind in Ihr Un\xADter\xADneh\xADmen. Wir zei\xADgen Ih\xADnen die Orte mit der bes\xADten Aus\xADsicht. Jott Zwei Werbeagentur – wir sind Ihre Werbeagentur im Artland."
+    }
+]
+
+
+    const [current, setCurrent] = useState(0);
 
     return (
         <Wrap>
             <Background>
-                <ImageWrap>
-                    <StaticImage src="../../images/1_Homepage/Hero/hero_3.jpg" alt="Ein Mann ist vertieft in seine Arbeit am Laptop vor der Silhouette einer großen Stadt" placeholder="blurred" quality="40" objectFit="cover" width={1920} loading="eager" />
-                </ImageWrap>
+                {Array.map((slide, index) => {
+                            return (
+                                <ImageWrap key={index}>
+                                    {index === current && (
+                                        <>{slide.image}</>
+                                    )}
+                                </ImageWrap>
+                            )
+                        })}
             </Background>
             <Foreground>
-                <Content>
-                    <Headline1>Doppelt so viel Perspektive.</Headline1>
-                    <Text>Öfter mal die Pers&nbsp;pek&nbsp;ti&nbsp;ve wech&nbsp;seln. Ein gu&nbsp;ter Pers&nbsp;pek&nbsp;tiv&nbsp;wech&nbsp;sel ist der Im&nbsp;puls zu et&nbsp;was Neu&nbsp;em und bringt fri&nbsp;schen Wind in Ihr Un&nbsp;ter&nbsp;neh&nbsp;men. Wir zei&nbsp;gen Ih&nbsp;nen die Orte mit der bes&nbsp;ten Aus&nbsp;sicht. Jott Zwei Werbeagentur – wir sind Ihre Werbeagentur im Artland.</Text>
-                    <FaChevronDown />
-                </Content>
+                    {Array.map((slide, index) => {
+                        return (                
+                            <Content key={index}>
+                                {index === current && (
+                                    <>
+                                        <Headline1>{slide.headline}</Headline1>
+                                        <Text>{slide.text}</Text>
+                                        <FaChevronDown />
+                                    </>
+                                    )}
+                            </Content>
+                            )
+                    })}
+                <Pagination>
+                    {Array.map((slide, index) => {
+                        return (
+                            <PaginationItem key={index} onClick={ () => { setCurrent(index)}}>
+                                {slide.paginationImage}
+                            </PaginationItem>)
+                    })}
+                </Pagination>
                 <Socials>
-                        <SocialLink href="https://www.facebook.com/jottzweiwerbeagentur" aria-label="Facebook" target="_blank" rel="noopener"><FaFacebook /></SocialLink>
-                        <SocialLink href="https://www.instagram.com/jottzwei/" target="_blank" aria-label="Instagram" rel="noopener"><FaInstagram /></SocialLink>
+                    <SocialLink href="https://www.facebook.com/jottzweiwerbeagentur" aria-label="Facebook" target="_blank" rel="noopener"><FaFacebook /></SocialLink>
+                    <SocialLink href="https://www.instagram.com/jottzwei/" target="_blank" aria-label="Instagram" rel="noopener"><FaInstagram /></SocialLink>
                 </Socials>
+                
             </Foreground>
         </Wrap>
     )
 }
+
+
 
 export default Hero

@@ -15,7 +15,7 @@ export const Headline1 = styled.h1`
     color: var(--white);
     font-size: clamp(2.5rem, 2.7rem + 0.4848vw, 4rem);
     line-height: clamp(2.7rem, 2.9rem + 0.4848vw, 4.2rem);
-    font-weight: 200;
+    font-weight: 600;
     margin-bottom: 20px;
     margin-bottom: .3em;
 `
@@ -25,7 +25,7 @@ export const Headline2 = styled.h2`
     font-size: clamp(1.6rem, 1.4rem + 0.4848vw, 3rem);
     line-height: clamp(1.8rem, 1.6rem + 0.4848vw, 3.2rem);
     margin-bottom: .3em;
-    font-weight: 200;
+    font-weight: 600;
 `
 
 export const Headline3 = styled.h3`
