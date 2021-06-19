@@ -32,11 +32,8 @@ export const GlobalStyle = createGlobalStyle`
     touch-action: manipulation;
     scroll-padding-top: 80px;
     -webkit-overflow-scrolling: touch;
-  }
-
-  body {
-    background: var(--primary-color);
     scrollbar-color: #006464;
+    background: var(--primary-color);
   }
 
   a {

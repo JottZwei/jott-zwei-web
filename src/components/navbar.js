@@ -5,29 +5,24 @@ import { StaticImage } from "gatsby-plugin-image"
 import { FaHome, FaStar, FaMap, FaUserAlt, FaEnvelope } from "react-icons/fa"
 
 const Wrap = styled.header`
-    background: ${({active}) => active ? "#010e1e88" : "rgba(255,255,255,0.0)"};
+
+    background: var(--secondary-color);
+    position: fixed;
+    bottom: 0px;
+    z-index: 99;    
+    width: 100%;
+    padding: 20px 10px 25px 10px;
+
+@media screen and (min-width: 1101px){
+    background: ${({active}) => active ? "rgba(1,14,30, 0.5)" : "rgba(255,255,255,0.0)"};
     backdrop-filter: ${({active}) => active ? "blur(10px)" : "blur(0px)"};
     border-bottom: ${({active}) => active ? "1px solid rgba(255,255,255,0.2)" : "1px solid rgba(255,255,255,0.0)"};
-    width: 100%;
-    position: fixed;
-    padding: ${({active}) => active ? ".1em 1.5em" : "1.5em 1.5em" };
-    z-index: 99;
-    transition: 0.3s background-color ease, 0.3s padding ease, backdrop-filter 0.3s ease, border-bottom 0.3s ease;
-    will-change: top;
-    backface-visibility: hidden;
-
-    @media screen and (min-width: 1101px){
-        top: 0;
-    }
-    
-    @media screen and (max-width: 1100px) {
-        background: ${({ click }) => (click ? "#fff" : "transparent")};
-        height: auto;
-        bottom: 0px;
-        background: var(--secondary-color);
-        margin-bottom:0;
-        padding: 20px 10px 25px 10px;
-    }
+    top: 0;
+    bottom: auto;
+    padding: .1em 1.5em;
+    transform: ${({active}) => active ? "translateY(0px)" : "translateY(20px)" };
+    transition: 0.5s background-color ease, backdrop-filter 0.5s ease, transform .1s ease;
+}
 `
 
 const NavMenu = styled.nav`

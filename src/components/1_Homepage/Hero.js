@@ -22,26 +22,12 @@ const Wrap = styled.div`
     box-shadow: 5px 5px 10px black;
     max-width: 1920px;
 }
-
-/* code der wegfällt
-    @media screen and (max-width: 1100px){
-        height: auto;
-        width: 100%;
-        margin: 0;
-        border-radius: 0px;
-        box-shadow: none;
-    }*/
 `
 
 const Background = styled.div`
     grid-area: a;
     display: grid;
     grid-template-areas: "a";    
-    
-    /*& > div {
-        height: 100%;
-        width: 100%;
-    }*/
 
     &::before {
         content: '';
@@ -80,24 +66,6 @@ const Foreground = styled.div`
         padding: 5vw;
         align-self: auto;
     }
-  /*  @media screen and (max-width: 1100px) {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr auto auto;
-        grid-template-areas: "a" "d" "c" ;
-        padding: 10vw;
-        
-
-        & > div {
-            max-width: 100%;
-        }
-
-    @media screen and (max-width: 900px){
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr;
-        grid-template-areas: "a";
-        align-items: flex-end;
-    }
-    }*/
 `
 
 const fadeIn = keyframes`
@@ -185,6 +153,7 @@ const Socials = styled.div`
         grid-area: c;
         margin: auto auto 0 0;
         z-index: 5;
+        transform: translateZ(0);
 
         & svg {
             font-size: 1.5rem;
