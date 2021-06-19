@@ -59,10 +59,11 @@ const Foreground = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #010e1ecc;
+    background-color: rgba(1,14,30, 0.75);
     opacity: 0.0;
     z-index: 20;
     transition: 0.3s ease opacity;
+    transform: translateZ(0);
 
     @media screen and (max-width: 1200px){
         opacity: 1.0;

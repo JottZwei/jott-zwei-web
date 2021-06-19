@@ -1,14 +1,7 @@
 import { createGlobalStyle } from "styled-components"
 
 export const GlobalStyle = createGlobalStyle`
-@import url("//hello.myfonts.net/count/3d92dc");
-
-@font-face {
-  font-family: "Code Next";
-  src: local("Code Next"), url('../fonts/code-next.woff2') format('woff2'), url('../fonts/code-next.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
   :root {
     --primary-color: #010e1e;
@@ -22,11 +15,10 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Code Next', sans-serif;
+    font-family: 'Roboto', sans-serif;
   }
 
   html {
-    font-family: 'Code Next', sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     touch-action: manipulation;

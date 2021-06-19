@@ -61,7 +61,7 @@ export const ButtonExtern = styled.a`
     border: none;
     font-size: 1rem;
     color: var(--white);
-    transition: background-color 0.2s ease, transform 0.2s ease; 
+    transition: transform 0.2s ease; 
 
     &:hover, &:focus {
         background: var(--tertiary-color);
@@ -80,7 +80,7 @@ export const Button = styled.button`
     border: none;
     font-size: 1rem;
     color: var(--white);
-    transition: background-color 0.2s ease, transform 0.2s ease; 
+    transition: transform 0.2s ease; 
     cursor: pointer;
 
     &:hover, &:focus {
@@ -101,7 +101,7 @@ export const ButtonInternal = styled(Link)`
     border: none;
     font-size: 1rem;
     color: var(--white);
-    transition: background-color 0.2s ease, transform 0.2s ease; 
+    transition: transform 0.2s ease; 
     cursor: pointer;
 
     &:hover, &:focus {
@@ -122,7 +122,7 @@ border-radius: 30px;
 border: none;
 font-size: 1rem;
 color: var(--white);
-transition: background-color 0.2s ease, transform 0.2s ease; 
+transition: transform 0.2s ease; 
 cursor: pointer;
 
 &:hover, &:focus {
