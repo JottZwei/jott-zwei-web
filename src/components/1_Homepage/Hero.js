@@ -11,12 +11,12 @@ const Wrap = styled.div`
     grid-template-rows: 100%;
     grid-template-columns: 100%;
     position: relative;
+    overflow: hidden;
 
 @media screen and (min-width: 1101px){
     height: 90vh;
     width: 92vw;
     border-radius: 20px;
-    overflow: hidden;
     transform: translateZ(0);
     margin: 30px auto;
     box-shadow: 5px 5px 10px black;
